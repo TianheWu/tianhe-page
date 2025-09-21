@@ -1,272 +1,511 @@
 <!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<html lang="en">
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<head>
+  <meta charset="UTF-8">
   <title>Tianhe Wu</title>
 
-  <meta name="author" content="Jon Barron">
+  <meta name="author" content="tianhe wu">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="shortcut icon" href="images/profile/2025-profile.jpg" type="image/x-icon">
+
+  <!-- 公共样式集中 -->
+  <style>
+    /* 所有“内容表格”共用：宽 100%，无边框，居中 */
+    .tbl{
+      width:100%;
+      border:0;
+      border-spacing:0;
+      border-collapse:separate;
+      margin-left:auto;
+      margin-right:auto;
+    }
+    /* 左右两栏常用单元格：20 px 内边距 + 垂直居中 */
+    .cell-md{
+      padding:20px;
+      vertical-align:middle;
+    }
+    /* 图片栏需要再水平居中 */
+    .cell-md-center{
+      padding:20px;
+      vertical-align:middle;
+      text-align:center;
+    }
+    /* 介绍区常见 1% 内边距 */
+    .cell-padding-1{
+      padding:1%;
+    }
+    span.tag {
+      font-size: 12px;
+      color: #FFFFFF;
+      /* color: #07889b; */
+      background-color: #b9162e;
+      box-shadow: 2px 2px 1px #151515;
+      padding: 1px 5px 2px 5px;
+    }
+    a.highlight-me {
+        color: rgba(255, 181, 84, 1.0);
+        /* font-weight: bold; */
+        text-decoration: underline; /* 下划线 */
+    }
+    a.highlight-pub {
+        color: #ffac4d;
+        font-weight: bold;        /* 加粗 */
+    }
+  </style>
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p class="name" style="text-align: center;">
-                Tianhe Wu
-              </p>
-              <p>
-                My name is Tianhe Wu, a third-year graduate student at the Intelligent Computing Lab at Tsinghua University, under the supervision of Professor <a href="https://scholar.google.com/citations?user=4gH3sxsAAAAJ&hl=en">Yujiu Yang</a>. Currently, I am a research assistant at City University of Hong Kong, working with Professor <a href="https://kedema.org/">Kede Ma</a>. I am also an intern at the OPPO Research Institute, where I am mentored by Professor <a href="https://www4.comp.polyu.edu.hk/~cslzhang/">Lei Zhang</a>. I am passionate about advancing the frontiers of artificial intelligence.
-              </p>
-              <p style="text-align:center">
-                <a href="wth22@mails.tsinghua.edu.cn">Email</a> &nbsp/&nbsp
-                <a href="https://scholar.google.com/citations?user=QW1JtysAAAAJ&hl=en&oi=ao">Google Scholar</a> &nbsp/&nbsp
-                <a href="https://github.com/TianheWu">Github</a>
-              </p>
+  <table style="width:90%;max-width:1080px;border:0;border-spacing:0;border-collapse:separate;margin:auto;">
+    <tr><td>
+        <!-- 1 INTRO -->
+        <table width="100%" align="left" border="0" cellspacing="0" cellpadding="12" style="table-layout:fixed;">
+        <colgroup>
+            <col span="1" style="width: 22%;">
+            <col span="1" style="width: 78%;">
+        </colgroup>
+        <tr style="width:100%">
+            <td valign="middle">
+                <img src="images/profile/2025-profile.jpg" height="180px">
             </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/tianhe.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/tianhe.jpg" class="hoverZoomLink"></a>
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <h2>Research</h2>
-              <p>
-                My research focuses on Multimodal Large Language Models (MLLMs), Image Quality Assessment (IQA), and Low-level Vision. Currently, most of my work is centered around IQA tasks, with future research directions primarily oriented towards MLLMs.
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
 
-
-      <!-- News section -->
-      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-        <tr>
-          <td style="padding:20px;width:100%;vertical-align:middle">
-            <h2>News</h2>
-            <ul>
-              <li><strong>2025-09:</strong> Paper VisualQuality-R1 obtains NeurIPS 2025 Spotlight!</li>
-              <li><strong>2025-02:</strong> Our paper Toward Generalized Image Quality Assessment: Relaxing the Perfect Reference Quality Assumption was accepted at CVPR 2025.</li>
-              <li><strong>2024-07:</strong> Our paper <a href="https://arxiv.org/abs/2403.10854">A Comprehensive Study of Multimodal Large Language Models for Image Quality Assessment</a> was accepted at ECCV 2024.</li>
-              <li><strong>2023-09:</strong> Our paper titled <a href="https://arxiv.org/abs/2305.10983">Assessor360: Multi-sequence Network for Blind Omnidirectional Image Quality Assessment</a> has been accepted for presentation at NeurIPS 2023.</li>
-              <li><strong>2022-04:</strong> I published my first conference paper <a href="https://arxiv.org/abs/2204.08958">MANIQA: Multi-dimension Attention Network for No-reference Image Quality Assessment.</a></li>
-              <li><strong>2022-04:</strong> We won first place in the NTIRE2022 Perceptual Image Quality Assessment Challenge, winning both Track 1 (Full-Reference) and Track 2 (No-Reference) competitions.</li>
-            </ul>
-          </td>
-        </tr>
-      </tbody></table>
-        
-      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-        <h2>Publications & Preprints (* means equal contribution)</h2>
-        <br>
-        <tr>
-          <td style="padding:20px;width:25%;vertical-align:middle">
-            <img src="./images/VisualQuality-R1.png" alt="PontTuset" width="160" style="border-style: none">
-          </td>
-          <td width="75%" valign="middle">
-            <papertitle> VisualQuality-R1: Reasoning-Induced Image Quality Assessment via<br> Reinforcement Learning to Rank
-            </papertitle>
-            <br>
-            <strong>Tianhe Wu</strong>,
-            <a href = "https://scholar.google.com/citations?user=-jj3Ub8AAAAJ&hl=zh-CN&authuser=2">Jian Zou</a>,
-            <a href="https://scholar.google.com/citations?user=REWxLZsAAAAJ&hl=en" target="_blank">Jie Liang</a>,
-            <a href="https://scholar.google.com/citations?user=tAK5l1IAAAAJ&hl=en&oi=ao" target="_blank">Lei Zhang</a>,
-            <a href="https://scholar.google.com/citations?user=sfzOyFoAAAAJ&hl=en&oi=ao" target="_blank">Kede Ma</a>
-            <br>
-            <em>NeurIPS 2025 </em><span style="color: red;"><strong>Spotlight</strong></span>
-            <p></p>
-            <a href="https://arxiv.org/abs/2505.14460" id="MultiMon">[arXiv]</a>
-            <a href="https://github.com/TianheWu/VisualQuality-R1">[Code]</a>
-            <br>
-            <p></p>
-            <p>The first NR-IQA model, capable of both quality description and rating through reasoning.</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td style="padding:20px;width:25%;vertical-align:middle">
-            <img src="./images/afine.png" alt="PontTuset" width="160" style="border-style: none">
-          </td>
-          <td width="75%" valign="middle">
-            <papertitle> Toward Generalized Image Quality Assessment: Relaxing the Perfect Reference Quality Assumption
-            </papertitle>
-            <br>
-            <a href = "https://github.com/ChrisDud0257">Du Chen*</a>,
-            <strong>Tianhe Wu*</strong>,
-            <a href="https://scholar.google.com/citations?user=sfzOyFoAAAAJ&hl=en&oi=ao" target="_blank">Kede Ma</a>,
-            <a href="https://scholar.google.com/citations?user=tAK5l1IAAAAJ&hl=en&oi=ao" target="_blank">Lei Zhang</a>
-            <br>
-            <em>CVPR 2025 </em>
-            <p></p>
-            <a href="https://arxiv.org/abs/2503.11221" id="MultiMon">[arXiv]</a>
-            <a href="https://tianhewu.github.io/A-FINE-page.github.io/" id="MultiMon">[Project]</a>
-            <a href="https://github.com/ChrisDud0257/AFINE">[Code]</a>
-            <br>
-            <p></p>
-            <p>We explore how to assess image quality under both imperfect and perfect reference scenarios.</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td style="padding:20px;width:25%;vertical-align:middle">
-            <img src="images/mllms_for_iqa.png" alt="PontTuset" width="160" style="border-style: none">
-          </td>
-          <td width="75%" valign="middle">
-            <papertitle> A Comprehensive Study of Multimodal Large Language Models for Image Quality Assessment
-            </papertitle>
-            <br>
-            <strong>Tianhe Wu</strong>,
-            <a href="https://scholar.google.com/citations?user=sfzOyFoAAAAJ&hl=en&oi=ao" target="_blank">Kede Ma</a>,
-            <a href="https://scholar.google.com/citations?user=REWxLZsAAAAJ&hl=en" target="_blank">Jie Liang</a>,
-            <a href="https://scholar.google.com/citations?user=4gH3sxsAAAAJ&hl=en&oi=ao" target="_blank">Yujiu Yang</a>,
-            <a href="https://scholar.google.com/citations?user=tAK5l1IAAAAJ&hl=en&oi=ao" target="_blank">Lei Zhang</a>
-            <br>
-            <em>ECCV 2024 </em>
-            <p></p>
-            <a href="https://arxiv.org/abs/2403.10854" id="MultiMon">[arXiv]</a> <a href="https://github.com/TianheWu/MLLMs-for-IQA">[Code]</a>
-
-            <br>
-            <p></p>
-            <p>We conducted a systematic evaluation of MLLMs' ability to perceive image quality.</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td style="padding:20px;width:25%;vertical-align:middle">
-            <img src="images/assessor360.png" alt="PontTuset" width="160" style="border-style: none">
-          </td>
-          <td width="75%" valign="middle">
-            <papertitle> Assessor360: Multi-sequence Network for Blind Omnidirectional Image Quality Assessment
-            </papertitle>
-            <br>
-            <strong>Tianhe Wu*</strong>,
-            <a href = "https://scholar.google.com/citations?user=2ZAstoQAAAAJ&hl=en&oi=ao">Shuwei Shi*</a>,
-            <a href = "https://scholar.google.com/citations?user=mePn76IAAAAJ&hl=en&oi=ao">Haoming Cai</a>,
-            <a href = "https://scholar.google.com/citations?user=EcS0L5sAAAAJ&hl=en&oi=ao">Mingdeng Cao</a>,
-            <a href = "https://scholar.google.com/citations?user=mcBd8KUAAAAJ&hl=en&oi=ao">Jing Xiao</a>,
-            <a href = "https://scholar.google.com/citations?user=JD-5DKcAAAAJ&hl=en&oi=ao">Yinqiang Zheng</a>,
-            <a href = "https://scholar.google.com/citations?user=4gH3sxsAAAAJ&hl=en&oi=ao">Yujiu Yang</a>
-            <br>
-            <em>NeurIPS 2023 </em>
-            <p></p>
-            <a href="https://arxiv.org/abs/2305.10983" id="MultiMon">[arXiv]</a> <a href="https://github.com/TianheWu/Assessor360">[Code]</a>
-
-            <br>
-            <p></p>
-            <p>We proposed a new paradram for blind Omnidirectional IQA.</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td style="padding:20px;width:25%;vertical-align:middle">
-            <img src="images/ahiq.png" alt="PontTuset" width="160" style="border-style: none">
-          </td>
-          <td width="75%" valign="middle">
-            <papertitle> Attentions Help CNNs See Better: Attention-based Hybrid Image Quality Assessment Network
-            </papertitle>
-            <br>
-            Shanshan Lao*,
-            <a href = "https://scholar.google.com/citations?user=tFGIMJYAAAAJ&hl=en&oi=sra">Yuan Gong*</a>,
-            <a href = "https://scholar.google.com/citations?user=2ZAstoQAAAAJ&hl=en&oi=ao">Shuwei Shi</a>,
-            <a href = "https://scholar.google.com/citations?user=TTG2mY8AAAAJ&hl=en&oi=ao">Sidi Yang</a>,
-            <strong>Tianhe Wu</strong>,
-            <a href = "https://scholar.google.com/citations?user=QjVR3UUAAAAJ&hl=en&oi=ao">Jiahao Wang</a>,
-            <a href = "https://scholar.google.com/citations?user=Egqp5AMAAAAJ&hl=en">Weihao Xia</a>,
-            <a href = "https://scholar.google.com/citations?user=4gH3sxsAAAAJ&hl=en&oi=ao">Yujiu Yang</a>
-            <br>
-            <em>CVPRW 2022 </em><span style="color: red;"><strong>Oral</strong></span>
-            <p></p>
-            <a href="https://arxiv.org/abs/2204.10485" id="MultiMon">[arXiv]</a> <a href="https://github.com/IIGROUP/AHIQ">[Code]</a>
-
-            <br>
-            <p></p>
-            <p>The champion method for NTIRE2022 Full-Reference IQA.</p>
-          </td>
-        </tr>
-
-        <tr>
-          <td style="padding:20px;width:25%;vertical-align:middle">
-            <img src="images/maniqa.png" alt="PontTuset" width="160" style="border-style: none">
-          </td>
-          <td width="75%" valign="middle">
-            <papertitle> MANIQA: Multi-dimension Attention Network for No-Reference Image Quality Assessment
-            </papertitle>
-            <br>
-            <a href = "https://scholar.google.com/citations?user=TTG2mY8AAAAJ&hl=en&oi=ao">Sidi Yang*</a>,
-            <strong>Tianhe Wu*</strong>,
-            <a href = "https://scholar.google.com/citations?user=2ZAstoQAAAAJ&hl=en&oi=ao">Shuwei Shi</a>,
-            Shanshan Lao,
-            <a href = "https://scholar.google.com/citations?user=tFGIMJYAAAAJ&hl=en&oi=sra">Yuan Gong</a>,
-            <a href = "https://scholar.google.com/citations?user=EcS0L5sAAAAJ&hl=en&oi=ao">Mingdeng Cao</a>,
-            <a href = "https://scholar.google.com/citations?user=QjVR3UUAAAAJ&hl=en&oi=ao">Jiahao Wang</a>,
-            <a href = "https://scholar.google.com/citations?user=4gH3sxsAAAAJ&hl=en&oi=ao">Yujiu Yang</a>
-            <br>
-            <em>CVPRW 2022 </em><span style="color: red;"><strong>Oral</strong></span>
-            <p></p>
-            <a href="https://arxiv.org/abs/2204.08958" id="MultiMon">[arXiv]</a> <a href="https://github.com/IIGROUP/MANIQA">[Code]</a>
-
-            <br>
-            <p></p>
-            <p>The champion method for NTIRE2022 No-Reference IQA.</p>
-          </td>
-        </tr>
-        
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tbody>
-            <tr>
-              <td>
-                <h2>Experience</h2>
+            <td valign="middle">
+                <p align="left">
+                  <name>Tianhe Wu</name>
+                </p>
+                <p>
+                  Ph.D. Student <br>
+                  <a href="https://www.cityu.edu.hk/en" target="_blank">City University of Hong Kong</a>
+                </p>
+                <p align=left>
+                  E-mail: <span>tianhewu-c@my.cityu.edu.hk</span>
+                </p>
+                <p align=left>
+                    <a href="https://scholar.google.com/citations?user=QW1JtysAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a> &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+                    <a href="https://github.com/TianheWu" target="_blank">Github</a>
+                </p>
               </td>
-            </tr>
-          </tbody>
-        </table>
-        <table width="100%">
-          <tr style="line-height: 30px;">
-            <td class="work-column">
-                <img src="images/logo/oppo_logo.png" width=150>
-            </td>
-            <td>
-                2024.04&mdash;Present: YLab, Research Intern, supervised by Prof. <a target="_blank" href="https://scholar.google.com/citations?user=tAK5l1IAAAAJ&hl=en&oi=ao">Lei Zhang</a>
-            </td>
-          </tr>
-          <tr style="line-height: 30px;">
-            <td class="work-column">
-                <img src="./images/logo/cityu_logo.jpg" width=200>
-            </td>
-            <td>
-                2023.12&mdash;Present: Department of Computer Science, Research Assistant, supervised by Prof. <a target="_blank" href="https://kedema.org/">Kede Ma</a>
-            </td>
-          </tr>
+        </tr>
         </table>
 
-        <style>
-          .sub-table {
-              width: 0;
-              height: 0;
-              overflow: hidden;
-              position: absolute;
-              left: -9999px;
-              opacity: 0;
-              visibility: hidden;
-          }
-      </style>
+        <!-- About Me -->
+        <table class="tbl">
+            <tr><td class="cell-padding-1" style="width:100%;vertical-align:middle">
+                <heading>About Me </heading>
+            </td></tr>
+        </table>
+
+        <table class="tbl" style="padding:3px;">
+            <tr><td valign="center">
+                <p>
+                  Hi, I'm Tianhe Wu, a Ph.D. student at the <a href="https://www.cityu.edu.hk/en" target="_blank">City University of Hong Kong (CityU)</a>, where I am supervised by <a href="https://kedema.org/" target="_blank">Prof. Kede Ma</a>. My current research focuses on Generative AI (GenAI), with a particular interest in post-training techniques for LLMs and VLMs.
+                </p>
+                <p>
+                  Before joining CityU, I completed my M.Sc. degree (2022-2025) at <a href="https://www.tsinghua.edu.cn/" target="_blank">Tsinghua University</a>, under the supervision of Prof. <a href="https://scholar.google.com/citations?user=4gH3sxsAAAAJ&hl=en" target="_blank">Yujiu Yang</a>. I received my B.Eng. degree (2018-2022) from the <a href="https://english.bjut.edu.cn/" target="_blank">Beijing University of Technology</a>.
+                </p>
+            </td></tr>
+        </table>
+
+
+        <!-- Education -->
+        <table class="tbl">
+          <tr><td class="cell-padding-1" style="width:100%;vertical-align:middle">
+              <heading>Education </heading>
+          </td></tr>
+        </table>
+        <table width="100%" align="left" border="0" cellspacing="0" cellpadding="6" style="table-layout: fixed;">
+          <colgroup>
+            <col span="1" style="width: 10%;">
+            <col span="1" style="width: 70%;">
+            <col span="1" style="width: 20%;">
+          </colgroup>
+          <tr>
+            <td align="center">
+              <img src='images/logo/cityu_logo.png' height="60">
+            </td>
       
-      <table class="sub-table" align="center">
-          <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=y35-AqSkeLIkce_C13W-97DGULFZQWj5YJB3rNARabY&cl=ffffff&w=a"></script>
+            <td valign="middle" align="left">
+              <p>
+              <papertitle>City University of Hong Kong</papertitle><br />
+              Ph.D. Student in Department of Computer Science <br/>
+              Supervisor: <a href="https://kedema.org/" target="_blank">Prof. Kede Ma</a>
+              </p>
+            </td>
+            <td valign="middle" align="right">
+              <p>
+              <b>Sep. 2025 - Present </b><br/>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+              <img src='images/logo/thu_logo.png' height="70">
+            </td>
+      
+            <td valign="middle" align="left">
+              <p>
+              <papertitle>Tsinghua University</papertitle><br />
+              Master Degree in Big Data Technology and Engineering <br />
+              Supervisor: <a href="https://sites.google.com/view/iigroup-thu/about" target="_blank">Prof. Yujiu Yang</a>
+              </p>
+            </td>
+            <td valign="middle" align="right">
+              <p>
+              <b>Sep. 2022 - Jun. 2025 </b><br/>
+              </p>
+            </td>
+          </tr>   
+          <tr>
+              <td align="center">
+                <img src='images/logo/bjut_logo.png' height="70">
+              </td>
+        
+              <td valign="middle" align="left">
+                <p>
+                <papertitle>Beijing University of Technology</papertitle><br />
+                Bachelor Degree in Computer Science <br />
+                </p>
+              </td>
+              <td valign="middle" align="right">
+                <p>
+                <b>Sep. 2018 - Jun. 2022 </b><br/>
+                </p>
+              </td>
+          </tr>
+          </table>
+        
+        <!-- News -->
+        <table class="tbl">
+          <tr><td class="cell-padding-1" style="width:100%;vertical-align:middle">
+              <heading>News</heading>
+          </td></tr>
       </table>
-      
-        </tbody></table>
 
-      </td>
-    </tr>
+      <table class="tbl" style="padding:3px;">
+          <tr><td valign="center">
+            <ul>
+              <li><strong>2025-09:</strong> Paper <a href="https://arxiv.org/abs/2505.14460" target="_blank">VisualQuality-R1</a> obtained NeurIPS 2025 Spotlight, jointly with OPPO and CityU.</li>
+              <li><strong>2025-02:</strong> One paper was accepted at CVPR 2025, jointly with OPPO and CityU.</li>
+              <li><strong>2024-07:</strong> One paper was accepted at ECCV 2024, jointly with Tsinghua and CityU.</li>
+              <li><strong>2023-09:</strong> A paper was accepted to NeurIPS 2023 during my time at Tsinghua University.</li>
+              <li><strong>2022-06:</strong> I published my first conference paper, <a href="https://arxiv.org/abs/2204.08958">MANIQA</a>, during my time at Tsinghua University.</li>
+              <li><strong>2022-04:</strong> Our team at Tsinghua won the NTIRE 2022 Perceptual Image Quality Assessment Challenge, taking first place in both Track 1 (Full-Reference) and Track 2 (No-Reference).</li>
+            </ul>
+          </td></tr>
+      </table>
+
+        <!-- Research -->
+        <table class="tbl">
+            <tr><td class="cell-padding-1" style="width:100%;vertical-align:middle">
+                <heading>Selected Publications </heading>
+                <br/>Hover the picture to see more
+            </td></tr>
+        </table>
+
+        <table class="tbl" style="padding:3px;">
+        <colgroup>
+            <col span="1" style="width: 40%;">
+            <col span="1" style="width: 60%;">
+        </colgroup>
+
+        <!-- perceptual optimization -->
+        <tr class="single_element" style="width:100%">
+          <td class="cell-md-center" onmouseout="perceptual_optimization_stop()" onmouseover="perceptual_optimization_start()">
+          <div class="one" style="display:inline;">
+              <div class="two" id="perceptual_optimization" style="display:inline;">
+              <img src="images/perceptual_optimization/teaser.png" width="100%" max-width="240">
+              </div>
+              <img src="images/perceptual_optimization/teaser.png" width="100%" max-width="240" style="background:#fff;">
+          </div>
+          <script>
+              function perceptual_optimization_start(){document.getElementById('perceptual_optimization').style.opacity='1';}
+              function perceptual_optimization_stop(){document.getElementById('perceptual_optimization').style.opacity='0';}
+              perceptual_optimization_stop();
+          </script>
+          </td>
+
+          <td class="cell-md">
+          <span class="tag">Preprint 2025</span>&nbsp;&nbsp;
+          <papertitle>Rethinking Perceptual Modeling: Asymmetries Between Assessment and Optimization</papertitle><br>
+          Jiabei Zhang*, <a class="highlight-me">Tianhe Wu*<sup>&dagger;</sup></a>, Siyu Wu, Du Chen, Qi Wang
+          <br>
+          <p></p>
+          <em>arXiv</em>, 2025
+          <br>
+          <!-- <a href="https://arxiv.org/abs/2505.14460" target="_blank">arXiv</a> 
+           &nbsp/&nbsp <a href="https://github.com/TianheWu/VisualQuality-R1" target="_blank">Code</a>
+          <p></p> -->
+          <p style="font-size:16px;"><em>
+            Our comprehensive study highlights the asymmetries between assessment and optimization.
+          </em></p>
+          </td>
+        </tr>
+
+        <!-- vqr1 -->
+        <tr class="single_element" style="width:100%">
+          <td class="cell-md-center" onmouseout="vqr1_stop()" onmouseover="vqr1_start()">
+          <div class="one" style="display:inline;">
+              <div class="two" id="vqr1" style="display:inline;">
+              <img src="images/vqr1/teaser.png" width="100%" max-width="240">
+              </div>
+              <img src="images/vqr1/teaser.png" width="100%" max-width="240" style="background:#fff;">
+          </div>
+          <script>
+              function vqr1_start(){document.getElementById('vqr1').style.opacity='1';}
+              function vqr1_stop(){document.getElementById('vqr1').style.opacity='0';}
+              vqr1_stop();
+          </script>
+          </td>
+
+          <td class="cell-md">
+          <span class="tag">NeurIPS 2025</span>&nbsp;&nbsp;
+          <papertitle>VisualQuality-R1: Reasoning-Induced Image Quality Assessment via Reinforcement Learning to Rank</papertitle><br>
+          <a class="highlight-me">Tianhe Wu</a>, Jian Zou, Jie Liang, Lei Zhang, Kede Ma
+          <br>
+          <p></p>
+          <em>NeurIPS <a class="highlight-pub">(Spotlight)</a></em>, 2025
+          <br>
+          <a href="https://arxiv.org/abs/2505.14460" target="_blank">arXiv</a> 
+           &nbsp/&nbsp <a href="https://github.com/TianheWu/VisualQuality-R1" target="_blank">Code</a>
+          <p></p>
+          <p style="font-size:16px;"><em>
+            A reasoning-enabled visual quality model capable of delivering both qualitative descriptions and quantitative ratings.
+          </em></p>
+          </td>
+        </tr>
+
+        <!-- afine -->
+        <tr class="single_element" style="width:100%">
+          <td class="cell-md-center" onmouseout="afine_stop()" onmouseover="afine_start()">
+          <div class="one" style="display:inline;">
+              <div class="two" id="afine" style="display:inline;">
+              <img src="images/afine/data.png" width="100%" max-width="240">
+              </div>
+              <img src="images/afine/data.png" width="100%" max-width="240" style="background:#fff;">
+          </div>
+          <script>
+              function afine_start(){document.getElementById('afine').style.opacity='1';}
+              function afine_stop(){document.getElementById('afine').style.opacity='0';}
+              afine_stop();
+          </script>
+          </td>
+
+          <td class="cell-md">
+          <span class="tag">CVPR 2025</span>&nbsp;&nbsp;
+          <papertitle>Toward Generalized Image Quality Assessment: Relaxing the Perfect Reference Quality Assumption</papertitle><br>
+          Du Chen*, <a class="highlight-me">Tianhe Wu*</a>, Kede Ma, Lei Zhang
+          <br>
+          <p></p>
+          <em>CVPR</em>, 2025
+          <br>
+          <a href="https://arxiv.org/abs/2503.11221" target="_blank">arXiv</a> 
+                    &nbsp/&nbsp <a href="https://tianhewu.github.io/A-FINE-page.github.io/" target="_blank">Project Page</a> &nbsp/&nbsp <a href="https://github.com/ChrisDud0257/AFINE" target="_blank">Code</a> 
+                    &nbsp/&nbsp <a href="https://drive.google.com/drive/folders/1vZehlUPDyDfo6Mq1K8pAMe3pcjqdDRht?usp=drive_link" target="_blank">Dataset</a> 
+                    &nbsp/&nbsp <a href="https://drive.google.com/file/d/1LhtLNDl6Jxwi6CPPVjX2_w4zIDRLFfbO/view" target="_blank">Benchmark</a>
+          <p></p>
+          <p style="font-size:16px;"><em>
+            A generalized FR-IQA model for low-level vision, applicable to both perfect and imperfect reference scenarios.
+          </em></p>
+          </td>
+        </tr>
+
+        <!-- mllm iqa -->
+        <tr class="single_element" style="width:100%">
+          <td class="cell-md-center" onmouseout="mllm_iqa_stop()" onmouseover="mllm_iqa_start()">
+          <div class="one" style="display:inline;">
+              <div class="two" id="mllm_iqa" style="display:inline;">
+              <img src="images/mllm_iqa/teaser.png" width="100%" max-width="240">
+              </div>
+              <img src="images/mllm_iqa/teaser.png" width="100%" max-width="240" style="background:#fff;">
+          </div>
+          <script>
+              function mllm_iqa_start(){document.getElementById('mllm_iqa').style.opacity='1';}
+              function mllm_iqa_stop(){document.getElementById('mllm_iqa').style.opacity='0';}
+              mllm_iqa_stop();
+          </script>
+          </td>
+
+          <td class="cell-md">
+          <span class="tag">ECCV 2024</span>&nbsp;&nbsp;
+          <papertitle>A Comprehensive Study of Multimodal Large  Language Models for Image Quality Assessment</papertitle><br>
+          <a class="highlight-me">Tianhe Wu</a>, Kede Ma, Jie Liang, Yujiu Yang, Lei Zhang
+          <br>
+          <p></p>
+          <em>ECCV</em>, 2024
+          <br>
+          <a href="https://arxiv.org/abs/2403.10854" target="_blank">arXiv</a> 
+                    &nbsp/&nbsp <a href="https://github.com/TianheWu/MLLMs-for-IQA" target="_blank">Code</a>
+          <p></p>
+          <p style="font-size:16px;"><em>
+            A systematic study on the ability of multimodal large language models to perceive and assess image quality.
+          </em></p>
+          </td>
+        </tr>
+
+        <!-- assessor360 -->
+        <tr class="single_element" style="width:100%">
+            <td class="cell-md-center" onmouseout="assessor360_stop()" onmouseover="assessor360_start()">
+            <div class="one" style="display:inline;">
+                <div class="two" id="assessor360" style="display:inline;">
+                <img src="images/assessor360/visual.png" width="100%" max-width="240">
+                </div>
+                <img src="images/assessor360/visual.png" width="100%" max-width="240">
+            </div>
+            <script>
+                function assessor360_start(){document.getElementById('assessor360').style.opacity='1';}
+                function assessor360_stop(){document.getElementById('assessor360').style.opacity='0';}
+                assessor360_stop();
+            </script>
+            </td>
+
+            <td class="cell-md">
+            <span class="tag">NeurIPS 2023</span>&nbsp;&nbsp;
+            <papertitle>Assessor360: Multi-sequence Network for Blind Omnidirectional Image Quality Assessment</papertitle><br>
+            <a class="highlight-me">Tianhe Wu*</a>, Shuwei Shi*, Haoming Cai, Mingdeng Cao, Jing Xiao, Yinqiang Zheng, Yujiu Yang
+            <br>
+            <p></p>
+            <em>NeurIPS</em>, 2023 
+            <br>
+            <a href="https://arxiv.org/abs/2305.10983" target="_blank">arXiv</a>
+            &nbsp/&nbsp <a href="https://github.com/TianheWu/Assessor360" target="_blank">Code</a>
+            <p></p>
+            <p style="font-size:16px;"><em>
+            Reference based Stylized Text-to-Image/Video Generation with Limited Stylized Data.
+            </em></p>
+            </td>
+        </tr>
+
+        <!-- ahiq -->
+        <tr class="single_element" style="width:100%">
+          <td class="cell-md-center" onmouseout="ahiq_stop()" onmouseover="ahiq_start()">
+          <div class="one" style="display:inline;">
+              <div class="two" id="ahiq" style="display:inline;">
+              <img src="images/ahiq/method.png" width="100%" max-width="240">
+              </div>
+              <img src="images/ahiq/method.png" width="100%" max-width="240" style="background:#fff;">
+          </div>
+          <script>
+              function ahiq_start(){document.getElementById('ahiq').style.opacity='1';}
+              function ahiq_stop(){document.getElementById('ahiq').style.opacity='0';}
+              ahiq_stop();
+          </script>
+          </td>
+
+          <td class="cell-md">
+          <span class="tag">CVPR Workshop 2022</span>&nbsp;&nbsp;
+          <papertitle>Attentions Help CNNs See Better: Attention-based Hybrid Image Quality Assessment Network</papertitle><br>
+          Shanshan Lao*, Yuan Gong*, Shuwei Shi, Sidi Yang, <a class="highlight-me">Tianhe Wu</a>, Jiahao Wang, Weihao Xia, Yujiu Yang
+          <br>
+          <p></p>
+          <em>CVPR Workshop <a class="highlight-pub">(Oral Presentation)</a></em>, 2022
+          <br>
+          <a href="https://arxiv.org/abs/2204.10485" target="_blank">arXiv</a>
+          &nbsp/&nbsp <a href="https://github.com/IIGROUP/AHIQ" target="_blank">Code</a>
+          <p></p>
+          <p style="font-size:16px;"><em>
+            The champion method for NTIRE2022 FR IQA.
+          </em></p>
+          </td>
+        </tr>
+
+        <!-- maniqa -->
+        <tr class="single_element" style="width:100%">
+            <td class="cell-md-center" onmouseout="maniqa_stop()" onmouseover="maniqa_start()">
+            <div class="one" style="display:inline;">
+                <div class="two" id="maniqa" style="display:inline;">
+                <img src="images/maniqa/method.png" width="100%" max-width="240">
+                </div>
+                <img src="images/maniqa/method.png" width="100%" max-width="240" style="background:#fff;">
+            </div>
+            <script>
+                function maniqa_start(){document.getElementById('maniqa').style.opacity='1';}
+                function maniqa_stop(){document.getElementById('maniqa').style.opacity='0';}
+                maniqa_stop();
+            </script>
+            </td>
+
+            <td class="cell-md">
+            <span class="tag">CVPR Workshop 2022</span>&nbsp;&nbsp;
+            <papertitle>MANIQA: Multi-dimension Attention Network for No-Reference Image Quality Assessment</papertitle><br>
+            Sidi Yang*, <a class="highlight-me">Tianhe Wu*</a>, Shuwei Shi, Shanshan Lao, Yuan Gong, Mingdeng Cao, Jiahao Wang, Yujiu Yang
+            <br>
+            <p></p>
+            <em>CVPR Workshop <a class="highlight-pub">(Oral Presentation)</a></em>, 2022
+            <br>
+            <a href="https://arxiv.org/abs/2204.08958" target="_blank">arXiv</a>
+            &nbsp/&nbsp <a href="https://github.com/IIGROUP/MANIQA" target="_blank">Code</a>
+            <p></p>
+            <p style="font-size:16px;"><em>
+              The champion method for NTIRE2022 NR IQA.
+            </em></p>
+            </td>
+        </tr>
+
+        </table>
+
+    <!-- Internship -->
+    <table class="tbl">
+      <tr><td class="cell-padding-1" style="width:100%;vertical-align:middle">
+          <heading>Internship</heading>
+      </td></tr>
+    </table>
+    <table width="100%" align="left" border="0" cellspacing="0" cellpadding="6" style="table-layout: fixed;">
+      <colgroup>
+        <col span="1" style="width: 10%;">
+        <col span="1" style="width: 70%;">
+        <col span="1" style="width: 20%;">
+      </colgroup>
+      <tr>
+        <td align="center">
+          <img src='images/logo/oppo_logo.jpg' height="70">
+        </td>
+  
+        <td valign="middle" align="left">
+          <p>
+          <papertitle>YLab, OPPO Research Institute</papertitle><br />
+          <em>Research Intern, focus on VLM for low-level visual understanding and perception</em> <br />
+          Supervisor: <a target="_blank" href="https://scholar.google.com/citations?user=tAK5l1IAAAAJ&hl=en&oi=ao">Prof. Lei Zhang</a>
+          </p>
+        </td>
+        <td valign="middle" align="right">
+          <p>
+          <b>Apr. 2024 - Present </b><br/>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+          <img src='images/logo/cityu_logo.png' height="70">
+        </td>
+  
+        <td valign="middle" align="left">
+          <p>
+          <papertitle>Department of Computer Science, City University of Hong Kong</papertitle><br />
+          <em>Research Assistant, focus on low-level vision</em> <br />
+          Supervisor: <a href="https://scholar.google.com/citations?user=sfzOyFoAAAAJ&hl=en&oi=ao" target="_blank">Prof. Kede Ma</a>
+          </p>
+        </td>
+        <td valign="middle" align="right">
+          <p>
+          <b>Dec. 2023 - Aug. 2025 </b><br/>
+          </p>
+        </td>
+      </tr>
+      </table>
+
+      <!-- Footer -->
+      <table class="tbl"><tr><td style="padding:0">
+        <br>
+        <p style="text-align:right;font-size:small;">
+          Last updated: May 2025<br>
+          <span id="busuanzi_container_site_pv">#Views: <span id="busuanzi_value_site_pv"></span>, #Visitors:
+                    <span id="busuanzi_value_site_uv"></span></span> (2024/9/15~)
+        </p>
+      </td></tr></table>
+
+    </td></tr>
   </table>
 </body>
-
 </html>

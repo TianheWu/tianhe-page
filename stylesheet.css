@@ -64,13 +64,13 @@
 }
 
 a {
-  color: #1772d0;
+  color: #3098ff;
   text-decoration: none;
 }
 
 a:focus,
 a:hover {
-  color: #f09228;
+  color: #ffac4d;
   text-decoration: none;
 }
 
@@ -80,49 +80,71 @@ th,
 tr,
 p,
 a {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-family: 'Aptos', 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 17px
 }
 
 strong {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-family: 'Aptos', 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 17px;
 }
 
-h2 {
-  margin: 0;
-  font-weight: normal;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
+heading {
+  font-family: 'Noto Serif', 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 26px;
 }
 
-.papertitle {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 700;
+papertitle {
+  font-family: 'Noto Serif', 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 700
 }
 
-.name {
-  padding-top: 20px;
-  margin: 0;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+name {
+  font-family: 'Aptos', 'Lato', Verdana, Helvetica, sans-serif, ;
   font-size: 32px;
+  color: hsl(69, 100%, 91%);
 }
 
 .one {
-  width: 160px;
-  height: 160px;
+  width: 100%;
+  height: 100%;
   position: relative;
 }
 
 .two {
-  width: 160px;
-  height: 160px;
+  width: 100%;
+  height: 100%;
   position: absolute;
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
   -webkit-transition: opacity .2s ease-in-out;
 }
+
+/* 默认样式 */
+table {
+  width: 100%;
+}
+
+td {
+  padding: 1%;
+}
+
+
+/* 横屏样式 */
+/* @media screen and (orientation: landscape) {
+  td {
+    width: 40%;
+  }
+} */
+
+/* 竖屏样式 */
+/* @media screen and (orientation: portrait) {
+  td {
+    width: 98%;
+    display: block;
+  }
+} */
 
 .fade {
   transition: opacity .2s ease-in-out;
@@ -131,5 +153,44 @@ h2 {
 }
 
 span.highlight {
-  background-color: #ffffd0;
+  background-color: #899797;
+}
+
+body{
+  background-color: rgb(34, 39, 44);
+}
+
+p,em,tr{
+  color: #f0f0f0;
+}
+
+papertitle{
+  color: rgb(185, 232, 255);
+  margin-top: 4px;
+  margin-bottom: -14px;
+  display: block;
+}
+
+heading{
+  color: rgb(23, 165, 236);
+}
+
+/* .single_element {
+  height: 400px;
+} */
+
+.single_element:hover {
+  background-color: #151515;
+}
+
+
+img, video {
+    border-radius: 15px;
+}
+
+.profile-image {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
 }
