@@ -210,6 +210,39 @@
             <col span="1" style="width: 60%;">
         </colgroup>
 
+        <!-- DPPO SR -->
+        <tr class="single_element" style="width:100%">
+          <td class="cell-md-center" onmouseout="dpposr_stop()" onmouseover="dpposr_start()">
+          <div class="one" style="display:inline;">
+              <div class="two" id="dpposr" style="display:inline;">
+              <img src="images/dpposr/teaser.png" width="100%" max-width="240">
+              </div>
+              <img src="images/dpposr/teaser.png" width="100%" max-width="240" style="background:#fff;">
+          </div>
+          <script>
+              function dpposr_start(){document.getElementById('dpposr').style.opacity='1';}
+              function dpposr_stop(){document.getElementById('dpposr').style.opacity='0';}
+              dpposr_stop();
+          </script>
+          </td>
+
+          <td class="cell-md">
+          <span class="tag">NeurIPS 2025</span>&nbsp;&nbsp;
+          <papertitle>DP2O-SR: Direct Perceptual Preference Optimization for Real-World Image Super-Resolution</papertitle><br>
+          Rongyuan Wu, Lingchen Sun, Zhengqiang Zhang, Shihao Wang, <a class="highlight-me">Tianhe Wu<sup>&dagger;</sup></a>, Qiaosi Yi, Shuai Li, Lei Zhang
+          <br>
+          <p></p>
+          <em>NeurIPS</em>, 2025
+          <br>
+          <a href="https://arxiv.org/abs/2510.18851" target="_blank">arXiv</a> 
+           &nbsp/&nbsp <a href="https://github.com/cswry/DP2O-SR" target="_blank">Code</a>
+          <p></p>
+          <p style="font-size:16px;"><em>
+            Direct perceptual preference optimization for image super-resolution.
+          </em></p>
+          </td>
+        </tr>
+
         <!-- perceptual optimization -->
         <tr class="single_element" style="width:100%">
           <td class="cell-md-center" onmouseout="perceptual_optimization_stop()" onmouseover="perceptual_optimization_start()">
