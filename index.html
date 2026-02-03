@@ -100,7 +100,7 @@
         <table class="tbl" style="padding:3px;">
             <tr><td valign="center">
                 <p>
-                  Hi, I'm Tianhe Wu, a Ph.D. student at the <a href="https://www.cityu.edu.hk/en" target="_blank">City University of Hong Kong (CityU)</a>, where I am supervised by <a href="https://kedema.org/" target="_blank">Prof. Kede Ma</a>. My current research focuses on Generative AI (GenAI), with a particular interest in post-training techniques for LLMs and VLMs.
+                  Hi, I'm Tianhe Wu, a Ph.D. student at the <a href="https://www.cityu.edu.hk/en" target="_blank">CityU</a>, where I am supervised by <a href="https://kedema.org/" target="_blank">Prof. Kede Ma</a>. My current research focuses on AIGC and AGI, with a particular interest in diffusion distillation and data valuation. I am a serious researcher and always happy to connect—feel free to reach out to me via email for discussion and collaboration.
                 </p>
                 <p>
                   Before joining CityU, I completed my M.Sc. degree (2022-2025) at <a href="https://www.tsinghua.edu.cn/" target="_blank">Tsinghua University</a>, under the supervision of Prof. <a href="https://scholar.google.com/citations?user=4gH3sxsAAAAJ&hl=en" target="_blank">Yujiu Yang</a>. I received my B.Eng. degree (2018-2022) from the <a href="https://english.bjut.edu.cn/" target="_blank">Beijing University of Technology</a>.
@@ -123,7 +123,7 @@
           </colgroup>
           <tr>
             <td align="center">
-              <img src='images/logo/cityu_logo.png' height="60">
+              <img src='images/logo/cityu_logo.png' height="58">
             </td>
       
             <td valign="middle" align="left">
@@ -141,7 +141,7 @@
           </tr>
           <tr>
             <td align="center">
-              <img src='images/logo/thu_logo.png' height="70">
+              <img src='images/logo/logo-thu.svg' height="70">
             </td>
       
             <td valign="middle" align="left">
@@ -186,11 +186,11 @@
       <table class="tbl" style="padding:3px;">
           <tr><td valign="center">
             <ul>
-              <li><strong>2025-09:</strong> Paper <a href="https://arxiv.org/abs/2505.14460" target="_blank">VisualQuality-R1</a> obtained NeurIPS 2025 Spotlight, jointly with OPPO and CityU.</li>
-              <li><strong>2025-02:</strong> One paper was accepted at CVPR 2025, jointly with OPPO and CityU.</li>
-              <li><strong>2024-07:</strong> One paper was accepted at ECCV 2024, jointly with Tsinghua and CityU.</li>
-              <li><strong>2023-09:</strong> A paper was accepted to NeurIPS 2023 during my time at Tsinghua University.</li>
-              <li><strong>2022-06:</strong> I published my first conference paper, <a href="https://arxiv.org/abs/2204.08958">MANIQA</a>, during my time at Tsinghua University.</li>
+              <li><strong>2025-09:</strong> Paper <a href="https://arxiv.org/abs/2505.14460" target="_blank">VisualQuality-R1</a> obtained NeurIPS 2025 (my first main conference Spotlight paper), CityU and OPPO.</li>
+              <li><strong>2025-02:</strong> One paper was accepted at CVPR 2025, CityU and OPPO.</li>
+              <li><strong>2024-07:</strong> One paper was accepted at ECCV 2024, Tsinghua and CityU.</li>
+              <li><strong>2023-09:</strong> A paper was accepted to NeurIPS 2023, Tsinghua University.</li>
+              <li><strong>2022-06:</strong> I published my first conference paper, <a href="https://arxiv.org/abs/2204.08958">MANIQA</a> at CVPR Workshopss 2022 (Oral), Tsinghua University.</li>
               <li><strong>2022-04:</strong> Our team at Tsinghua won the NTIRE 2022 Perceptual Image Quality Assessment Challenge, taking first place in both Track 1 (Full-Reference) and Track 2 (No-Reference).</li>
             </ul>
           </td></tr>
@@ -199,8 +199,111 @@
         <!-- Research -->
         <table class="tbl">
             <tr><td class="cell-padding-1" style="width:100%;vertical-align:middle">
-                <heading>Selected Publications </heading>
-                <br/>Hover the picture to see more
+                <heading class="heading-red">Representative Publications </heading>
+            </td></tr>
+        </table>
+
+        <table class="tbl" style="padding:3px;">
+        <colgroup>
+            <col span="1" style="width: 40%;">
+            <col span="1" style="width: 60%;">
+        </colgroup>
+
+        <!-- dpdmd -->
+        <tr class="single_element" style="width:100%">
+          <td class="cell-md-center" onmouseout="dpdmd_stop()" onmouseover="dpdmd_start()">
+          <div class="one" style="display:inline;">
+              <div class="two" id="dpdmd" style="display:inline;">
+              <img src="images/dpdmd/teaser.png" width="100%" max-width="240">
+              </div>
+              <img src="images/dpdmd/teaser.png" width="100%" max-width="240" style="background:#fff;">
+          </div>
+          <script>
+              function dpdmd_start(){document.getElementById('dpdmd').style.opacity='1';}
+              function dpdmd_stop(){document.getElementById('dpdmd').style.opacity='0';}
+              dpdmd_stop();
+          </script>
+          </td>
+
+          <td class="cell-md">
+          <span class="tag">Preprint 2025</span>&nbsp;&nbsp;
+          <papertitle>Diversity-Preserved Distribution Matching Distillation for Fast Visual Synthesis</papertitle><br>
+          <a class="highlight-me">Tianhe Wu*</a>, Ruibin Li*, Lei Zhang, Kede Ma
+          <br><br>
+          <a href="https://arxiv.org/abs/2505.14460" target="_blank">arXiv</a> 
+           &nbsp/&nbsp <a href="https://github.com/Multimedia-Analytics-Laboratory/dpdmd" target="_blank">Code</a>
+          <p></p>
+          <p style="font-size:16px;"><em>
+            A simple yet effective approach to preserving sample diversity under DMD, with no perceptual backbone, no discriminator, no auxiliary networks, and no additional ground-truth images.
+          </em></p>
+          </td>
+        </tr>
+
+        <!-- vqr1 -->
+        <tr class="single_element" style="width:100%">
+          <td class="cell-md-center" onmouseout="vqr1_stop()" onmouseover="vqr1_start()">
+          <div class="one" style="display:inline;">
+              <div class="two" id="vqr1" style="display:inline;">
+              <img src="images/vqr1/teaser.png" width="100%" max-width="240">
+              </div>
+              <img src="images/vqr1/teaser.png" width="100%" max-width="240" style="background:#fff;">
+          </div>
+          <script>
+              function vqr1_start(){document.getElementById('vqr1').style.opacity='1';}
+              function vqr1_stop(){document.getElementById('vqr1').style.opacity='0';}
+              vqr1_stop();
+          </script>
+          </td>
+
+          <td class="cell-md">
+          <span class="tag">NeurIPS 2025 Spotlight</span>&nbsp;&nbsp;
+          <papertitle>VisualQuality-R1: Reasoning-Induced Image Quality Assessment via Reinforcement Learning to Rank</papertitle><br>
+          <a class="highlight-me">Tianhe Wu</a>, Jian Zou, Jie Liang, Lei Zhang, Kede Ma
+          <br><br>
+          <a href="https://arxiv.org/abs/2505.14460" target="_blank">arXiv</a> 
+           &nbsp/&nbsp <a href="https://github.com/TianheWu/VisualQuality-R1" target="_blank">Code</a>
+          <p></p>
+          <p style="font-size:16px;"><em>
+            A reasoning-enabled visual quality model capable of delivering both qualitative descriptions and quantitative ratings.
+          </em></p>
+          </td>
+        </tr>
+
+        <!-- maniqa -->
+        <tr class="single_element" style="width:100%">
+            <td class="cell-md-center" onmouseout="maniqa_stop()" onmouseover="maniqa_start()">
+            <div class="one" style="display:inline;">
+                <div class="two" id="maniqa" style="display:inline;">
+                <img src="images/maniqa/method.png" width="100%" max-width="240">
+                </div>
+                <img src="images/maniqa/method.png" width="100%" max-width="240" style="background:#fff;">
+            </div>
+            <script>
+                function maniqa_start(){document.getElementById('maniqa').style.opacity='1';}
+                function maniqa_stop(){document.getElementById('maniqa').style.opacity='0';}
+                maniqa_stop();
+            </script>
+            </td>
+
+            <td class="cell-md">
+            <span class="tag">CVPR Workshops 2022 Oral</span>&nbsp;&nbsp;
+            <papertitle>MANIQA: Multi-dimension Attention Network for No-Reference Image Quality Assessment</papertitle><br>
+            Sidi Yang*, <a class="highlight-me">Tianhe Wu*</a>, Shuwei Shi, Shanshan Lao, Yuan Gong, Mingdeng Cao, Jiahao Wang, Yujiu Yang
+            <br><br>
+            <a href="https://arxiv.org/abs/2204.08958" target="_blank">arXiv</a>
+            &nbsp/&nbsp <a href="https://github.com/IIGROUP/MANIQA" target="_blank">Code</a>
+            <p></p>
+            <p style="font-size:16px;"><em>
+              The champion method for NTIRE2022 NR IQA.
+            </em></p>
+            </td>
+        </tr>
+
+
+        <!-- Research -->
+        <table class="tbl">
+            <tr><td class="cell-padding-1" style="width:100%;vertical-align:middle">
+                <heading>Other Publications </heading>
             </td></tr>
         </table>
 
@@ -230,10 +333,7 @@
           <span class="tag">NeurIPS 2025</span>&nbsp;&nbsp;
           <papertitle>DP2O-SR: Direct Perceptual Preference Optimization for Real-World Image Super-Resolution</papertitle><br>
           Rongyuan Wu, Lingchen Sun, Zhengqiang Zhang, Shihao Wang, <a class="highlight-me">Tianhe Wu</a>, Qiaosi Yi, Shuai Li, Lei Zhang
-          <br>
-          <p></p>
-          <em>NeurIPS</em>, 2025
-          <br>
+          <br><br>
           <a href="https://arxiv.org/abs/2510.18851" target="_blank">arXiv</a> 
            &nbsp/&nbsp <a href="https://github.com/cswry/DP2O-SR" target="_blank">Code</a>
           <p></p>
@@ -263,48 +363,12 @@
           <span class="tag">Preprint 2025</span>&nbsp;&nbsp;
           <papertitle>The Unanticipated Asymmetry Between Perceptual Optimization and Assessment</papertitle><br>
           Jiabei Zhang*, Qi Wang, Siyu Wu, Du Chen, <a class="highlight-me">Tianhe Wu*<sup>&dagger;</sup></a>
-          <br>
-          <p></p>
-          <em>arXiv</em>, 2025
-          <br>
+          <br><br>
           <a href="https://arxiv.org/abs/2509.20878" target="_blank">arXiv</a> 
            &nbsp/&nbsp <a href="https://github.com/Oreki1999/AsymmetryIQA" target="_blank">Code</a>
           <p></p>
           <p style="font-size:16px;"><em>
             Our comprehensive study highlights the asymmetries between assessment and optimization.
-          </em></p>
-          </td>
-        </tr>
-
-        <!-- vqr1 -->
-        <tr class="single_element" style="width:100%">
-          <td class="cell-md-center" onmouseout="vqr1_stop()" onmouseover="vqr1_start()">
-          <div class="one" style="display:inline;">
-              <div class="two" id="vqr1" style="display:inline;">
-              <img src="images/vqr1/teaser.png" width="100%" max-width="240">
-              </div>
-              <img src="images/vqr1/teaser.png" width="100%" max-width="240" style="background:#fff;">
-          </div>
-          <script>
-              function vqr1_start(){document.getElementById('vqr1').style.opacity='1';}
-              function vqr1_stop(){document.getElementById('vqr1').style.opacity='0';}
-              vqr1_stop();
-          </script>
-          </td>
-
-          <td class="cell-md">
-          <span class="tag">NeurIPS 2025</span>&nbsp;&nbsp;
-          <papertitle>VisualQuality-R1: Reasoning-Induced Image Quality Assessment via Reinforcement Learning to Rank</papertitle><br>
-          <a class="highlight-me">Tianhe Wu</a>, Jian Zou, Jie Liang, Lei Zhang, Kede Ma
-          <br>
-          <p></p>
-          <em>NeurIPS <a class="highlight-pub">(Spotlight)</a></em>, 2025
-          <br>
-          <a href="https://arxiv.org/abs/2505.14460" target="_blank">arXiv</a> 
-           &nbsp/&nbsp <a href="https://github.com/TianheWu/VisualQuality-R1" target="_blank">Code</a>
-          <p></p>
-          <p style="font-size:16px;"><em>
-            A reasoning-enabled visual quality model capable of delivering both qualitative descriptions and quantitative ratings.
           </em></p>
           </td>
         </tr>
@@ -329,10 +393,7 @@
           <span class="tag">CVPR 2025</span>&nbsp;&nbsp;
           <papertitle>Toward Generalized Image Quality Assessment: Relaxing the Perfect Reference Quality Assumption</papertitle><br>
           Du Chen*, <a class="highlight-me">Tianhe Wu*</a>, Kede Ma, Lei Zhang
-          <br>
-          <p></p>
-          <em>CVPR</em>, 2025
-          <br>
+          <br><br>
           <a href="https://arxiv.org/abs/2503.11221" target="_blank">arXiv</a> 
                     &nbsp/&nbsp <a href="https://tianhewu.github.io/A-FINE-page.github.io/" target="_blank">Project Page</a> &nbsp/&nbsp <a href="https://github.com/ChrisDud0257/AFINE" target="_blank">Code</a> 
                     &nbsp/&nbsp <a href="https://drive.google.com/drive/folders/1vZehlUPDyDfo6Mq1K8pAMe3pcjqdDRht?usp=drive_link" target="_blank">Dataset</a> 
@@ -364,10 +425,7 @@
           <span class="tag">ECCV 2024</span>&nbsp;&nbsp;
           <papertitle>A Comprehensive Study of Multimodal Large  Language Models for Image Quality Assessment</papertitle><br>
           <a class="highlight-me">Tianhe Wu</a>, Kede Ma, Jie Liang, Yujiu Yang, Lei Zhang
-          <br>
-          <p></p>
-          <em>ECCV</em>, 2024
-          <br>
+          <br><br>
           <a href="https://arxiv.org/abs/2403.10854" target="_blank">arXiv</a> 
                     &nbsp/&nbsp <a href="https://github.com/TianheWu/MLLMs-for-IQA" target="_blank">Code</a>
           <p></p>
@@ -397,10 +455,7 @@
             <span class="tag">NeurIPS 2023</span>&nbsp;&nbsp;
             <papertitle>Assessor360: Multi-sequence Network for Blind Omnidirectional Image Quality Assessment</papertitle><br>
             <a class="highlight-me">Tianhe Wu*</a>, Shuwei Shi*, Haoming Cai, Mingdeng Cao, Jing Xiao, Yinqiang Zheng, Yujiu Yang
-            <br>
-            <p></p>
-            <em>NeurIPS</em>, 2023 
-            <br>
+            <br><br>
             <a href="https://arxiv.org/abs/2305.10983" target="_blank">arXiv</a>
             &nbsp/&nbsp <a href="https://github.com/TianheWu/Assessor360" target="_blank">Code</a>
             <p></p>
@@ -427,13 +482,10 @@
           </td>
 
           <td class="cell-md">
-          <span class="tag">CVPR Workshop 2022</span>&nbsp;&nbsp;
+          <span class="tag">CVPR Workshops 2022 Oral</span>&nbsp;&nbsp;
           <papertitle>Attentions Help CNNs See Better: Attention-based Hybrid Image Quality Assessment Network</papertitle><br>
           Shanshan Lao*, Yuan Gong*, Shuwei Shi, Sidi Yang, <a class="highlight-me">Tianhe Wu</a>, Jiahao Wang, Weihao Xia, Yujiu Yang
-          <br>
-          <p></p>
-          <em>CVPR Workshop <a class="highlight-pub">(Oral Presentation)</a></em>, 2022
-          <br>
+          <br><br>
           <a href="https://arxiv.org/abs/2204.10485" target="_blank">arXiv</a>
           &nbsp/&nbsp <a href="https://github.com/IIGROUP/AHIQ" target="_blank">Code</a>
           <p></p>
@@ -441,39 +493,6 @@
             The champion method for NTIRE2022 FR IQA.
           </em></p>
           </td>
-        </tr>
-
-        <!-- maniqa -->
-        <tr class="single_element" style="width:100%">
-            <td class="cell-md-center" onmouseout="maniqa_stop()" onmouseover="maniqa_start()">
-            <div class="one" style="display:inline;">
-                <div class="two" id="maniqa" style="display:inline;">
-                <img src="images/maniqa/method.png" width="100%" max-width="240">
-                </div>
-                <img src="images/maniqa/method.png" width="100%" max-width="240" style="background:#fff;">
-            </div>
-            <script>
-                function maniqa_start(){document.getElementById('maniqa').style.opacity='1';}
-                function maniqa_stop(){document.getElementById('maniqa').style.opacity='0';}
-                maniqa_stop();
-            </script>
-            </td>
-
-            <td class="cell-md">
-            <span class="tag">CVPR Workshop 2022</span>&nbsp;&nbsp;
-            <papertitle>MANIQA: Multi-dimension Attention Network for No-Reference Image Quality Assessment</papertitle><br>
-            Sidi Yang*, <a class="highlight-me">Tianhe Wu*</a>, Shuwei Shi, Shanshan Lao, Yuan Gong, Mingdeng Cao, Jiahao Wang, Yujiu Yang
-            <br>
-            <p></p>
-            <em>CVPR Workshop <a class="highlight-pub">(Oral Presentation)</a></em>, 2022
-            <br>
-            <a href="https://arxiv.org/abs/2204.08958" target="_blank">arXiv</a>
-            &nbsp/&nbsp <a href="https://github.com/IIGROUP/MANIQA" target="_blank">Code</a>
-            <p></p>
-            <p style="font-size:16px;"><em>
-              The champion method for NTIRE2022 NR IQA.
-            </em></p>
-            </td>
         </tr>
 
         </table>
@@ -492,13 +511,13 @@
       </colgroup>
       <tr>
         <td align="center">
-          <img src='images/logo/oppo_logo.jpg' height="70">
+          <img src='images/logo/oppo_logo.jpg' height="60">
         </td>
   
         <td valign="middle" align="left">
           <p>
           <papertitle>YLab, OPPO Research Institute</papertitle><br />
-          <em>Research Intern, focus on VLM for low-level visual understanding and perception</em> <br />
+          <em>Research Intern, focusing on VLM</em> <br />
           Supervisor: <a target="_blank" href="https://scholar.google.com/citations?user=tAK5l1IAAAAJ&hl=en&oi=ao">Prof. Lei Zhang</a>
           </p>
         </td>
@@ -510,13 +529,13 @@
       </tr>
       <tr>
         <td align="center">
-          <img src='images/logo/cityu_logo.png' height="70">
+          <img src='images/logo/cityu_logo.png' height="60">
         </td>
   
         <td valign="middle" align="left">
           <p>
           <papertitle>Department of Computer Science, City University of Hong Kong</papertitle><br />
-          <em>Research Assistant, focus on low-level vision</em> <br />
+          <em>Research Assistant, focusing on low-level vision</em> <br />
           Supervisor: <a href="https://scholar.google.com/citations?user=sfzOyFoAAAAJ&hl=en&oi=ao" target="_blank">Prof. Kede Ma</a>
           </p>
         </td>

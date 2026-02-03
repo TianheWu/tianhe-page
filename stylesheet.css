@@ -103,7 +103,7 @@ papertitle {
 name {
   font-family: 'Aptos', 'Lato', Verdana, Helvetica, sans-serif, ;
   font-size: 32px;
-  color: hsl(69, 100%, 91%);
+  color: #111;
 }
 
 .one {
@@ -157,11 +157,11 @@ span.highlight {
 }
 
 body{
-  background-color: rgb(34, 39, 44);
+  background-color: #fff;
 }
 
 p,em,tr{
-  color: #f0f0f0;
+  color: #222;
 }
 
 papertitle{
@@ -173,6 +173,7 @@ papertitle{
 
 heading{
   color: rgb(23, 165, 236);
+  font-weight: 700;
 }
 
 /* .single_element {
@@ -193,4 +194,76 @@ img, video {
   max-width: 100%;
   display: block;
   margin: 0 auto;
+}
+
+/* ===== Force Light Theme (PUT THIS AT VERY END) ===== */
+
+/* 1) 全局背景 & 全局默认字色（覆盖掉深色主题残留） */
+html, body {
+  background: #ffffff !important;
+  color: #222222 !important;
+}
+
+/* 2) 页面里常见承载文字的元素全部统一颜色（你现在漏了 li / span / div 等） */
+body, table, tbody, tr, td, th,
+p, em, strong, li, ul, ol, span, div {
+  color: #222222 !important;
+}
+
+/* 3) 链接颜色（白底更舒服），并且 hover 不要变橙到刺眼也行 */
+a {
+  color: #1a73e8 !important;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: #0b57d0 !important;
+  text-decoration: underline;
+}
+
+/* 4) 你自定义的标签元素（不是 class，是 <name><heading><papertitle> 这种） */
+name {
+  color: #111111 !important;
+}
+heading {
+  color: #0b57d0 !important;
+}
+papertitle {
+  color: #111111 !important;
+}
+
+/* 5) publication 每一行 hover 变黑：这里强制改成浅灰 */
+.single_element:hover {
+  background-color: #f3f4f6 !important;
+}
+
+/* （可选）如果你想 publication 行本身就有一点卡片感 */
+.single_element {
+  background-color: transparent !important;
+}
+
+
+/* ===== Keep red tag white text ===== */
+span.tag {
+  color: #ffffff !important;
+  background-color: #b9162e !important;
+}
+
+/* ===== Image card shadow ===== */
+img {
+  background: #ffffff;
+  padding: 6px;
+  border-radius: 14px;
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.12),
+    0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== Disable hover overlay image ===== */
+.two {
+  display: none !important;
+}
+
+heading.heading-red {
+  color: #b9162e !important;
 }
