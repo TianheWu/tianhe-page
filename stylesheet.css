@@ -267,3 +267,6 @@ img {
 heading.heading-red {
   color: #b9162e !important;
 }
+
+html { -webkit-text-size-adjust: 100%; }
+body { min-width: 1080px; }
