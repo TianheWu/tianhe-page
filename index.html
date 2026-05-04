@@ -315,7 +315,38 @@
             <col span="1" style="width: 40%;">
             <col span="1" style="width: 60%;">
         </colgroup>
+        
+        <!-- hybrid-forcing -->
+        <tr class="single_element" style="width:100%">
+          <td class="cell-md-center" onmouseout="hybrid_forcing_stop()" onmouseover="hybrid_forcing_start()">
+          <div class="one" style="display:inline;">
+              <div class="two" id="mixgrm" style="display:inline;">
+              <img src="images/hybrid_forcing/image.png" width="100%" max-width="240">
+              </div>
+              <img src="images/hybrid_forcing/image.png" width="100%" max-width="240" style="background:#fff;">
+          </div>
+          <script>
+              function hybrid_forcing_start(){document.getElementById('hybrid_forcing').style.opacity='1';}
+              function hybrid_forcing_stop(){document.getElementById('hybrid_forcing').style.opacity='0';}
+              hybrid_forcing_stop();
+          </script>
+          </td>
 
+          <td class="cell-md">
+          <span class="tag">Preprint 2026</span>&nbsp;&nbsp;
+          <papertitle>Long-Horizon Streaming Video Generation via Hybrid Attention with Decoupled Distillation</papertitle><br>
+          Ruibin Li, Tao Yang, Fangzhou Ai, <a class="highlight-me">Tianhe Wu</a>, Shilei Wen, Bingyue Peng, Lei Zhang
+          <br><br>
+          <a href="https://arxiv.org/abs/2604.10103" target="_blank">arXiv</a> 
+           &nbsp/&nbsp <a href="https://github.com/leeruibin/hybrid-forcing" target="_blank">Code</a>
+          <p></p>
+          <p style="font-size:16px;"><em>
+            Hybrid Forcing enables faster, more stable long-form streaming video generation.
+          </em></p>
+          </td>
+        </tr>
+
+        
         <!-- meiqa -->
         <tr class="single_element" style="width:100%">
           <td class="cell-md-center" onmouseout="meiqa_stop()" onmouseover="meiqa_start()">
