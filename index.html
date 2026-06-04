@@ -188,6 +188,7 @@
       <table class="tbl" style="padding:3px;">
           <tr><td valign="center">
             <ul>
+              <li><strong>2026-06:</strong> We release <a href="https://arxiv.org/abs/2606.03746" target="_blank">Qwen-Image-Flash</a> paper.</li>
               <li><strong>2026-05:</strong> We release <a href="https://arxiv.org/abs/2605.10730" target="_blank">Qwen-Image-2.0</a> technical report.</li>
               <li><strong>2026-05:</strong> Paper <a href="https://arxiv.org/abs/2602.03139" target="_blank">DP-DMD</a> obtained ICML 2026, CityU and OPPO.</li>
               <li><strong>2025-09:</strong> Paper <a href="https://arxiv.org/abs/2505.14460" target="_blank">VisualQuality-R1</a> obtained NeurIPS 2025 (my first main conference Spotlight paper), CityU and OPPO.</li>
@@ -212,6 +213,36 @@
             <col span="1" style="width: 40%;">
             <col span="1" style="width: 60%;">
         </colgroup>
+
+        <!-- qwenimageflash -->
+        <tr class="single_element" style="width:100%">
+          <td class="cell-md-center" onmouseout="qwenimageflash_stop()" onmouseover="qwenimageflash_start()">
+          <div class="one" style="display:inline;">
+              <div class="two" id="qwenimageflash" style="display:inline;">
+              <img src="images/qwenimageflash/teaser.png" width="100%" max-width="240">
+              </div>
+              <img src="images/qwenimageflash/teaser.png" width="100%" max-width="240" style="background:#fff;">
+          </div>
+          <script>
+              function qwenimageflash_start(){document.getElementById('qwenimageflash').style.opacity='1';}
+              function qwenimageflash_stop(){document.getElementById('qwenimageflash').style.opacity='0';}
+              qwenimageflash_stop();
+          </script>
+          </td>
+
+          <td class="cell-md">
+          <span class="tag">Preprint 2026</span>&nbsp;&nbsp;
+          <papertitle>Qwen-Image-Flash: Beyond Objective Design</papertitle><br>
+          Qwen Team (Sole First Author)
+          <br><br>
+          <a href="https://arxiv.org/abs/2606.03746" target="_blank">arXiv</a> 
+          <p></p>
+          <p style="font-size:16px;"><em>
+            The paper presents Qwen-Image-Flash, showing that efficient 4-step image generation and editing distillation depends not only on the loss objective, but also critically on data composition, multi-teacher guidance, and the generation-editing task mix.
+          </em></p>
+          </td>
+        </tr>
+
 
         <!-- dpdmd -->
         <tr class="single_element" style="width:100%">
@@ -271,36 +302,6 @@
             A reasoning-enabled visual quality model capable of delivering both qualitative descriptions and quantitative ratings without perceptual alignment.
           </em></p>
           </td>
-        </tr>
-
-        <!-- maniqa -->
-        <tr class="single_element" style="width:100%">
-            <td class="cell-md-center" onmouseout="maniqa_stop()" onmouseover="maniqa_start()">
-            <div class="one" style="display:inline;">
-                <div class="two" id="maniqa" style="display:inline;">
-                <img src="images/maniqa/method.png" width="100%" max-width="240">
-                </div>
-                <img src="images/maniqa/method.png" width="100%" max-width="240" style="background:#fff;">
-            </div>
-            <script>
-                function maniqa_start(){document.getElementById('maniqa').style.opacity='1';}
-                function maniqa_stop(){document.getElementById('maniqa').style.opacity='0';}
-                maniqa_stop();
-            </script>
-            </td>
-
-            <td class="cell-md">
-            <span class="tag">CVPR Workshops 2022 Oral</span>&nbsp;&nbsp;
-            <papertitle>MANIQA: Multi-dimension Attention Network for No-Reference Image Quality Assessment</papertitle><br>
-            Sidi Yang*, <a class="highlight-me">Tianhe Wu*</a>, Shuwei Shi, Shanshan Lao, Yuan Gong, Mingdeng Cao, Jiahao Wang, Yujiu Yang
-            <br><br>
-            <a href="https://arxiv.org/abs/2204.08958" target="_blank">arXiv</a>
-            &nbsp/&nbsp <a href="https://github.com/IIGROUP/MANIQA" target="_blank">Code</a>
-            <p></p>
-            <p style="font-size:16px;"><em>
-              The champion method for NTIRE2022 NR IQA.
-            </em></p>
-            </td>
         </tr>
 
 
@@ -695,6 +696,36 @@
         </tr>
 
         </table>
+
+        <!-- maniqa -->
+        <tr class="single_element" style="width:100%">
+            <td class="cell-md-center" onmouseout="maniqa_stop()" onmouseover="maniqa_start()">
+            <div class="one" style="display:inline;">
+                <div class="two" id="maniqa" style="display:inline;">
+                <img src="images/maniqa/method.png" width="100%" max-width="240">
+                </div>
+                <img src="images/maniqa/method.png" width="100%" max-width="240" style="background:#fff;">
+            </div>
+            <script>
+                function maniqa_start(){document.getElementById('maniqa').style.opacity='1';}
+                function maniqa_stop(){document.getElementById('maniqa').style.opacity='0';}
+                maniqa_stop();
+            </script>
+            </td>
+
+            <td class="cell-md">
+            <span class="tag">CVPR Workshops 2022 Oral</span>&nbsp;&nbsp;
+            <papertitle>MANIQA: Multi-dimension Attention Network for No-Reference Image Quality Assessment</papertitle><br>
+            Sidi Yang*, <a class="highlight-me">Tianhe Wu*</a>, Shuwei Shi, Shanshan Lao, Yuan Gong, Mingdeng Cao, Jiahao Wang, Yujiu Yang
+            <br><br>
+            <a href="https://arxiv.org/abs/2204.08958" target="_blank">arXiv</a>
+            &nbsp/&nbsp <a href="https://github.com/IIGROUP/MANIQA" target="_blank">Code</a>
+            <p></p>
+            <p style="font-size:16px;"><em>
+              The champion method for NTIRE2022 NR IQA.
+            </em></p>
+            </td>
+        </tr>
       
       <!-- Education -->
       <table class="tbl">
