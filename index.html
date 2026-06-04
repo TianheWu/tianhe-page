@@ -420,12 +420,44 @@
             <col span="1" style="width: 40%;">
             <col span="1" style="width: 60%;">
         </colgroup>
+
+
+        <!-- smallergrpo -->
+        <tr class="single_element" style="width:100%">
+          <td class="cell-md-center" onmouseout="smallergrpo_stop()" onmouseover="smallergrpo_start()">
+          <div class="one" style="display:inline;">
+              <div class="two" id="smallergrpo" style="display:inline;">
+              <img src="images/smallergrpo/image.png" width="100%" max-width="240">
+              </div>
+              <img src="images/smallergrpo/image.png" width="100%" max-width="240" style="background:#fff;">
+          </div>
+          <script>
+              function smallergrpo_start(){document.getElementById('smallergrpo').style.opacity='1';}
+              function smallergrpo_stop(){document.getElementById('smallergrpo').style.opacity='0';}
+              smallergrpo_stop();
+          </script>
+          </td>
+
+          <td class="cell-md">
+          <span class="tag">ICML 2026</span>&nbsp;&nbsp;
+          <papertitle>Smaller Models are Natural Explorers for Policy-Level Diversity in GRPO</papertitle><br>
+          Yiming Ren, Yiran Xu, Zicheng Lin, Chufan Shi, Yukang Chen, Dingdong Wang, <a class="highlight-me">Tianhe Wu</a>, Jujie Wang, Yujiu Yang, Yu Qiao, Ruihang Chu
+          <br><br>
+          <a href="https://arxiv.org/abs/2604.10103" target="_blank">arXiv</a> 
+           &nbsp/&nbsp <a href="https://github.com/leeruibin/hybrid-forcing" target="_blank">Code</a>
+          <p></p>
+          <p style="font-size:16px;"><em>
+            S2L-PO uses smaller models as diverse explorers to train larger reasoning models more efficiently.
+          </em></p>
+          </td>
+        </tr>
+
         
         <!-- hybrid-forcing -->
         <tr class="single_element" style="width:100%">
           <td class="cell-md-center" onmouseout="hybrid_forcing_stop()" onmouseover="hybrid_forcing_start()">
           <div class="one" style="display:inline;">
-              <div class="two" id="mixgrm" style="display:inline;">
+              <div class="two" id="hybrid_forcing" style="display:inline;">
               <img src="images/hybrid_forcing/image.png" width="100%" max-width="240">
               </div>
               <img src="images/hybrid_forcing/image.png" width="100%" max-width="240" style="background:#fff;">
@@ -456,7 +488,7 @@
         <tr class="single_element" style="width:100%">
           <td class="cell-md-center" onmouseout="meiqa_stop()" onmouseover="meiqa_start()">
           <div class="one" style="display:inline;">
-              <div class="two" id="mixgrm" style="display:inline;">
+              <div class="two" id="meiqa" style="display:inline;">
               <img src="images/meiqa/teaser.png" width="100%" max-width="240">
               </div>
               <img src="images/meiqa/teaser.png" width="100%" max-width="240" style="background:#fff;">
