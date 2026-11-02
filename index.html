@@ -1,978 +1,403 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <head>
-  <meta charset="UTF-8">
-  <title>Tianhe Wu</title>
-
-  <meta name="author" content="tianhe wu">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-  <meta name="viewport" content="width=1080, initial-scale=0.36, user-scalable=yes">
-
-
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="author" content="Tianhe Wu">
+  <meta name="description" content="Tianhe Wu — Ph.D. student at City University of Hong Kong and research intern at ByteDance Seed. Research in visual generation, foundation model post-training, distillation, and visual quality.">
+  <meta property="og:title" content="Tianhe Wu · Visual Generative Intelligence">
+  <meta property="og:description" content="Research in visual generation, post-training, and efficient foundation models. CityU Hong Kong · ByteDance Seed.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://tianhewu.github.io/tianhe-page/images/profile/photo.jpg">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="stylesheet.css">
-  <link rel="shortcut icon" href="images/profile/2026-profile.jpg" type="image/x-icon">
-
-  <!-- 公共样式集中 -->
-  <style>
-    /* 所有“内容表格”共用：宽 100%，无边框，居中 */
-    .tbl{
-      width:100%;
-      border:0;
-      border-spacing:0;
-      border-collapse:separate;
-      margin-left:auto;
-      margin-right:auto;
-    }
-    /* 左右两栏常用单元格：20 px 内边距 + 垂直居中 */
-    .cell-md{
-      padding:20px;
-      vertical-align:middle;
-    }
-    /* 图片栏需要再水平居中 */
-    .cell-md-center{
-      padding:20px;
-      vertical-align:middle;
-      text-align:center;
-    }
-    /* 介绍区常见 1% 内边距 */
-    .cell-padding-1{
-      padding:1%;
-    }
-    span.tag {
-      font-size: 12px;
-      color: #FFFFFF;
-      /* color: #07889b; */
-      background-color: #b9162e;
-      box-shadow: 2px 2px 1px #151515;
-      padding: 1px 5px 2px 5px;
-    }
-    a.highlight-me {
-        color: rgba(255, 181, 84, 1.0);
-        /* font-weight: bold; */
-        text-decoration: underline; /* 下划线 */
-    }
-    a.highlight-pub {
-        color: #ffac4d;
-        font-weight: bold;        /* 加粗 */
-    }
-  </style>
+  <script src="layout.js"></script>
+  <script src="site.js" defer></script>
+  <title>Tianhe Wu · Visual Generative Intelligence</title>
 </head>
-
 <body>
-  <table style="width:90%;max-width:1080px;border:0;border-spacing:0;border-collapse:separate;margin:auto;">
-    <tr><td>
-        <!-- 1 INTRO -->
-        <table width="100%" align="left" border="0" cellspacing="0" cellpadding="12" style="table-layout:fixed;">
-        <colgroup>
-            <col span="1" style="width: 22%;">
-            <col span="1" style="width: 78%;">
-        </colgroup>
-        <tr style="width:100%">
-            <td valign="middle">
-                <img src="images/profile/2026-profile.jpg" height="220px">
-            </td>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="#about" aria-label="Tianhe Wu, home">TW<span class="wordmark-dot">.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#research">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a class="nav-contact" href="mailto:tianhewu-c@my.cityu.edu.hk">Contact <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
 
-            <td valign="middle">
-                <p align="left">
-                  <name>Tianhe Wu</name>
-                </p>
-                <p>
-                  Ph.D. Student in City University of Hong Kong<br>
-                  Research Intern in ByteDance Seed<br>
-                  E-mail: <span>tianhewu-c@my.cityu.edu.hk</span> <br>
-                  <a href="https://scholar.google.com/citations?user=QW1JtysAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a> &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
-                  <a href="https://github.com/TianheWu" target="_blank">Github</a>
-                </p>
-              </td>
-        </tr>
-        </table>
+  <main id="main" class="page-shell">
+    <section class="hero" id="about" aria-labelledby="name">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Visual generative intelligence</p>
+        <h1 id="name">Tianhe Wu<span class="name-period">.</span></h1>
+        <p class="hero-affiliation">Ph.D. student, City University of Hong Kong<br>Research intern, ByteDance Seed</p>
+        <p class="hero-intro">I work on making visual generative models<br class="desktop-break"> <em>better, faster, and more perceptually aligned.</em></p>
+        <p class="hero-bio">At <a href="https://seed.bytedance.com/" target="_blank" rel="noopener noreferrer">ByteDance Seed</a>, I focus on <strong>post-training for Seedream foundation models</strong>. Previously, I was a core contributor to <strong>distillation and acceleration for Qwen-Image-2.0 and Qwen-Image-3.0</strong> at Alibaba.</p>
+        <p class="hero-bio">I am pursuing my Ph.D. at <a href="https://www.cityu.edu.hk/" target="_blank" rel="noopener noreferrer">CityU Hong Kong</a>, advised by <a href="https://kedema.org/" target="_blank" rel="noopener noreferrer">Prof. Kede Ma</a>. My broader interests include generative world models and data valuation.</p>
+        <div class="social-links">
+          <a class="contact-link" href="mailto:tianhewu-c@my.cityu.edu.hk">Email <span aria-hidden="true">↗</span></a>
+          <a href="https://scholar.google.com/citations?user=QW1JtysAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/TianheWu" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <figure class="portrait">
+        <div class="portrait-frame"><img src="images/profile/photo.jpg" width="3017" height="4023" alt="Portrait of Tianhe Wu beside the waterfront" fetchpriority="high"></div>
+        <figcaption><span>RESEARCH &amp; ENGINEERING</span><span>HONG KONG</span></figcaption>
+      </figure>
+    </section>
 
-        <!-- About Me -->
-        <table class="tbl">
-            <tr><td class="cell-padding-1" style="width:100%;vertical-align:middle">
-                <heading>About Me </heading>
-            </td></tr>
-        </table>
+    <div class="research-directions" aria-label="Research interests">
+      <div><span class="direction-number">01</span><span>Visual generation</span></div>
+      <div><span class="direction-number">02</span><span>Post-training &amp; distillation</span></div>
+      <div><span class="direction-number">03</span><span>Perception &amp; evaluation</span></div>
+    </div>
 
-        <table class="tbl" style="padding:3px;">
-            <tr><td valign="center">
-                <p>
-                  Hi, I'm Tianhe Wu, a Ph.D. student at the <a href="https://www.cityu.edu.hk/en" target="_blank">CityU</a>, where I am supervised by <a href="https://kedema.org/" target="_blank">Prof. Kede Ma</a>. My current research focuses on AIGC and AGI, with a particular interest in generative world models and data valuation. I am a serious researcher and always happy to connect—feel free to reach out to me via email for discussion and collaboration.
-                </p>
-                <p>
-                  Before joining CityU, I completed my M.Sc. degree (2022-2025) at <a href="https://www.tsinghua.edu.cn/" target="_blank">Tsinghua University</a>, under the supervision of Prof. <a href="https://scholar.google.com/citations?user=4gH3sxsAAAAJ&hl=en" target="_blank">Yujiu Yang</a>. I received my B.Eng. degree (2018-2022) from the <a href="https://english.bjut.edu.cn/" target="_blank">Beijing University of Technology</a>.
-                </p>
-            </td></tr>
-        </table>
+    <section class="news-section" id="news" aria-labelledby="news-title">
+      <div class="section-label"><span class="eyebrow">Latest</span><h2 id="news-title">A few updates.</h2></div>
+      <div class="news-content">
+        <div class="news-row"><time datetime="2026-09">2026.09</time><p>Joined <strong>ByteDance Seed</strong>, working on post-training for Seedream foundation models.</p></div>
+        <div class="news-row"><time datetime="2026-08">2026.04–08</time><p>Contributed to <strong>Qwen-Image-2.0 / 3.0</strong> as a core contributor to distillation and acceleration.</p></div>
+        <div class="news-row"><time datetime="2026-06">2026.06</time><p>Released <a href="https://arxiv.org/abs/2606.03746" target="_blank" rel="noopener noreferrer">Qwen-Image-Flash</a>, exploring efficient few-step image generation and editing.</p></div>
+        <details class="news-archive">
+          <summary>Earlier updates <span aria-hidden="true">+</span></summary>
+          <div class="news-row"><time datetime="2026-05">2026.05</time><p><a href="https://arxiv.org/abs/2602.03139" target="_blank" rel="noopener noreferrer">DP-DMD</a> accepted at <strong>ICML 2026</strong>. Released the <a href="https://arxiv.org/abs/2605.10730" target="_blank" rel="noopener noreferrer">Qwen-Image-2.0 technical report</a>.</p></div>
+          <div class="news-row"><time datetime="2025-09">2025.09</time><p><a href="https://arxiv.org/abs/2505.14460" target="_blank" rel="noopener noreferrer">VisualQuality-R1</a> accepted as a <strong>NeurIPS 2025 Spotlight</strong>.</p></div>
+          <div class="news-row"><time datetime="2025-02">2025.02</time><p>One paper accepted at <strong>CVPR 2025</strong>, with CityU and OPPO.</p></div>
+          <div class="news-row"><time datetime="2024-07">2024.07</time><p>One paper accepted at <strong>ECCV 2024</strong>, with Tsinghua and CityU.</p></div>
+          <div class="news-row"><time datetime="2023-09">2023.09</time><p>One paper accepted at <strong>NeurIPS 2023</strong>, with Tsinghua University.</p></div>
+          <div class="news-row"><time datetime="2022-06">2022.06</time><p><a href="https://arxiv.org/abs/2204.08958" target="_blank" rel="noopener noreferrer">MANIQA</a>, my first conference paper, presented as an oral at <strong>CVPR Workshops 2022</strong>.</p></div>
+          <div class="news-row"><time datetime="2022-04">2022.04</time><p>Our Tsinghua team won <strong>both tracks</strong> of the NTIRE 2022 Perceptual Image Quality Assessment Challenge.</p></div>
+        </details>
+      </div>
+    </section>
 
-        <!-- Education -->
-      <table class="tbl">
-        <tr><td class="cell-padding-1" style="width:100%;vertical-align:middle">
-            <heading>Education </heading>
-        </td></tr>
-      </table>
-      <table width="100%" align="left" border="0" cellspacing="0" cellpadding="6" style="table-layout: fixed;">
-        <colgroup>
-          <col span="1" style="width: 10%;">
-          <col span="1" style="width: 70%;">
-          <col span="1" style="width: 20%;">
-        </colgroup>
-        <tr>
-          <td align="center">
-            <img src='images/logo/cityu_logo.png' height="58">
-          </td>
-    
-          <td valign="middle" align="left">
-            <p>
-            <papertitle>City University of Hong Kong</papertitle><br />
-            Ph.D. Student in Department of Computer Science <br/>
-            Supervisor: <a href="https://kedema.org/" target="_blank">Prof. Kede Ma</a>
-            </p>
-          </td>
-          <td valign="middle" align="right">
-            <p>
-            <b>Sep. 2025 - Present </b><br/>
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td align="center">
-            <img src='images/logo/logo-thu.svg' height="70">
-          </td>
-    
-          <td valign="middle" align="left">
-            <p>
-            <papertitle>Tsinghua University</papertitle><br />
-            Master Degree in Big Data Technology and Engineering <br />
-            Supervisor: <a href="https://sites.google.com/view/iigroup-thu/about" target="_blank">Prof. Yujiu Yang</a>
-            </p>
-          </td>
-          <td valign="middle" align="right">
-            <p>
-            <b>Sep. 2022 - Jun. 2025 </b><br/>
-            </p>
-          </td>
-        </tr>   
-        <tr>
-            <td align="center">
-              <img src='images/logo/bjut_logo.png' height="70">
-            </td>
-      
-            <td valign="middle" align="left">
-              <p>
-              <papertitle>Beijing University of Technology</papertitle><br />
-              Bachelor Degree in Computer Science <br />
-              </p>
-            </td>
-            <td valign="middle" align="right">
-              <p>
-              <b>Sep. 2018 - Jun. 2022 </b><br/>
-              </p>
-            </td>
-        </tr>
-      </table>
-
-
-        <!-- Internship -->
-        <table class="tbl">
-          <tr><td class="cell-padding-1" style="width:100%;vertical-align:middle">
-              <heading>Internship</heading>
-          </td></tr>
-        </table>
-        <table width="100%" align="left" border="0" cellspacing="0" cellpadding="6" style="table-layout: fixed;">
-          <colgroup>
-            <col span="1" style="width: 10%;">
-            <col span="1" style="width: 70%;">
-            <col span="1" style="width: 20%;">
-          </colgroup>
-
-          <tr>
-            <td align="center">
-              <img src='images/logo/bytedance-logo.png' height="60">
-            </td>
-      
-            <td valign="middle" align="left">
-              <p>
-              <papertitle>ByteDance Seed</papertitle><br />
-              <em>Research intern, focusing on image/video/world model</em> <br />
-              </p>
-            </td>
-            <td valign="middle" align="right">
-              <p>
-              <b>Sep. 2026 - Now </b><br/>
-              </p>
-            </td>
-          </tr>
-
-
-          <tr>
-            <td align="center">
-              <img src='images/logo/qwen-logo.svg' height="60">
-            </td>
-      
-            <td valign="middle" align="left">
-              <p>
-              <papertitle>Qwen Image, Alibaba Token Foundry</papertitle><br />
-              <em>Research intern, focusing on building visual generative foundation model</em> <br />
-              Supervisor: <a target="_blank" href="https://scholar.google.com/citations?user=1YlFL5UAAAAJ&hl=en&oi=ao">Chenfei Wu</a>
-              </p>
-            </td>
-            <td valign="middle" align="right">
-              <p>
-              <b>Apr. 2026 - Aug. 2026 </b><br/>
-              </p>
-            </td>
-          </tr>
-
-          <tr>
-            <td align="center">
-              <img src='images/logo/oppo_logo.jpg' height="60">
-            </td>
-      
-            <td valign="middle" align="left">
-              <p>
-              <papertitle>YLab, OPPO Research Institute</papertitle><br />
-              <em>Research intern, focusing on VLM</em> <br />
-              Supervisor: <a target="_blank" href="https://scholar.google.com/citations?user=tAK5l1IAAAAJ&hl=en&oi=ao">Prof. Lei Zhang</a>
-              </p>
-            </td>
-            <td valign="middle" align="right">
-              <p>
-              <b>Apr. 2024 - Apr. 2026 </b><br/>
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td align="center">
-              <img src='images/logo/cityu_logo.png' height="60">
-            </td>
-      
-            <td valign="middle" align="left">
-              <p>
-              <papertitle>Department of Computer Science, City University of Hong Kong</papertitle><br />
-              <em>Research assistant, focusing on VLM</em> <br />
-              Supervisor: <a href="https://scholar.google.com/citations?user=sfzOyFoAAAAJ&hl=en&oi=ao" target="_blank">Prof. Kede Ma</a>
-              </p>
-            </td>
-            <td valign="middle" align="right">
-              <p>
-              <b>Dec. 2023 - Aug. 2025 </b><br/>
-              </p>
-            </td>
-          </tr>
-          </table>
-
-        <!-- News -->
-        <table class="tbl">
-          <tr><td class="cell-padding-1" style="width:100%;vertical-align:middle">
-              <heading>News</heading> 
-          </td></tr>
-      </table>
-
-      <table class="tbl" style="padding:3px;">
-          <tr><td valign="center">
-            <ul>
-              <li><strong>2026-06:</strong> We release <a href="https://arxiv.org/abs/2606.03746" target="_blank">Qwen-Image-Flash</a> paper.</li>
-              <li><strong>2026-05:</strong> We release <a href="https://arxiv.org/abs/2605.10730" target="_blank">Qwen-Image-2.0</a> technical report.</li>
-              <li><strong>2026-05:</strong> Paper <a href="https://arxiv.org/abs/2602.03139" target="_blank">DP-DMD</a> obtained ICML 2026, CityU and OPPO.</li>
-              <li><strong>2025-09:</strong> Paper <a href="https://arxiv.org/abs/2505.14460" target="_blank">VisualQuality-R1</a> obtained NeurIPS 2025 (my first main conference Spotlight paper), CityU and OPPO.</li>
-              <li><strong>2025-02:</strong> One paper was accepted at CVPR 2025, CityU and OPPO.</li>
-              <li><strong>2024-07:</strong> One paper was accepted at ECCV 2024, Tsinghua and CityU.</li>
-              <li><strong>2023-09:</strong> A paper was accepted to NeurIPS 2023, Tsinghua University.</li>
-              <li><strong>2022-06:</strong> I published my first conference paper, <a href="https://arxiv.org/abs/2204.08958">MANIQA</a> at CVPR Workshopss 2022 (Oral), Tsinghua University.</li>
-              <li><strong>2022-04:</strong> Our team at Tsinghua won the NTIRE 2022 Perceptual Image Quality Assessment Challenge, taking first place in both Track 1 (Full-Reference) and Track 2 (No-Reference).</li>
-            </ul>
-          </td></tr>
-      </table>
-
-        <!-- Research -->
-        <table class="tbl">
-            <tr><td class="cell-padding-1" style="width:100%;vertical-align:middle">
-                <heading class="heading-red">Top3 Representative Publications </heading>
-            </td></tr>
-        </table>
-
-        <table class="tbl" style="padding:3px;">
-        <colgroup>
-            <col span="1" style="width: 40%;">
-            <col span="1" style="width: 60%;">
-        </colgroup>
-
-        <!-- qwenimageflash -->
-        <tr class="single_element" style="width:100%">
-          <td class="cell-md-center" onmouseout="qwenimageflash_stop()" onmouseover="qwenimageflash_start()">
-          <div class="one" style="display:inline;">
-              <div class="two" id="qwenimageflash" style="display:inline;">
-              <img src="images/qwenimageflash/teaser.png" width="100%" max-width="240">
-              </div>
-              <img src="images/qwenimageflash/teaser.png" width="100%" max-width="240" style="background:#fff;">
+    <section class="research-section" id="research" aria-labelledby="research-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">Research / 2022–2026</p><h2 id="research-title">From perception to generation.</h2></div>
+        <a class="section-link" href="https://scholar.google.com/citations?user=QW1JtysAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Scholar profile <span aria-hidden="true">↗</span></a>
+      </div>
+      <p class="section-intro">Visual foundation models, efficient synthesis, and the signals that make them better.</p>
+      <div class="publication-controls" hidden>
+        <div class="filters" role="group" aria-label="Filter publications">
+          <button type="button" data-filter="selected" aria-pressed="true" aria-controls="publication-list">Selected works <span>03</span></button>
+          <button type="button" data-filter="all" aria-pressed="false" aria-controls="publication-list">All publications <span>21</span></button>
+          <button type="button" data-filter="reports" aria-pressed="false" aria-controls="publication-list">Technical reports <span>05</span></button>
+        </div>
+        <span class="result-count" aria-live="polite" id="result-count"></span>
+      </div>
+      <div class="publication-list" id="publication-list">
+        <!-- publications:start -->
+        <article class="paper" id="paper-qwenimageflash" data-group="selected">
+          <a class="paper-figure" href="https://arxiv.org/abs/2606.03746" target="_blank" rel="noopener noreferrer" aria-label="Read Qwen-Image-Flash: Beyond Objective Design">
+            <img src="images/qwenimageflash/teaser.png" alt="Research figure for Qwen-Image-Flash: Beyond Objective Design" loading="lazy" decoding="async" width="600" height="360">
+          </a>
+          <div class="paper-content">
+            <div class="paper-meta"><span>Preprint 2026</span><span class="paper-distinction">Selected work</span></div>
+            <h3><a href="https://arxiv.org/abs/2606.03746" target="_blank" rel="noopener noreferrer">Qwen-Image-Flash: Beyond Objective Design</a></h3>
+            <p class="paper-authors">Qwen Team (Sole First Author)</p>
+            <p class="paper-summary">The paper presents Qwen-Image-Flash, showing that efficient 4-step image generation and editing distillation depends not only on the loss objective, but also critically on data composition, multi-teacher guidance, and the generation-editing task mix.</p>
+            <div class="paper-bottom"><div class="paper-links"><a href="https://arxiv.org/abs/2606.03746" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a></div><a class="citation" data-citation="qwenimageflash" data-updated="2026-11-02T16:35:55+00:00" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=QW1JtysAAAAJ&amp;pagesize=100&amp;citation_for_view=QW1JtysAAAAJ:UebtZRa9Y70C" target="_blank" rel="noopener noreferrer" title="Google Scholar · updated 03 Nov 2026">Cited by 0 <span aria-hidden="true">↗</span></a></div>
           </div>
-          <script>
-              function qwenimageflash_start(){document.getElementById('qwenimageflash').style.opacity='1';}
-              function qwenimageflash_stop(){document.getElementById('qwenimageflash').style.opacity='0';}
-              qwenimageflash_stop();
-          </script>
-          </td>
-
-          <td class="cell-md">
-          <span class="tag">Preprint 2026</span>&nbsp;&nbsp;
-          <papertitle>Qwen-Image-Flash: Beyond Objective Design</papertitle><br>
-          Qwen Team (Sole First Author)
-          <br><br>
-          <a href="https://arxiv.org/abs/2606.03746" target="_blank">arXiv</a> 
-          <p></p>
-          <p style="font-size:16px;"><em>
-            The paper presents Qwen-Image-Flash, showing that efficient 4-step image generation and editing distillation depends not only on the loss objective, but also critically on data composition, multi-teacher guidance, and the generation-editing task mix.
-          </em></p>
-          </td>
-        </tr>
-
-
-        <!-- dpdmd -->
-        <tr class="single_element" style="width:100%">
-          <td class="cell-md-center" onmouseout="dpdmd_stop()" onmouseover="dpdmd_start()">
-          <div class="one" style="display:inline;">
-              <div class="two" id="dpdmd" style="display:inline;">
-              <img src="images/dpdmd/teaser.png" width="100%" max-width="240">
-              </div>
-              <img src="images/dpdmd/teaser.png" width="100%" max-width="240" style="background:#fff;">
+        </article>
+        <article class="paper" id="paper-dpdmd" data-group="selected">
+          <a class="paper-figure" href="https://arxiv.org/abs/2602.03139" target="_blank" rel="noopener noreferrer" aria-label="Read Diversity-Preserved Distribution Matching Distillation for Fast Visual Synthesis">
+            <img src="images/dpdmd/teaser.png" alt="Research figure for Diversity-Preserved Distribution Matching Distillation for Fast Visual Synthesis" loading="lazy" decoding="async" width="600" height="360">
+          </a>
+          <div class="paper-content">
+            <div class="paper-meta"><span>ICML 2026</span><span class="paper-distinction">Selected work</span></div>
+            <h3><a href="https://arxiv.org/abs/2602.03139" target="_blank" rel="noopener noreferrer">Diversity-Preserved Distribution Matching Distillation for Fast Visual Synthesis</a></h3>
+            <p class="paper-authors"><strong>Tianhe Wu*</strong>, Ruibin Li*, Lei Zhang, Kede Ma</p>
+            <p class="paper-summary">A simple yet effective approach to preserving sample diversity under DMD, with no perceptual backbone, no discriminator, no auxiliary networks, and no additional ground-truth images.</p>
+            <div class="paper-bottom"><div class="paper-links"><a href="https://arxiv.org/abs/2602.03139" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a><a href="https://github.com/Multimedia-Analytics-Laboratory/dpdmd" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div><a class="citation" data-citation="dpdmd" data-updated="2026-11-02T16:35:55+00:00" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=QW1JtysAAAAJ&amp;pagesize=100&amp;citation_for_view=QW1JtysAAAAJ:YsMSGLbcyi4C" target="_blank" rel="noopener noreferrer" title="Google Scholar · updated 03 Nov 2026">Cited by 15 <span aria-hidden="true">↗</span></a></div>
           </div>
-          <script>
-              function dpdmd_start(){document.getElementById('dpdmd').style.opacity='1';}
-              function dpdmd_stop(){document.getElementById('dpdmd').style.opacity='0';}
-              dpdmd_stop();
-          </script>
-          </td>
-
-          <td class="cell-md">
-          <span class="tag">ICML 2026</span>&nbsp;&nbsp;
-          <papertitle>Diversity-Preserved Distribution Matching Distillation for Fast Visual Synthesis</papertitle><br>
-          <a class="highlight-me">Tianhe Wu*</a>, Ruibin Li*, Lei Zhang, Kede Ma
-          <br><br>
-          <a href="https://arxiv.org/abs/2602.03139" target="_blank">arXiv</a> 
-           &nbsp/&nbsp <a href="https://github.com/Multimedia-Analytics-Laboratory/dpdmd" target="_blank">Code</a>
-          <p></p>
-          <p style="font-size:16px;"><em>
-            A simple yet effective approach to preserving sample diversity under DMD, with no perceptual backbone, no discriminator, no auxiliary networks, and no additional ground-truth images.
-          </em></p>
-          </td>
-        </tr>
-
-        <!-- vqr1 -->
-        <tr class="single_element" style="width:100%">
-          <td class="cell-md-center" onmouseout="vqr1_stop()" onmouseover="vqr1_start()">
-          <div class="one" style="display:inline;">
-              <div class="two" id="vqr1" style="display:inline;">
-              <img src="images/vqr1/teaser.png" width="100%" max-width="240">
-              </div>
-              <img src="images/vqr1/teaser.png" width="100%" max-width="240" style="background:#fff;">
+        </article>
+        <article class="paper" id="paper-vqr1" data-group="selected">
+          <a class="paper-figure" href="https://arxiv.org/abs/2505.14460" target="_blank" rel="noopener noreferrer" aria-label="Read VisualQuality-R1: Reasoning-Induced Image Quality Assessment via Reinforcement Learning to Rank">
+            <img src="images/vqr1/teaser.png" alt="Research figure for VisualQuality-R1: Reasoning-Induced Image Quality Assessment via Reinforcement Learning to Rank" loading="lazy" decoding="async" width="600" height="360">
+          </a>
+          <div class="paper-content">
+            <div class="paper-meta"><span>NeurIPS 2025 Spotlight</span><span class="paper-distinction">Selected work</span></div>
+            <h3><a href="https://arxiv.org/abs/2505.14460" target="_blank" rel="noopener noreferrer">VisualQuality-R1: Reasoning-Induced Image Quality Assessment via Reinforcement Learning to Rank</a></h3>
+            <p class="paper-authors"><strong>Tianhe Wu</strong>, Jian Zou, Jie Liang, Lei Zhang, Kede Ma</p>
+            <p class="paper-summary">A reasoning-enabled visual quality model capable of delivering both qualitative descriptions and quantitative ratings without perceptual alignment.</p>
+            <div class="paper-bottom"><div class="paper-links"><a href="https://arxiv.org/abs/2505.14460" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a><a href="https://github.com/TianheWu/VisualQuality-R1" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div><a class="citation" data-citation="vqr1" data-updated="2026-11-02T16:35:55+00:00" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=QW1JtysAAAAJ&amp;pagesize=100&amp;citation_for_view=QW1JtysAAAAJ:Tyk-4Ss8FVUC" target="_blank" rel="noopener noreferrer" title="Google Scholar · updated 03 Nov 2026">Cited by 115 <span aria-hidden="true">↗</span></a></div>
           </div>
-          <script>
-              function vqr1_start(){document.getElementById('vqr1').style.opacity='1';}
-              function vqr1_stop(){document.getElementById('vqr1').style.opacity='0';}
-              vqr1_stop();
-          </script>
-          </td>
-
-          <td class="cell-md">
-          <span class="tag">NeurIPS 2025 Spotlight</span>&nbsp;&nbsp;
-          <papertitle>VisualQuality-R1: Reasoning-Induced Image Quality Assessment via Reinforcement Learning to Rank</papertitle><br>
-          <a class="highlight-me">Tianhe Wu</a>, Jian Zou, Jie Liang, Lei Zhang, Kede Ma
-          <br><br>
-          <a href="https://arxiv.org/abs/2505.14460" target="_blank">arXiv</a> 
-           &nbsp/&nbsp <a href="https://github.com/TianheWu/VisualQuality-R1" target="_blank">Code</a>
-          <p></p>
-          <p style="font-size:16px;"><em>
-            A reasoning-enabled visual quality model capable of delivering both qualitative descriptions and quantitative ratings without perceptual alignment.
-          </em></p>
-          </td>
-        </tr>
-
-
-        <!-- Technical Report -->
-        <table class="tbl">
-            <tr><td class="cell-padding-1" style="width:100%;vertical-align:middle">
-                <heading class="color:black;">Technical Report</heading>
-            </td></tr>
-        </table>
-
-        <table class="tbl" style="padding:3px;">
-        <colgroup>
-            <col span="1" style="width: 40%;">
-            <col span="1" style="width: 60%;">
-        </colgroup>
-
-
-        <!-- qwenimagerl -->
-        <tr class="single_element" style="width:100%">
-          <td class="cell-md-center" onmouseout="qwenimagerl_stop()" onmouseover="qwenimagerl_start()">
-          <div class="one" style="display:inline;">
-              <div class="two" id="qwenimagerl" style="display:inline;">
-              <img src="images/qwenimagerl/teaser.png" width="100%" max-width="240">
-              </div>
-              <img src="images/qwenimagerl/teaser.png" width="100%" max-width="240" style="background:#fff;">
+        </article>
+        <article class="paper" id="paper-qwenimagerl" data-group="reports">
+          <a class="paper-figure" href="https://arxiv.org/abs/2606.27608" target="_blank" rel="noopener noreferrer" aria-label="Read Qwen-Image-2.0-RL Technical Report">
+            <img src="images/qwenimagerl/teaser.png" alt="Research figure for Qwen-Image-2.0-RL Technical Report" loading="lazy" decoding="async" width="600" height="360">
+          </a>
+          <div class="paper-content">
+            <div class="paper-meta"><span>Preprint 2026</span></div>
+            <h3><a href="https://arxiv.org/abs/2606.27608" target="_blank" rel="noopener noreferrer">Qwen-Image-2.0-RL Technical Report</a></h3>
+            <p class="paper-authors">Qwen Team</p>
+            <p class="paper-summary">We present Qwen-Image-2.0-RL, a post-training pipeline that combines RLHF, composite reward models, GRPO-based training, and on-policy distillation to improve image generation and editing quality.</p>
+            <div class="paper-bottom"><div class="paper-links"><a href="https://arxiv.org/abs/2606.27608" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a></div><a class="citation" data-citation="qwenimagerl" data-updated="2026-11-02T16:35:55+00:00" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=QW1JtysAAAAJ&amp;pagesize=100&amp;citation_for_view=QW1JtysAAAAJ:MXK_kJrjxJIC" target="_blank" rel="noopener noreferrer" title="Google Scholar · updated 03 Nov 2026">Cited by 5 <span aria-hidden="true">↗</span></a></div>
           </div>
-          <script>
-              function qwenimagerl_start(){document.getElementById('qwenimagerl').style.opacity='1';}
-              function qwenimagerl_stop(){document.getElementById('qwenimagerl').style.opacity='0';}
-              qwenimagerl_stop();
-          </script>
-          </td>
-
-          <td class="cell-md">
-          <span class="tag">Preprint 2026</span>&nbsp;&nbsp;
-          <papertitle>Qwen-Image-2.0-RL Technical Report</papertitle><br>
-          Qwen Team
-          <br><br>
-          <a href="https://arxiv.org/abs/2606.27608" target="_blank">arXiv</a>
-          <p></p>
-          <p style="font-size:16px;"><em>
-            We present Qwen-Image-2.0-RL, a post-training pipeline that combines RLHF, composite reward models, GRPO-based training, and on-policy distillation to improve image generation and editing quality.
-          </em></p>
-          </td>
-        </tr>
-
-
-        <!-- qwenimageagent -->
-        <tr class="single_element" style="width:100%">
-          <td class="cell-md-center" onmouseout="qwenimageagent_stop()" onmouseover="qwenimageagent_start()">
-          <div class="one" style="display:inline;">
-              <div class="two" id="qwenimageagent" style="display:inline;">
-              <img src="images/qwenimageagent/teaser.png" width="100%" max-width="240">
-              </div>
-              <img src="images/qwenimageagent/teaser.png" width="100%" max-width="240" style="background:#fff;">
+        </article>
+        <article class="paper" id="paper-qwenimageagent" data-group="reports">
+          <a class="paper-figure" href="https://arxiv.org/abs/2606.26907" target="_blank" rel="noopener noreferrer" aria-label="Read Qwen-Image-Agent: Bridging the Context Gap in Real-World Image Generation">
+            <img src="images/qwenimageagent/teaser.png" alt="Research figure for Qwen-Image-Agent: Bridging the Context Gap in Real-World Image Generation" loading="lazy" decoding="async" width="600" height="360">
+          </a>
+          <div class="paper-content">
+            <div class="paper-meta"><span>Preprint 2026</span></div>
+            <h3><a href="https://arxiv.org/abs/2606.26907" target="_blank" rel="noopener noreferrer">Qwen-Image-Agent: Bridging the Context Gap in Real-World Image Generation</a></h3>
+            <p class="paper-authors">Qwen Team</p>
+            <p class="paper-summary">We introduce Qwen-Image-Agent, a context-centric framework that uses planning, reasoning, search, memory, and feedback to improve real-world image generation.</p>
+            <div class="paper-bottom"><div class="paper-links"><a href="https://arxiv.org/abs/2606.26907" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a></div><a class="citation" data-citation="qwenimageagent" data-updated="2026-11-02T16:35:55+00:00" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=QW1JtysAAAAJ&amp;pagesize=100&amp;citation_for_view=QW1JtysAAAAJ:8k81kl-MbHgC" target="_blank" rel="noopener noreferrer" title="Google Scholar · updated 03 Nov 2026">Cited by 10 <span aria-hidden="true">↗</span></a></div>
           </div>
-          <script>
-              function qwenimageagent_start(){document.getElementById('qwenimageagent').style.opacity='1';}
-              function qwenimageagent_stop(){document.getElementById('qwenimageagent').style.opacity='0';}
-              qwenimageagent_stop();
-          </script>
-          </td>
-
-          <td class="cell-md">
-          <span class="tag">Preprint 2026</span>&nbsp;&nbsp;
-          <papertitle>Qwen-Image-Agent: Bridging the Context Gap in Real-World Image Generation</papertitle><br>
-          Qwen Team
-          <br><br>
-          <a href="https://arxiv.org/abs/2606.26907" target="_blank">arXiv</a>
-          <p></p>
-          <p style="font-size:16px;"><em>
-            We introduce Qwen-Image-Agent, a context-centric framework that uses planning, reasoning, search, memory, and feedback to improve real-world image generation.
-          </em></p>
-          </td>
-        </tr>
-
-
-        <!-- qwenrobot -->
-        <tr class="single_element" style="width:100%">
-          <td class="cell-md-center" onmouseout="qwenrobot_stop()" onmouseover="qwenrobot_start()">
-          <div class="one" style="display:inline;">
-              <div class="two" id="qwenrobot" style="display:inline;">
-              <img src="images/qwenrobot/teaser.png" width="100%" max-width="240">
-              </div>
-              <img src="images/qwenrobot/teaser.png" width="100%" max-width="240" style="background:#fff;">
+        </article>
+        <article class="paper" id="paper-qwenrobot" data-group="reports">
+          <a class="paper-figure" href="https://arxiv.org/abs/2606.17030" target="_blank" rel="noopener noreferrer" aria-label="Read Qwen-RobotWorld Technical Report: Unifying Embodied World Modeling through Language-Conditioned Video Generation">
+            <img src="images/qwenrobot/teaser.png" alt="Research figure for Qwen-RobotWorld Technical Report: Unifying Embodied World Modeling through Language-Conditioned Video Generation" loading="lazy" decoding="async" width="600" height="360">
+          </a>
+          <div class="paper-content">
+            <div class="paper-meta"><span>Preprint 2026</span></div>
+            <h3><a href="https://arxiv.org/abs/2606.17030" target="_blank" rel="noopener noreferrer">Qwen-RobotWorld Technical Report: Unifying Embodied World Modeling through Language-Conditioned Video Generation</a></h3>
+            <p class="paper-authors">Qwen Team</p>
+            <p class="paper-summary">We introduce Qwen-RobotWorld, a language-conditioned video world model that predicts future visual trajectories across embodied AI scenarios.</p>
+            <div class="paper-bottom"><div class="paper-links"><a href="https://arxiv.org/abs/2606.17030" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a></div><a class="citation" data-citation="qwenrobot" data-updated="2026-11-02T16:35:55+00:00" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=QW1JtysAAAAJ&amp;pagesize=100&amp;citation_for_view=QW1JtysAAAAJ:hqOjcs7Dif8C" target="_blank" rel="noopener noreferrer" title="Google Scholar · updated 03 Nov 2026">Cited by 12 <span aria-hidden="true">↗</span></a></div>
           </div>
-          <script>
-              function qwenrobot_start(){document.getElementById('qwenrobot').style.opacity='1';}
-              function qwenrobot_stop(){document.getElementById('qwenrobot').style.opacity='0';}
-              qwenrobot_stop();
-          </script>
-          </td>
-
-          <td class="cell-md">
-          <span class="tag">Preprint 2026</span>&nbsp;&nbsp;
-          <papertitle>Qwen-RobotWorld Technical Report: Unifying Embodied World Modeling through Language-Conditioned Video Generation</papertitle><br>
-          Qwen Team
-          <br><br>
-          <a href="https://arxiv.org/abs/2606.17030" target="_blank">arXiv</a>
-          <p></p>
-          <p style="font-size:16px;"><em>
-            We introduce Qwen-RobotWorld, a language-conditioned video world model that predicts future visual trajectories across embodied AI scenarios.
-          </em></p>
-          </td>
-        </tr>
-
-
-        <!-- qwenimage2_vae -->
-        <tr class="single_element" style="width:100%">
-          <td class="cell-md-center" onmouseout="qwenimage2_vae_stop()" onmouseover="qwenimage2_vae_start()">
-          <div class="one" style="display:inline;">
-              <div class="two" id="qwenimage2_vae" style="display:inline;">
-              <img src="images/qwenimage2_vae/teaser.png" width="100%" max-width="240">
-              </div>
-              <img src="images/qwenimage2_vae/teaser.png" width="100%" max-width="240" style="background:#fff;">
+        </article>
+        <article class="paper" id="paper-qwenimage2_vae" data-group="reports">
+          <a class="paper-figure" href="https://arxiv.org/abs/2605.13565" target="_blank" rel="noopener noreferrer" aria-label="Read Qwen-Image-VAE-2.0 Technical Report">
+            <img src="images/qwenimage2_vae/teaser.png" alt="Research figure for Qwen-Image-VAE-2.0 Technical Report" loading="lazy" decoding="async" width="600" height="360">
+          </a>
+          <div class="paper-content">
+            <div class="paper-meta"><span>Preprint 2026</span></div>
+            <h3><a href="https://arxiv.org/abs/2605.13565" target="_blank" rel="noopener noreferrer">Qwen-Image-VAE-2.0 Technical Report</a></h3>
+            <p class="paper-authors">Qwen Team</p>
+            <p class="paper-summary">Qwen-Image-VAE-2.0 introduces a high-compression VAE that achieves state-of-the-art image reconstruction and diffusion-friendly latent representations, especially for text-rich images, through global skip connections, large-channel latents, and semantic alignment training.</p>
+            <div class="paper-bottom"><div class="paper-links"><a href="https://arxiv.org/abs/2605.13565" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a><a href="https://github.com/alibaba/OmniDoc-TokenBench" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div><a class="citation" data-citation="qwenimage2_vae" data-updated="2026-11-02T16:35:55+00:00" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=QW1JtysAAAAJ&amp;pagesize=100&amp;citation_for_view=QW1JtysAAAAJ:LkGwnXOMwfcC" target="_blank" rel="noopener noreferrer" title="Google Scholar · updated 03 Nov 2026">Cited by 2 <span aria-hidden="true">↗</span></a></div>
           </div>
-          <script>
-              function qwenimage2_vae_start(){document.getElementById('qwenimage2_vae').style.opacity='1';}
-              function qwenimage2_vae_stop(){document.getElementById('qwenimage2_vae').style.opacity='0';}
-              qwenimage2_vae_stop();
-          </script>
-          </td>
-
-          <td class="cell-md">
-          <span class="tag">Preprint 2026</span>&nbsp;&nbsp;
-          <papertitle>Qwen-Image-VAE-2.0 Technical Report</papertitle><br>
-          Qwen Team
-          <br><br>
-          <a href="https://arxiv.org/abs/2605.13565" target="_blank">arXiv</a>
-          &nbsp/&nbsp <a href="https://github.com/alibaba/OmniDoc-TokenBench" target="_blank">Code</a>
-          <p></p>
-          <p style="font-size:16px;"><em>
-            Qwen-Image-VAE-2.0 introduces a high-compression VAE that achieves state-of-the-art image reconstruction and diffusion-friendly latent representations, especially for text-rich images, through global skip connections, large-channel latents, and semantic alignment training.
-          </em></p>
-          </td>
-        </tr>
-
-        <!-- qwenimage2 -->
-        <tr class="single_element" style="width:100%">
-          <td class="cell-md-center" onmouseout="qwenimage2_stop()" onmouseover="qwenimage2_start()">
-          <div class="one" style="display:inline;">
-              <div class="two" id="qwenimage2" style="display:inline;">
-              <img src="images/qwenimage2/teaser.png" width="100%" max-width="240">
-              </div>
-              <img src="images/qwenimage2/teaser.png" width="100%" max-width="240" style="background:#fff;">
+        </article>
+        <article class="paper" id="paper-qwenimage2" data-group="reports">
+          <a class="paper-figure" href="https://arxiv.org/abs/2605.10730" target="_blank" rel="noopener noreferrer" aria-label="Read Qwen-Image-2.0 Technical Report">
+            <img src="images/qwenimage2/teaser.png" alt="Research figure for Qwen-Image-2.0 Technical Report" loading="lazy" decoding="async" width="600" height="360">
+          </a>
+          <div class="paper-content">
+            <div class="paper-meta"><span>Preprint 2026</span></div>
+            <h3><a href="https://arxiv.org/abs/2605.10730" target="_blank" rel="noopener noreferrer">Qwen-Image-2.0 Technical Report</a></h3>
+            <p class="paper-authors">Qwen Team (As the core contributor to this project)</p>
+            <p class="paper-summary">Qwen-Image-2.0 is an omni-capable image generation foundation model that integrates high-fidelity image creation and precise image editing into a single unified framework.</p>
+            <div class="paper-bottom"><div class="paper-links"><a href="https://arxiv.org/abs/2605.10730" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a></div><a class="citation" data-citation="qwenimage2" data-updated="2026-11-02T16:35:55+00:00" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=QW1JtysAAAAJ&amp;pagesize=100&amp;citation_for_view=QW1JtysAAAAJ:_FxGoFyzp5QC" target="_blank" rel="noopener noreferrer" title="Google Scholar · updated 03 Nov 2026">Cited by 36 <span aria-hidden="true">↗</span></a></div>
           </div>
-          <script>
-              function qwenimage2_start(){document.getElementById('qwenimage2').style.opacity='1';}
-              function qwenimage2_stop(){document.getElementById('qwenimage2').style.opacity='0';}
-              qwenimage2_stop();
-          </script>
-          </td>
-
-          <td class="cell-md">
-          <span class="tag">Preprint 2026</span>&nbsp;&nbsp;
-          <papertitle>Qwen-Image-2.0 Technical Report</papertitle><br>
-          Qwen Team (As the core contributor to this project)
-          <br><br>
-          <a href="https://arxiv.org/abs/2605.10730" target="_blank">arXiv</a> 
-          <p></p>
-          <p style="font-size:16px;"><em>
-            Qwen-Image-2.0 is an omni-capable image generation foundation model that integrates high-fidelity image creation and precise image editing into a single unified framework.
-          </em></p>
-          </td>
-        </tr>
-
-
-        <!-- Research -->
-        <table class="tbl">
-            <tr><td class="cell-padding-1" style="width:100%;vertical-align:middle">
-                <heading>Other Publications</heading>
-            </td></tr>
-        </table>
-
-        <table class="tbl" style="padding:3px;">
-        <colgroup>
-            <col span="1" style="width: 40%;">
-            <col span="1" style="width: 60%;">
-        </colgroup>
-
-
-        <!-- tooliqa -->
-        <tr class="single_element" style="width:100%">
-          <td class="cell-md-center" onmouseout="tooliqa_stop()" onmouseover="tooliqa_start()">
-          <div class="one" style="display:inline;">
-              <div class="two" id="tooliqa" style="display:inline;">
-              <img src="images/tooliqa/teaser.png" width="100%" max-width="240">
-              </div>
-              <img src="images/tooliqa/teaser.png" width="100%" max-width="240" style="background:#fff;">
+        </article>
+        <article class="paper" id="paper-tooliqa" data-group="other">
+          <a class="paper-figure" href="https://arxiv.org/abs/2606.16082" target="_blank" rel="noopener noreferrer" aria-label="Read Tool-IQA: Augmenting Image Quality Assessment with Simple Tools">
+            <img src="images/tooliqa/teaser.png" alt="Research figure for Tool-IQA: Augmenting Image Quality Assessment with Simple Tools" loading="lazy" decoding="async" width="600" height="360">
+          </a>
+          <div class="paper-content">
+            <div class="paper-meta"><span>Preprint 2026</span></div>
+            <h3><a href="https://arxiv.org/abs/2606.16082" target="_blank" rel="noopener noreferrer">Tool-IQA: Augmenting Image Quality Assessment with Simple Tools</a></h3>
+            <p class="paper-authors">Guanyi Qin, Junjie Zhang, Chunming He, Yibing Fu, Jie Liang, <strong>Tianhe Wu</strong>, Lei Zhang</p>
+            <p class="paper-summary">We propose Tool-IQA, a VLM-based image quality assessment framework that improves over one-shot scoring by using rubric notes, a Magnifier, a Gamma Corrector, and BATE-guided GRPO training for more accurate calibrated quality prediction.</p>
+            <div class="paper-bottom"><div class="paper-links"><a href="https://arxiv.org/abs/2606.16082" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a><a href="https://github.com/narthchin/Tool-IQA" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div><a class="citation" data-citation="tooliqa" data-updated="2026-11-02T16:35:55+00:00" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=QW1JtysAAAAJ&amp;pagesize=100&amp;citation_for_view=QW1JtysAAAAJ:0EnyYjriUFMC" target="_blank" rel="noopener noreferrer" title="Google Scholar · updated 03 Nov 2026">Cited by 0 <span aria-hidden="true">↗</span></a></div>
           </div>
-          <script>
-              function tooliqa_start(){document.getElementById('tooliqa').style.opacity='1';}
-              function tooliqa_stop(){document.getElementById('tooliqa').style.opacity='0';}
-              tooliqa_stop();
-          </script>
-          </td>
-
-          <td class="cell-md">
-          <span class="tag">Preprint 2026</span>&nbsp;&nbsp;
-          <papertitle>Tool-IQA: Augmenting Image Quality Assessment with Simple Tools</papertitle><br>
-          Guanyi Qin, Junjie Zhang, Chunming He, Yibing Fu, Jie Liang, <a class="highlight-me">Tianhe Wu</a>, Lei Zhang
-          <br><br>
-          <a href="https://arxiv.org/abs/2606.16082" target="_blank">arXiv</a>
-          &nbsp/&nbsp <a href="https://github.com/narthchin/Tool-IQA" target="_blank">Code</a>
-          <p></p>
-          <p style="font-size:16px;"><em>
-            We propose Tool-IQA, a VLM-based image quality assessment framework that improves over one-shot scoring by using rubric notes, a Magnifier, a Gamma Corrector, and BATE-guided GRPO training for more accurate calibrated quality prediction.
-          </em></p>
-          </td>
-        </tr>
-
-
-        <!-- qwenimagebench -->
-        <tr class="single_element" style="width:100%">
-          <td class="cell-md-center" onmouseout="qwenimagebench_stop()" onmouseover="qwenimagebench_start()">
-          <div class="one" style="display:inline;">
-              <div class="two" id="qwenimagebench" style="display:inline;">
-              <img src="images/qwenimagebench/teaser.png" width="100%" max-width="240">
-              </div>
-              <img src="images/qwenimagebench/teaser.png" width="100%" max-width="240" style="background:#fff;">
+        </article>
+        <article class="paper" id="paper-qwenimagebench" data-group="other">
+          <a class="paper-figure" href="https://arxiv.org/abs/2605.28091" target="_blank" rel="noopener noreferrer" aria-label="Read Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation">
+            <img src="images/qwenimagebench/teaser.png" alt="Research figure for Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation" loading="lazy" decoding="async" width="600" height="360">
+          </a>
+          <div class="paper-content">
+            <div class="paper-meta"><span>EMNLP 2026</span></div>
+            <h3><a href="https://arxiv.org/abs/2605.28091" target="_blank" rel="noopener noreferrer">Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation</a></h3>
+            <p class="paper-authors">Qwen Team</p>
+            <p class="paper-summary">Qwen-Image-Bench is a creator-centric benchmark for evaluating text-to-image models with fine-grained, expert-aligned scoring.</p>
+            <div class="paper-bottom"><div class="paper-links"><a href="https://arxiv.org/abs/2605.28091" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a><a href="https://github.com/QwenLM/Qwen-Image-Bench" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div><a class="citation" data-citation="qwenimagebench" data-updated="2026-11-02T16:35:55+00:00" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=QW1JtysAAAAJ&amp;pagesize=100&amp;citation_for_view=QW1JtysAAAAJ:roLk4NBRz8UC" target="_blank" rel="noopener noreferrer" title="Google Scholar · updated 03 Nov 2026">Cited by 12 <span aria-hidden="true">↗</span></a></div>
           </div>
-          <script>
-              function qwenimagebench_start(){document.getElementById('qwenimagebench').style.opacity='1';}
-              function qwenimagebench_stop(){document.getElementById('qwenimagebench').style.opacity='0';}
-              qwenimagebench_stop();
-          </script>
-          </td>
-
-          <td class="cell-md">
-          <span class="tag">EMNLP 2026</span>&nbsp;&nbsp;
-          <papertitle>Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation</papertitle><br>
-          Qwen Team
-          <br><br>
-          <a href="https://arxiv.org/abs/2605.28091" target="_blank">arXiv</a>
-          &nbsp/&nbsp <a href="https://github.com/QwenLM/Qwen-Image-Bench" target="_blank">Code</a>
-          <p></p>
-          <p style="font-size:16px;"><em>
-            Qwen-Image-Bench is a creator-centric benchmark for evaluating text-to-image models with fine-grained, expert-aligned scoring.
-          </em></p>
-          </td>
-        </tr>
-
-
-        <!-- smallergrpo -->
-        <tr class="single_element" style="width:100%">
-          <td class="cell-md-center" onmouseout="smallergrpo_stop()" onmouseover="smallergrpo_start()">
-          <div class="one" style="display:inline;">
-              <div class="two" id="smallergrpo" style="display:inline;">
-              <img src="images/smallergrpo/image.png" width="100%" max-width="240">
-              </div>
-              <img src="images/smallergrpo/image.png" width="100%" max-width="240" style="background:#fff;">
+        </article>
+        <article class="paper" id="paper-smallergrpo" data-group="other">
+          <a class="paper-figure" href="https://arxiv.org/abs/2604.10103" target="_blank" rel="noopener noreferrer" aria-label="Read Smaller Models are Natural Explorers for Policy-Level Diversity in GRPO">
+            <img src="images/smallergrpo/image.png" alt="Research figure for Smaller Models are Natural Explorers for Policy-Level Diversity in GRPO" loading="lazy" decoding="async" width="600" height="360">
+          </a>
+          <div class="paper-content">
+            <div class="paper-meta"><span>ICML 2026</span></div>
+            <h3><a href="https://arxiv.org/abs/2604.10103" target="_blank" rel="noopener noreferrer">Smaller Models are Natural Explorers for Policy-Level Diversity in GRPO</a></h3>
+            <p class="paper-authors">Yiming Ren, Yiran Xu, Zicheng Lin, Chufan Shi, Yukang Chen, Dingdong Wang, <strong>Tianhe Wu</strong>, Jujie Wang, Yujiu Yang, Yu Qiao, Ruihang Chu</p>
+            <p class="paper-summary">S2L-PO uses smaller models as diverse explorers to train larger reasoning models more efficiently.</p>
+            <div class="paper-bottom"><div class="paper-links"><a href="https://arxiv.org/abs/2604.10103" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a><a href="https://github.com/leeruibin/hybrid-forcing" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div><a class="citation" data-citation="smallergrpo" data-updated="2026-11-02T16:35:55+00:00" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=QW1JtysAAAAJ&amp;pagesize=100&amp;citation_for_view=QW1JtysAAAAJ:Se3iqnhoufwC" target="_blank" rel="noopener noreferrer" title="Google Scholar · updated 03 Nov 2026">Cited by 1 <span aria-hidden="true">↗</span></a></div>
           </div>
-          <script>
-              function smallergrpo_start(){document.getElementById('smallergrpo').style.opacity='1';}
-              function smallergrpo_stop(){document.getElementById('smallergrpo').style.opacity='0';}
-              smallergrpo_stop();
-          </script>
-          </td>
-
-          <td class="cell-md">
-          <span class="tag">ICML 2026</span>&nbsp;&nbsp;
-          <papertitle>Smaller Models are Natural Explorers for Policy-Level Diversity in GRPO</papertitle><br>
-          Yiming Ren, Yiran Xu, Zicheng Lin, Chufan Shi, Yukang Chen, Dingdong Wang, <a class="highlight-me">Tianhe Wu</a>, Jujie Wang, Yujiu Yang, Yu Qiao, Ruihang Chu
-          <br><br>
-          <a href="https://arxiv.org/abs/2604.10103" target="_blank">arXiv</a> 
-           &nbsp/&nbsp <a href="https://github.com/leeruibin/hybrid-forcing" target="_blank">Code</a>
-          <p></p>
-          <p style="font-size:16px;"><em>
-            S2L-PO uses smaller models as diverse explorers to train larger reasoning models more efficiently.
-          </em></p>
-          </td>
-        </tr>
-
-        
-        <!-- hybrid-forcing -->
-        <tr class="single_element" style="width:100%">
-          <td class="cell-md-center" onmouseout="hybrid_forcing_stop()" onmouseover="hybrid_forcing_start()">
-          <div class="one" style="display:inline;">
-              <div class="two" id="hybrid_forcing" style="display:inline;">
-              <img src="images/hybrid_forcing/image.png" width="100%" max-width="240">
-              </div>
-              <img src="images/hybrid_forcing/image.png" width="100%" max-width="240" style="background:#fff;">
+        </article>
+        <article class="paper" id="paper-hybrid_forcing" data-group="other">
+          <a class="paper-figure" href="https://arxiv.org/abs/2604.10103" target="_blank" rel="noopener noreferrer" aria-label="Read Long-Horizon Streaming Video Generation via Hybrid Attention with Decoupled Distillation">
+            <img src="images/hybrid_forcing/image.png" alt="Research figure for Long-Horizon Streaming Video Generation via Hybrid Attention with Decoupled Distillation" loading="lazy" decoding="async" width="600" height="360">
+          </a>
+          <div class="paper-content">
+            <div class="paper-meta"><span>Preprint 2026</span></div>
+            <h3><a href="https://arxiv.org/abs/2604.10103" target="_blank" rel="noopener noreferrer">Long-Horizon Streaming Video Generation via Hybrid Attention with Decoupled Distillation</a></h3>
+            <p class="paper-authors">Ruibin Li, Tao Yang, Fangzhou Ai, <strong>Tianhe Wu</strong>, Shilei Wen, Bingyue Peng, Lei Zhang</p>
+            <p class="paper-summary">Hybrid Forcing enables faster, more stable long-form streaming video generation.</p>
+            <div class="paper-bottom"><div class="paper-links"><a href="https://arxiv.org/abs/2604.10103" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a><a href="https://github.com/leeruibin/hybrid-forcing" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div><a class="citation" data-citation="hybrid_forcing" data-updated="2026-11-02T16:35:55+00:00" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=QW1JtysAAAAJ&amp;pagesize=100&amp;citation_for_view=QW1JtysAAAAJ:ufrVoPGSRksC" target="_blank" rel="noopener noreferrer" title="Google Scholar · updated 03 Nov 2026">Cited by 1 <span aria-hidden="true">↗</span></a></div>
           </div>
-          <script>
-              function hybrid_forcing_start(){document.getElementById('hybrid_forcing').style.opacity='1';}
-              function hybrid_forcing_stop(){document.getElementById('hybrid_forcing').style.opacity='0';}
-              hybrid_forcing_stop();
-          </script>
-          </td>
-
-          <td class="cell-md">
-          <span class="tag">Preprint 2026</span>&nbsp;&nbsp;
-          <papertitle>Long-Horizon Streaming Video Generation via Hybrid Attention with Decoupled Distillation</papertitle><br>
-          Ruibin Li, Tao Yang, Fangzhou Ai, <a class="highlight-me">Tianhe Wu</a>, Shilei Wen, Bingyue Peng, Lei Zhang
-          <br><br>
-          <a href="https://arxiv.org/abs/2604.10103" target="_blank">arXiv</a> 
-           &nbsp/&nbsp <a href="https://github.com/leeruibin/hybrid-forcing" target="_blank">Code</a>
-          <p></p>
-          <p style="font-size:16px;"><em>
-            Hybrid Forcing enables faster, more stable long-form streaming video generation.
-          </em></p>
-          </td>
-        </tr>
-
-        
-        <!-- meiqa -->
-        <tr class="single_element" style="width:100%">
-          <td class="cell-md-center" onmouseout="meiqa_stop()" onmouseover="meiqa_start()">
-          <div class="one" style="display:inline;">
-              <div class="two" id="meiqa" style="display:inline;">
-              <img src="images/meiqa/teaser.png" width="100%" max-width="240">
-              </div>
-              <img src="images/meiqa/teaser.png" width="100%" max-width="240" style="background:#fff;">
+        </article>
+        <article class="paper" id="paper-meiqa" data-group="other">
+          <a class="paper-figure" href="https://arxiv.org/abs/2603.20785" target="_blank" rel="noopener noreferrer" aria-label="Read ME-IQA: Memory-Enhanced Image Quality Assessment via Re-Ranking">
+            <img src="images/meiqa/teaser.png" alt="Research figure for ME-IQA: Memory-Enhanced Image Quality Assessment via Re-Ranking" loading="lazy" decoding="async" width="600" height="360">
+          </a>
+          <div class="paper-content">
+            <div class="paper-meta"><span>ECCV 2026</span></div>
+            <h3><a href="https://arxiv.org/abs/2603.20785" target="_blank" rel="noopener noreferrer">ME-IQA: Memory-Enhanced Image Quality Assessment via Re-Ranking</a></h3>
+            <p class="paper-authors">Kanglong Fan, <strong>Tianhe Wu<sup>&dagger;</sup></strong>, Wen Wen, Jianzhao Liu, Le Yang, Yabin Zhang, Yiting Liao, Junlin Li, Li Zhang</p>
+            <p class="paper-summary">Training-free method for alleviating scoring collapse in generative visual quality perception models.</p>
+            <div class="paper-bottom"><div class="paper-links"><a href="https://arxiv.org/abs/2603.20785" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a></div><a class="citation" data-citation="meiqa" data-updated="2026-11-02T16:35:55+00:00" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=QW1JtysAAAAJ&amp;pagesize=100&amp;citation_for_view=QW1JtysAAAAJ:WF5omc3nYNoC" target="_blank" rel="noopener noreferrer" title="Google Scholar · updated 03 Nov 2026">Cited by 0 <span aria-hidden="true">↗</span></a></div>
           </div>
-          <script>
-              function meiqa_start(){document.getElementById('meiqa').style.opacity='1';}
-              function meiqa_stop(){document.getElementById('meiqa').style.opacity='0';}
-              meiqa_stop();
-          </script>
-          </td>
-
-          <td class="cell-md">
-          <span class="tag">ECCV 2026</span>&nbsp;&nbsp;
-          <papertitle>ME-IQA: Memory-Enhanced Image Quality Assessment via Re-Ranking</papertitle><br>
-          Kanglong Fan, <a class="highlight-me">Tianhe Wu<sup>&dagger;</sup></a>, Wen Wen, Jianzhao Liu, Le Yang, Yabin Zhang, Yiting Liao, Junlin Li, Li Zhang
-          <br><br>
-          <a href="https://arxiv.org/abs/2603.20785" target="_blank">arXiv</a> 
-           <!-- &nbsp/&nbsp <a href="https://github.com/Don-Joey/Mix-GRM" target="_blank">Code</a> -->
-          <p></p>
-          <p style="font-size:16px;"><em>
-            Training-free method for alleviating scoring collapse in generative visual quality perception models.
-          </em></p>
-          </td>
-        </tr>
-
-        <!-- mixgrm -->
-        <tr class="single_element" style="width:100%">
-          <td class="cell-md-center" onmouseout="mixgrm_stop()" onmouseover="mixgrm_start()">
-          <div class="one" style="display:inline;">
-              <div class="two" id="mixgrm" style="display:inline;">
-              <img src="images/mixgrm/teaser.png" width="100%" max-width="240">
-              </div>
-              <img src="images/mixgrm/teaser.png" width="100%" max-width="240" style="background:#fff;">
+        </article>
+        <article class="paper" id="paper-mixgrm" data-group="other">
+          <a class="paper-figure" href="https://arxiv.org/abs/2603.01571v1" target="_blank" rel="noopener noreferrer" aria-label="Read Beyond Length Scaling: Synergizing Breadth and Depth for Generative Reward Models">
+            <img src="images/mixgrm/teaser.png" alt="Research figure for Beyond Length Scaling: Synergizing Breadth and Depth for Generative Reward Models" loading="lazy" decoding="async" width="600" height="360">
+          </a>
+          <div class="paper-content">
+            <div class="paper-meta"><span>ACL Findings 2026</span></div>
+            <h3><a href="https://arxiv.org/abs/2603.01571v1" target="_blank" rel="noopener noreferrer">Beyond Length Scaling: Synergizing Breadth and Depth for Generative Reward Models</a></h3>
+            <p class="paper-authors">Qiyuan Zhang, Yufei Wang, <strong>Tianhe Wu</strong>, Can Xu, Qingfeng Sun, Kai Zheng, Xue Liu, Chen Ma</p>
+            <p class="paper-summary">Test time scaling for generative reward models.</p>
+            <div class="paper-bottom"><div class="paper-links"><a href="https://arxiv.org/abs/2603.01571v1" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a><a href="https://github.com/Don-Joey/Mix-GRM" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div><a class="citation" data-citation="mixgrm" data-updated="2026-11-02T16:35:55+00:00" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=QW1JtysAAAAJ&amp;pagesize=100&amp;citation_for_view=QW1JtysAAAAJ:eQOLeE2rZwMC" target="_blank" rel="noopener noreferrer" title="Google Scholar · updated 03 Nov 2026">Cited by 0 <span aria-hidden="true">↗</span></a></div>
           </div>
-          <script>
-              function mixgrm_start(){document.getElementById('mixgrm').style.opacity='1';}
-              function mixgrm_stop(){document.getElementById('mixgrm').style.opacity='0';}
-              mixgrm_stop();
-          </script>
-          </td>
-
-          <td class="cell-md">
-          <span class="tag">ACL Findings 2026</span>&nbsp;&nbsp;
-          <papertitle>Beyond Length Scaling: Synergizing Breadth and Depth for Generative Reward Models</papertitle><br>
-          Qiyuan Zhang, Yufei Wang, <a class="highlight-me">Tianhe Wu</a>, Can Xu, Qingfeng Sun, Kai Zheng, Xue Liu, Chen Ma
-          <br><br>
-          <a href="https://arxiv.org/abs/2603.01571v1" target="_blank">arXiv</a> 
-           &nbsp/&nbsp <a href="https://github.com/Don-Joey/Mix-GRM" target="_blank">Code</a>
-          <p></p>
-          <p style="font-size:16px;"><em>
-            Test time scaling for generative reward models.
-          </em></p>
-          </td>
-        </tr>
-
-
-        <!-- DPPO SR -->
-        <tr class="single_element" style="width:100%">
-          <td class="cell-md-center" onmouseout="dpposr_stop()" onmouseover="dpposr_start()">
-          <div class="one" style="display:inline;">
-              <div class="two" id="dpposr" style="display:inline;">
-              <img src="images/dpposr/teaser.png" width="100%" max-width="240">
-              </div>
-              <img src="images/dpposr/teaser.png" width="100%" max-width="240" style="background:#fff;">
+        </article>
+        <article class="paper" id="paper-dpposr" data-group="other">
+          <a class="paper-figure" href="https://arxiv.org/abs/2510.18851" target="_blank" rel="noopener noreferrer" aria-label="Read DP2O-SR: Direct Perceptual Preference Optimization for Real-World Image Super-Resolution">
+            <img src="images/dpposr/teaser.png" alt="Research figure for DP2O-SR: Direct Perceptual Preference Optimization for Real-World Image Super-Resolution" loading="lazy" decoding="async" width="600" height="360">
+          </a>
+          <div class="paper-content">
+            <div class="paper-meta"><span>NeurIPS 2025</span></div>
+            <h3><a href="https://arxiv.org/abs/2510.18851" target="_blank" rel="noopener noreferrer">DP2O-SR: Direct Perceptual Preference Optimization for Real-World Image Super-Resolution</a></h3>
+            <p class="paper-authors">Rongyuan Wu, Lingchen Sun, Zhengqiang Zhang, Shihao Wang, <strong>Tianhe Wu</strong>, Qiaosi Yi, Shuai Li, Lei Zhang</p>
+            <p class="paper-summary">Direct perceptual preference optimization for image super-resolution.</p>
+            <div class="paper-bottom"><div class="paper-links"><a href="https://arxiv.org/abs/2510.18851" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a><a href="https://github.com/cswry/DP2O-SR" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div><a class="citation" data-citation="dpposr" data-updated="2026-11-02T16:35:55+00:00" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=QW1JtysAAAAJ&amp;pagesize=100&amp;citation_for_view=QW1JtysAAAAJ:W7OEmFMy1HYC" target="_blank" rel="noopener noreferrer" title="Google Scholar · updated 03 Nov 2026">Cited by 13 <span aria-hidden="true">↗</span></a></div>
           </div>
-          <script>
-              function dpposr_start(){document.getElementById('dpposr').style.opacity='1';}
-              function dpposr_stop(){document.getElementById('dpposr').style.opacity='0';}
-              dpposr_stop();
-          </script>
-          </td>
-
-          <td class="cell-md">
-          <span class="tag">NeurIPS 2025</span>&nbsp;&nbsp;
-          <papertitle>DP2O-SR: Direct Perceptual Preference Optimization for Real-World Image Super-Resolution</papertitle><br>
-          Rongyuan Wu, Lingchen Sun, Zhengqiang Zhang, Shihao Wang, <a class="highlight-me">Tianhe Wu</a>, Qiaosi Yi, Shuai Li, Lei Zhang
-          <br><br>
-          <a href="https://arxiv.org/abs/2510.18851" target="_blank">arXiv</a> 
-           &nbsp/&nbsp <a href="https://github.com/cswry/DP2O-SR" target="_blank">Code</a>
-          <p></p>
-          <p style="font-size:16px;"><em>
-            Direct perceptual preference optimization for image super-resolution.
-          </em></p>
-          </td>
-        </tr>
-
-        <!-- perceptual optimization -->
-        <tr class="single_element" style="width:100%">
-          <td class="cell-md-center" onmouseout="perceptual_optimization_stop()" onmouseover="perceptual_optimization_start()">
-          <div class="one" style="display:inline;">
-              <div class="two" id="perceptual_optimization" style="display:inline;">
-              <img src="images/perceptual_optimization/teaser.png" width="100%" max-width="240">
-              </div>
-              <img src="images/perceptual_optimization/teaser.png" width="100%" max-width="240" style="background:#fff;">
+        </article>
+        <article class="paper" id="paper-perceptual_optimization" data-group="other">
+          <a class="paper-figure" href="https://arxiv.org/abs/2509.20878" target="_blank" rel="noopener noreferrer" aria-label="Read The Unanticipated Asymmetry Between Perceptual Optimization and Assessment">
+            <img src="images/perceptual_optimization/teaser.png" alt="Research figure for The Unanticipated Asymmetry Between Perceptual Optimization and Assessment" loading="lazy" decoding="async" width="600" height="360">
+          </a>
+          <div class="paper-content">
+            <div class="paper-meta"><span>Preprint 2025</span></div>
+            <h3><a href="https://arxiv.org/abs/2509.20878" target="_blank" rel="noopener noreferrer">The Unanticipated Asymmetry Between Perceptual Optimization and Assessment</a></h3>
+            <p class="paper-authors">Jiabei Zhang*, Qi Wang, Siyu Wu, Du Chen, <strong>Tianhe Wu*<sup>&dagger;</sup></strong></p>
+            <p class="paper-summary">Our comprehensive study highlights the asymmetries between assessment and optimization.</p>
+            <div class="paper-bottom"><div class="paper-links"><a href="https://arxiv.org/abs/2509.20878" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a><a href="https://github.com/Oreki1999/AsymmetryIQA" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div><a class="citation" data-citation="perceptual_optimization" data-updated="2026-11-02T16:35:55+00:00" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=QW1JtysAAAAJ&amp;pagesize=100&amp;citation_for_view=QW1JtysAAAAJ:Y0pCki6q_DkC" target="_blank" rel="noopener noreferrer" title="Google Scholar · updated 03 Nov 2026">Cited by 0 <span aria-hidden="true">↗</span></a></div>
           </div>
-          <script>
-              function perceptual_optimization_start(){document.getElementById('perceptual_optimization').style.opacity='1';}
-              function perceptual_optimization_stop(){document.getElementById('perceptual_optimization').style.opacity='0';}
-              perceptual_optimization_stop();
-          </script>
-          </td>
-
-          <td class="cell-md">
-          <span class="tag">Preprint 2025</span>&nbsp;&nbsp;
-          <papertitle>The Unanticipated Asymmetry Between Perceptual Optimization and Assessment</papertitle><br>
-          Jiabei Zhang*, Qi Wang, Siyu Wu, Du Chen, <a class="highlight-me">Tianhe Wu*<sup>&dagger;</sup></a>
-          <br><br>
-          <a href="https://arxiv.org/abs/2509.20878" target="_blank">arXiv</a> 
-           &nbsp/&nbsp <a href="https://github.com/Oreki1999/AsymmetryIQA" target="_blank">Code</a>
-          <p></p>
-          <p style="font-size:16px;"><em>
-            Our comprehensive study highlights the asymmetries between assessment and optimization.
-          </em></p>
-          </td>
-        </tr>
-
-        <!-- afine -->
-        <tr class="single_element" style="width:100%">
-          <td class="cell-md-center" onmouseout="afine_stop()" onmouseover="afine_start()">
-          <div class="one" style="display:inline;">
-              <div class="two" id="afine" style="display:inline;">
-              <img src="images/afine/data.png" width="100%" max-width="240">
-              </div>
-              <img src="images/afine/data.png" width="100%" max-width="240" style="background:#fff;">
+        </article>
+        <article class="paper" id="paper-afine" data-group="other">
+          <a class="paper-figure" href="https://arxiv.org/abs/2503.11221" target="_blank" rel="noopener noreferrer" aria-label="Read Toward Generalized Image Quality Assessment: Relaxing the Perfect Reference Quality Assumption">
+            <img src="images/afine/data.png" alt="Research figure for Toward Generalized Image Quality Assessment: Relaxing the Perfect Reference Quality Assumption" loading="lazy" decoding="async" width="600" height="360">
+          </a>
+          <div class="paper-content">
+            <div class="paper-meta"><span>CVPR 2025</span></div>
+            <h3><a href="https://arxiv.org/abs/2503.11221" target="_blank" rel="noopener noreferrer">Toward Generalized Image Quality Assessment: Relaxing the Perfect Reference Quality Assumption</a></h3>
+            <p class="paper-authors">Du Chen*, <strong>Tianhe Wu*</strong>, Kede Ma, Lei Zhang</p>
+            <p class="paper-summary">A generalized FR-IQA model for low-level vision, applicable to both perfect and imperfect reference scenarios.</p>
+            <div class="paper-bottom"><div class="paper-links"><a href="https://arxiv.org/abs/2503.11221" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a><a href="https://tianhewu.github.io/A-FINE-page.github.io/" target="_blank" rel="noopener noreferrer">Project Page <span aria-hidden="true">↗</span></a><a href="https://github.com/ChrisDud0257/AFINE" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a><a href="https://drive.google.com/drive/folders/1vZehlUPDyDfo6Mq1K8pAMe3pcjqdDRht?usp=drive_link" target="_blank" rel="noopener noreferrer">Dataset <span aria-hidden="true">↗</span></a><a href="https://drive.google.com/file/d/1LhtLNDl6Jxwi6CPPVjX2_w4zIDRLFfbO/view" target="_blank" rel="noopener noreferrer">Benchmark <span aria-hidden="true">↗</span></a></div><a class="citation" data-citation="afine" data-updated="2026-11-02T16:35:55+00:00" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=QW1JtysAAAAJ&amp;pagesize=100&amp;citation_for_view=QW1JtysAAAAJ:zYLM7Y9cAGgC" target="_blank" rel="noopener noreferrer" title="Google Scholar · updated 03 Nov 2026">Cited by 57 <span aria-hidden="true">↗</span></a></div>
           </div>
-          <script>
-              function afine_start(){document.getElementById('afine').style.opacity='1';}
-              function afine_stop(){document.getElementById('afine').style.opacity='0';}
-              afine_stop();
-          </script>
-          </td>
-
-          <td class="cell-md">
-          <span class="tag">CVPR 2025</span>&nbsp;&nbsp;
-          <papertitle>Toward Generalized Image Quality Assessment: Relaxing the Perfect Reference Quality Assumption</papertitle><br>
-          Du Chen*, <a class="highlight-me">Tianhe Wu*</a>, Kede Ma, Lei Zhang
-          <br><br>
-          <a href="https://arxiv.org/abs/2503.11221" target="_blank">arXiv</a> 
-                    &nbsp/&nbsp <a href="https://tianhewu.github.io/A-FINE-page.github.io/" target="_blank">Project Page</a> &nbsp/&nbsp <a href="https://github.com/ChrisDud0257/AFINE" target="_blank">Code</a> 
-                    &nbsp/&nbsp <a href="https://drive.google.com/drive/folders/1vZehlUPDyDfo6Mq1K8pAMe3pcjqdDRht?usp=drive_link" target="_blank">Dataset</a> 
-                    &nbsp/&nbsp <a href="https://drive.google.com/file/d/1LhtLNDl6Jxwi6CPPVjX2_w4zIDRLFfbO/view" target="_blank">Benchmark</a>
-          <p></p>
-          <p style="font-size:16px;"><em>
-            A generalized FR-IQA model for low-level vision, applicable to both perfect and imperfect reference scenarios.
-          </em></p>
-          </td>
-        </tr>
-
-        <!-- mllm iqa -->
-        <tr class="single_element" style="width:100%">
-          <td class="cell-md-center" onmouseout="mllm_iqa_stop()" onmouseover="mllm_iqa_start()">
-          <div class="one" style="display:inline;">
-              <div class="two" id="mllm_iqa" style="display:inline;">
-              <img src="images/mllm_iqa/teaser.png" width="100%" max-width="240">
-              </div>
-              <img src="images/mllm_iqa/teaser.png" width="100%" max-width="240" style="background:#fff;">
+        </article>
+        <article class="paper" id="paper-mllm_iqa" data-group="other">
+          <a class="paper-figure" href="https://arxiv.org/abs/2403.10854" target="_blank" rel="noopener noreferrer" aria-label="Read A Comprehensive Study of Multimodal Large Language Models for Image Quality Assessment">
+            <img src="images/mllm_iqa/teaser.png" alt="Research figure for A Comprehensive Study of Multimodal Large Language Models for Image Quality Assessment" loading="lazy" decoding="async" width="600" height="360">
+          </a>
+          <div class="paper-content">
+            <div class="paper-meta"><span>ECCV 2024</span></div>
+            <h3><a href="https://arxiv.org/abs/2403.10854" target="_blank" rel="noopener noreferrer">A Comprehensive Study of Multimodal Large Language Models for Image Quality Assessment</a></h3>
+            <p class="paper-authors"><strong>Tianhe Wu</strong>, Kede Ma, Jie Liang, Yujiu Yang, Lei Zhang</p>
+            <p class="paper-summary">A systematic study on the ability of multimodal large language models to perceive and assess image quality.</p>
+            <div class="paper-bottom"><div class="paper-links"><a href="https://arxiv.org/abs/2403.10854" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a><a href="https://github.com/TianheWu/MLLMs-for-IQA" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div><a class="citation" data-citation="mllm_iqa" data-updated="2026-11-02T16:35:55+00:00" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=QW1JtysAAAAJ&amp;pagesize=100&amp;citation_for_view=QW1JtysAAAAJ:qjMakFHDy7sC" target="_blank" rel="noopener noreferrer" title="Google Scholar · updated 03 Nov 2026">Cited by 109 <span aria-hidden="true">↗</span></a></div>
           </div>
-          <script>
-              function mllm_iqa_start(){document.getElementById('mllm_iqa').style.opacity='1';}
-              function mllm_iqa_stop(){document.getElementById('mllm_iqa').style.opacity='0';}
-              mllm_iqa_stop();
-          </script>
-          </td>
-
-          <td class="cell-md">
-          <span class="tag">ECCV 2024</span>&nbsp;&nbsp;
-          <papertitle>A Comprehensive Study of Multimodal Large  Language Models for Image Quality Assessment</papertitle><br>
-          <a class="highlight-me">Tianhe Wu</a>, Kede Ma, Jie Liang, Yujiu Yang, Lei Zhang
-          <br><br>
-          <a href="https://arxiv.org/abs/2403.10854" target="_blank">arXiv</a> 
-                    &nbsp/&nbsp <a href="https://github.com/TianheWu/MLLMs-for-IQA" target="_blank">Code</a>
-          <p></p>
-          <p style="font-size:16px;"><em>
-            A systematic study on the ability of multimodal large language models to perceive and assess image quality.
-          </em></p>
-          </td>
-        </tr>
-
-        <!-- assessor360 -->
-        <tr class="single_element" style="width:100%">
-            <td class="cell-md-center" onmouseout="assessor360_stop()" onmouseover="assessor360_start()">
-            <div class="one" style="display:inline;">
-                <div class="two" id="assessor360" style="display:inline;">
-                <img src="images/assessor360/visual.png" width="100%" max-width="240">
-                </div>
-                <img src="images/assessor360/visual.png" width="100%" max-width="240">
-            </div>
-            <script>
-                function assessor360_start(){document.getElementById('assessor360').style.opacity='1';}
-                function assessor360_stop(){document.getElementById('assessor360').style.opacity='0';}
-                assessor360_stop();
-            </script>
-            </td>
-
-            <td class="cell-md">
-            <span class="tag">NeurIPS 2023</span>&nbsp;&nbsp;
-            <papertitle>Assessor360: Multi-sequence Network for Blind Omnidirectional Image Quality Assessment</papertitle><br>
-            <a class="highlight-me">Tianhe Wu*</a>, Shuwei Shi*, Haoming Cai, Mingdeng Cao, Jing Xiao, Yinqiang Zheng, Yujiu Yang
-            <br><br>
-            <a href="https://arxiv.org/abs/2305.10983" target="_blank">arXiv</a>
-            &nbsp/&nbsp <a href="https://github.com/TianheWu/Assessor360" target="_blank">Code</a>
-            <p></p>
-            <p style="font-size:16px;"><em>
-              We present a new framework for blind omnidirectional IQA.
-            </em></p>
-            </td>
-        </tr>
-
-        <!-- ahiq -->
-        <tr class="single_element" style="width:100%">
-          <td class="cell-md-center" onmouseout="ahiq_stop()" onmouseover="ahiq_start()">
-          <div class="one" style="display:inline;">
-              <div class="two" id="ahiq" style="display:inline;">
-              <img src="images/ahiq/method.png" width="100%" max-width="240">
-              </div>
-              <img src="images/ahiq/method.png" width="100%" max-width="240" style="background:#fff;">
+        </article>
+        <article class="paper" id="paper-assessor360" data-group="other">
+          <a class="paper-figure" href="https://arxiv.org/abs/2305.10983" target="_blank" rel="noopener noreferrer" aria-label="Read Assessor360: Multi-sequence Network for Blind Omnidirectional Image Quality Assessment">
+            <img src="images/assessor360/visual.png" alt="Research figure for Assessor360: Multi-sequence Network for Blind Omnidirectional Image Quality Assessment" loading="lazy" decoding="async" width="600" height="360">
+          </a>
+          <div class="paper-content">
+            <div class="paper-meta"><span>NeurIPS 2023</span></div>
+            <h3><a href="https://arxiv.org/abs/2305.10983" target="_blank" rel="noopener noreferrer">Assessor360: Multi-sequence Network for Blind Omnidirectional Image Quality Assessment</a></h3>
+            <p class="paper-authors"><strong>Tianhe Wu*</strong>, Shuwei Shi*, Haoming Cai, Mingdeng Cao, Jing Xiao, Yinqiang Zheng, Yujiu Yang</p>
+            <p class="paper-summary">We present a new framework for blind omnidirectional IQA.</p>
+            <div class="paper-bottom"><div class="paper-links"><a href="https://arxiv.org/abs/2305.10983" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a><a href="https://github.com/TianheWu/Assessor360" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div><a class="citation" data-citation="assessor360" data-updated="2026-11-02T16:35:55+00:00" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=QW1JtysAAAAJ&amp;pagesize=100&amp;citation_for_view=QW1JtysAAAAJ:9yKSN-GCB0IC" target="_blank" rel="noopener noreferrer" title="Google Scholar · updated 03 Nov 2026">Cited by 79 <span aria-hidden="true">↗</span></a></div>
           </div>
-          <script>
-              function ahiq_start(){document.getElementById('ahiq').style.opacity='1';}
-              function ahiq_stop(){document.getElementById('ahiq').style.opacity='0';}
-              ahiq_stop();
-          </script>
-          </td>
+        </article>
+        <article class="paper" id="paper-ahiq" data-group="other">
+          <a class="paper-figure" href="https://arxiv.org/abs/2204.10485" target="_blank" rel="noopener noreferrer" aria-label="Read Attentions Help CNNs See Better: Attention-based Hybrid Image Quality Assessment Network">
+            <img src="images/ahiq/method.png" alt="Research figure for Attentions Help CNNs See Better: Attention-based Hybrid Image Quality Assessment Network" loading="lazy" decoding="async" width="600" height="360">
+          </a>
+          <div class="paper-content">
+            <div class="paper-meta"><span>CVPR Workshops 2022 Oral</span></div>
+            <h3><a href="https://arxiv.org/abs/2204.10485" target="_blank" rel="noopener noreferrer">Attentions Help CNNs See Better: Attention-based Hybrid Image Quality Assessment Network</a></h3>
+            <p class="paper-authors">Shanshan Lao*, Yuan Gong*, Shuwei Shi, Sidi Yang, <strong>Tianhe Wu</strong>, Jiahao Wang, Weihao Xia, Yujiu Yang</p>
+            <p class="paper-summary">The champion method for NTIRE2022 FR IQA.</p>
+            <div class="paper-bottom"><div class="paper-links"><a href="https://arxiv.org/abs/2204.10485" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a><a href="https://github.com/IIGROUP/AHIQ" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div><a class="citation" data-citation="ahiq" data-updated="2026-11-02T16:35:55+00:00" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=QW1JtysAAAAJ&amp;pagesize=100&amp;citation_for_view=QW1JtysAAAAJ:u-x6o8ySG0sC" target="_blank" rel="noopener noreferrer" title="Google Scholar · updated 03 Nov 2026">Cited by 192 <span aria-hidden="true">↗</span></a></div>
+          </div>
+        </article>
+        <article class="paper" id="paper-maniqa" data-group="other">
+          <a class="paper-figure" href="https://arxiv.org/abs/2204.08958" target="_blank" rel="noopener noreferrer" aria-label="Read MANIQA: Multi-dimension Attention Network for No-Reference Image Quality Assessment">
+            <img src="images/maniqa/method.png" alt="Research figure for MANIQA: Multi-dimension Attention Network for No-Reference Image Quality Assessment" loading="lazy" decoding="async" width="600" height="360">
+          </a>
+          <div class="paper-content">
+            <div class="paper-meta"><span>CVPR Workshops 2022 Oral</span></div>
+            <h3><a href="https://arxiv.org/abs/2204.08958" target="_blank" rel="noopener noreferrer">MANIQA: Multi-dimension Attention Network for No-Reference Image Quality Assessment</a></h3>
+            <p class="paper-authors">Sidi Yang*, <strong>Tianhe Wu*</strong>, Shuwei Shi, Shanshan Lao, Yuan Gong, Mingdeng Cao, Jiahao Wang, Yujiu Yang</p>
+            <p class="paper-summary">The champion method for NTIRE2022 NR IQA.</p>
+            <div class="paper-bottom"><div class="paper-links"><a href="https://arxiv.org/abs/2204.08958" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a><a href="https://github.com/IIGROUP/MANIQA" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div><a class="citation" data-citation="maniqa" data-updated="2026-11-02T16:35:55+00:00" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=QW1JtysAAAAJ&amp;pagesize=100&amp;citation_for_view=QW1JtysAAAAJ:u5HHmVD_uO8C" target="_blank" rel="noopener noreferrer" title="Google Scholar · updated 03 Nov 2026">Cited by 1,187 <span aria-hidden="true">↗</span></a></div>
+          </div>
+        </article>
+        <!-- publications:end -->
+      </div>
+      <div class="research-notes"><span>* Equal contribution &nbsp; · &nbsp; † Corresponding author</span><span id="citation-status">Citation counts from Google Scholar; see each link for its last update.</span></div>
+      <button class="show-all" type="button" id="show-all" hidden>Explore all 21 publications <span aria-hidden="true">↗</span></button>
+    </section>
 
-          <td class="cell-md">
-          <span class="tag">CVPR Workshops 2022 Oral</span>&nbsp;&nbsp;
-          <papertitle>Attentions Help CNNs See Better: Attention-based Hybrid Image Quality Assessment Network</papertitle><br>
-          Shanshan Lao*, Yuan Gong*, Shuwei Shi, Sidi Yang, <a class="highlight-me">Tianhe Wu</a>, Jiahao Wang, Weihao Xia, Yujiu Yang
-          <br><br>
-          <a href="https://arxiv.org/abs/2204.10485" target="_blank">arXiv</a>
-          &nbsp/&nbsp <a href="https://github.com/IIGROUP/AHIQ" target="_blank">Code</a>
-          <p></p>
-          <p style="font-size:16px;"><em>
-            The champion method for NTIRE2022 FR IQA.
-          </em></p>
-          </td>
-        </tr>
-
-        <!-- maniqa -->
-        <tr class="single_element" style="width:100%">
-            <td class="cell-md-center" onmouseout="maniqa_stop()" onmouseover="maniqa_start()">
-            <div class="one" style="display:inline;">
-                <div class="two" id="maniqa" style="display:inline;">
-                <img src="images/maniqa/method.png" width="100%" max-width="240">
-                </div>
-                <img src="images/maniqa/method.png" width="100%" max-width="240" style="background:#fff;">
-            </div>
-            <script>
-                function maniqa_start(){document.getElementById('maniqa').style.opacity='1';}
-                function maniqa_stop(){document.getElementById('maniqa').style.opacity='0';}
-                maniqa_stop();
-            </script>
-            </td>
-
-            <td class="cell-md">
-            <span class="tag">CVPR Workshops 2022 Oral</span>&nbsp;&nbsp;
-            <papertitle>MANIQA: Multi-dimension Attention Network for No-Reference Image Quality Assessment</papertitle><br>
-            Sidi Yang*, <a class="highlight-me">Tianhe Wu*</a>, Shuwei Shi, Shanshan Lao, Yuan Gong, Mingdeng Cao, Jiahao Wang, Yujiu Yang
-            <br><br>
-            <a href="https://arxiv.org/abs/2204.08958" target="_blank">arXiv</a>
-            &nbsp/&nbsp <a href="https://github.com/IIGROUP/MANIQA" target="_blank">Code</a>
-            <p></p>
-            <p style="font-size:16px;"><em>
-              The champion method for NTIRE2022 NR IQA.
-            </em></p>
-            </td>
-        </tr>
-
-        </table>
-      
-      
-
-    </td></tr>
-  </table>
-
-    
+    <div class="background-grid">
+      <section id="experience" class="experience-section" aria-labelledby="experience-title">
+        <p class="eyebrow">In practice</p><h2 id="experience-title">Research experience.</h2>
+        <div class="timeline">
+          <article class="timeline-item current">
+            <div class="timeline-meta"><span class="timeline-date">SEP 2026 — PRESENT</span><span class="current-label">Current</span></div>
+            <h3>ByteDance Seed</h3><p class="position">Research Intern</p>
+            <p>Post-training for <strong>Seedream foundation models</strong>.</p>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-meta"><span class="timeline-date">APR 2026 — AUG 2026</span></div>
+            <h3>Qwen Image <span class="institution-detail">/ Alibaba Token Foundry</span></h3><p class="position">Research Intern · Core Contributor</p>
+            <p>Distillation and acceleration for <strong>Qwen-Image-2.0 and Qwen-Image-3.0</strong>.</p>
+            <p class="mentor">Supervisor: <a href="https://scholar.google.com/citations?user=1YlFL5UAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Chenfei Wu</a></p>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-meta"><span class="timeline-date">APR 2024 — APR 2026</span></div>
+            <h3>OPPO Research Institute <span class="institution-detail">/ YLab</span></h3><p class="position">Research Intern</p>
+            <p>Vision-language models and visual quality perception.</p>
+            <p class="mentor">Supervisor: <a href="https://scholar.google.com/citations?user=tAK5l1IAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Prof. Lei Zhang</a></p>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-meta"><span class="timeline-date">DEC 2023 — AUG 2025</span></div>
+            <h3>City University of Hong Kong</h3><p class="position">Research Assistant · Computer Science</p>
+            <p>Vision-language models.</p><p class="mentor">Supervisor: <a href="https://kedema.org/" target="_blank" rel="noopener noreferrer">Prof. Kede Ma</a></p>
+          </article>
+        </div>
+      </section>
+      <section id="education" class="education-section" aria-labelledby="education-title">
+        <p class="eyebrow">Foundations</p><h2 id="education-title">Education.</h2>
+        <div class="education-list">
+          <article class="education-item">
+            <img class="university-logo" src="images/logo/cityu_logo.png" width="44" height="44" alt="" loading="lazy">
+            <div><p class="timeline-date">SEP 2025 — PRESENT</p><h3>City University of Hong Kong</h3><p>Ph.D. in Computer Science</p><p class="mentor">Advisor: <a href="https://kedema.org/" target="_blank" rel="noopener noreferrer">Prof. Kede Ma</a></p></div>
+          </article>
+          <article class="education-item">
+            <img class="university-logo" src="images/logo/logo-thu.svg" width="44" height="44" alt="" loading="lazy">
+            <div><p class="timeline-date">SEP 2022 — JUN 2025</p><h3>Tsinghua University</h3><p>M.Sc. in Big Data Technology<br>and Engineering</p><p class="mentor">Advisor: <a href="https://scholar.google.com/citations?user=4gH3sxsAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Prof. Yujiu Yang</a></p></div>
+          </article>
+          <article class="education-item">
+            <img class="university-logo" src="images/logo/bjut_logo.png" width="44" height="44" alt="" loading="lazy">
+            <div><p class="timeline-date">SEP 2018 — JUN 2022</p><h3>Beijing University of Technology</h3><p>B.Eng. in Computer Science</p></div>
+          </article>
+        </div>
+        <aside class="collaboration-note"><span class="eyebrow">Open to ideas</span><p>Always happy to discuss research and explore collaborations.</p><a href="mailto:tianhewu-c@my.cityu.edu.hk">tianhewu-c@my.cityu.edu.hk <span aria-hidden="true">↗</span></a></aside>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer page-shell"><span>© 2026 Tianhe Wu</span><span>Perception. Generation. Intelligence.</span><a href="#about">Back to top ↑</a></footer>
 </body>
 </html>

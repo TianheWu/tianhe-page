@@ -1,0 +1,368 @@
+[
+  {
+    "id": "qwenimageflash",
+    "title": "Qwen-Image-Flash: Beyond Objective Design",
+    "authors": "Qwen Team (Sole First Author)",
+    "venue": "Preprint 2026",
+    "image": "images/qwenimageflash/teaser.png",
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2606.03746"
+      }
+    ],
+    "summary": "The paper presents Qwen-Image-Flash, showing that efficient 4-step image generation and editing distillation depends not only on the loss objective, but also critically on data composition, multi-teacher guidance, and the generation-editing task mix."
+  },
+  {
+    "id": "dpdmd",
+    "title": "Diversity-Preserved Distribution Matching Distillation for Fast Visual Synthesis",
+    "authors": "<strong>Tianhe Wu*</strong>, Ruibin Li*, Lei Zhang, Kede Ma",
+    "venue": "ICML 2026",
+    "image": "images/dpdmd/teaser.png",
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2602.03139"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/Multimedia-Analytics-Laboratory/dpdmd"
+      }
+    ],
+    "summary": "A simple yet effective approach to preserving sample diversity under DMD, with no perceptual backbone, no discriminator, no auxiliary networks, and no additional ground-truth images."
+  },
+  {
+    "id": "vqr1",
+    "title": "VisualQuality-R1: Reasoning-Induced Image Quality Assessment via Reinforcement Learning to Rank",
+    "authors": "<strong>Tianhe Wu</strong>, Jian Zou, Jie Liang, Lei Zhang, Kede Ma",
+    "venue": "NeurIPS 2025 Spotlight",
+    "image": "images/vqr1/teaser.png",
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2505.14460"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/TianheWu/VisualQuality-R1"
+      }
+    ],
+    "summary": "A reasoning-enabled visual quality model capable of delivering both qualitative descriptions and quantitative ratings without perceptual alignment."
+  },
+  {
+    "id": "qwenimagerl",
+    "title": "Qwen-Image-2.0-RL Technical Report",
+    "authors": "Qwen Team",
+    "venue": "Preprint 2026",
+    "image": "images/qwenimagerl/teaser.png",
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2606.27608"
+      }
+    ],
+    "summary": "We present Qwen-Image-2.0-RL, a post-training pipeline that combines RLHF, composite reward models, GRPO-based training, and on-policy distillation to improve image generation and editing quality."
+  },
+  {
+    "id": "qwenimageagent",
+    "title": "Qwen-Image-Agent: Bridging the Context Gap in Real-World Image Generation",
+    "authors": "Qwen Team",
+    "venue": "Preprint 2026",
+    "image": "images/qwenimageagent/teaser.png",
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2606.26907"
+      }
+    ],
+    "summary": "We introduce Qwen-Image-Agent, a context-centric framework that uses planning, reasoning, search, memory, and feedback to improve real-world image generation."
+  },
+  {
+    "id": "qwenrobot",
+    "title": "Qwen-RobotWorld Technical Report: Unifying Embodied World Modeling through Language-Conditioned Video Generation",
+    "authors": "Qwen Team",
+    "venue": "Preprint 2026",
+    "image": "images/qwenrobot/teaser.png",
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2606.17030"
+      }
+    ],
+    "summary": "We introduce Qwen-RobotWorld, a language-conditioned video world model that predicts future visual trajectories across embodied AI scenarios."
+  },
+  {
+    "id": "qwenimage2_vae",
+    "title": "Qwen-Image-VAE-2.0 Technical Report",
+    "authors": "Qwen Team",
+    "venue": "Preprint 2026",
+    "image": "images/qwenimage2_vae/teaser.png",
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2605.13565"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/alibaba/OmniDoc-TokenBench"
+      }
+    ],
+    "summary": "Qwen-Image-VAE-2.0 introduces a high-compression VAE that achieves state-of-the-art image reconstruction and diffusion-friendly latent representations, especially for text-rich images, through global skip connections, large-channel latents, and semantic alignment training."
+  },
+  {
+    "id": "qwenimage2",
+    "title": "Qwen-Image-2.0 Technical Report",
+    "authors": "Qwen Team (As the core contributor to this project)",
+    "venue": "Preprint 2026",
+    "image": "images/qwenimage2/teaser.png",
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2605.10730"
+      }
+    ],
+    "summary": "Qwen-Image-2.0 is an omni-capable image generation foundation model that integrates high-fidelity image creation and precise image editing into a single unified framework."
+  },
+  {
+    "id": "tooliqa",
+    "title": "Tool-IQA: Augmenting Image Quality Assessment with Simple Tools",
+    "authors": "Guanyi Qin, Junjie Zhang, Chunming He, Yibing Fu, Jie Liang, <strong>Tianhe Wu</strong>, Lei Zhang",
+    "venue": "Preprint 2026",
+    "image": "images/tooliqa/teaser.png",
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2606.16082"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/narthchin/Tool-IQA"
+      }
+    ],
+    "summary": "We propose Tool-IQA, a VLM-based image quality assessment framework that improves over one-shot scoring by using rubric notes, a Magnifier, a Gamma Corrector, and BATE-guided GRPO training for more accurate calibrated quality prediction."
+  },
+  {
+    "id": "qwenimagebench",
+    "title": "Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation",
+    "authors": "Qwen Team",
+    "venue": "EMNLP 2026",
+    "image": "images/qwenimagebench/teaser.png",
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2605.28091"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/QwenLM/Qwen-Image-Bench"
+      }
+    ],
+    "summary": "Qwen-Image-Bench is a creator-centric benchmark for evaluating text-to-image models with fine-grained, expert-aligned scoring."
+  },
+  {
+    "id": "smallergrpo",
+    "title": "Smaller Models are Natural Explorers for Policy-Level Diversity in GRPO",
+    "authors": "Yiming Ren, Yiran Xu, Zicheng Lin, Chufan Shi, Yukang Chen, Dingdong Wang, <strong>Tianhe Wu</strong>, Jujie Wang, Yujiu Yang, Yu Qiao, Ruihang Chu",
+    "venue": "ICML 2026",
+    "image": "images/smallergrpo/image.png",
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2604.10103"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/leeruibin/hybrid-forcing"
+      }
+    ],
+    "summary": "S2L-PO uses smaller models as diverse explorers to train larger reasoning models more efficiently."
+  },
+  {
+    "id": "hybrid_forcing",
+    "title": "Long-Horizon Streaming Video Generation via Hybrid Attention with Decoupled Distillation",
+    "authors": "Ruibin Li, Tao Yang, Fangzhou Ai, <strong>Tianhe Wu</strong>, Shilei Wen, Bingyue Peng, Lei Zhang",
+    "venue": "Preprint 2026",
+    "image": "images/hybrid_forcing/image.png",
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2604.10103"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/leeruibin/hybrid-forcing"
+      }
+    ],
+    "summary": "Hybrid Forcing enables faster, more stable long-form streaming video generation."
+  },
+  {
+    "id": "meiqa",
+    "title": "ME-IQA: Memory-Enhanced Image Quality Assessment via Re-Ranking",
+    "authors": "Kanglong Fan, <strong>Tianhe Wu<sup>&dagger;</sup></strong>, Wen Wen, Jianzhao Liu, Le Yang, Yabin Zhang, Yiting Liao, Junlin Li, Li Zhang",
+    "venue": "ECCV 2026",
+    "image": "images/meiqa/teaser.png",
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2603.20785"
+      }
+    ],
+    "summary": "Training-free method for alleviating scoring collapse in generative visual quality perception models."
+  },
+  {
+    "id": "mixgrm",
+    "title": "Beyond Length Scaling: Synergizing Breadth and Depth for Generative Reward Models",
+    "authors": "Qiyuan Zhang, Yufei Wang, <strong>Tianhe Wu</strong>, Can Xu, Qingfeng Sun, Kai Zheng, Xue Liu, Chen Ma",
+    "venue": "ACL Findings 2026",
+    "image": "images/mixgrm/teaser.png",
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2603.01571v1"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/Don-Joey/Mix-GRM"
+      }
+    ],
+    "summary": "Test time scaling for generative reward models."
+  },
+  {
+    "id": "dpposr",
+    "title": "DP2O-SR: Direct Perceptual Preference Optimization for Real-World Image Super-Resolution",
+    "authors": "Rongyuan Wu, Lingchen Sun, Zhengqiang Zhang, Shihao Wang, <strong>Tianhe Wu</strong>, Qiaosi Yi, Shuai Li, Lei Zhang",
+    "venue": "NeurIPS 2025",
+    "image": "images/dpposr/teaser.png",
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2510.18851"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/cswry/DP2O-SR"
+      }
+    ],
+    "summary": "Direct perceptual preference optimization for image super-resolution."
+  },
+  {
+    "id": "perceptual_optimization",
+    "title": "The Unanticipated Asymmetry Between Perceptual Optimization and Assessment",
+    "authors": "Jiabei Zhang*, Qi Wang, Siyu Wu, Du Chen, <strong>Tianhe Wu*<sup>&dagger;</sup></strong>",
+    "venue": "Preprint 2025",
+    "image": "images/perceptual_optimization/teaser.png",
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2509.20878"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/Oreki1999/AsymmetryIQA"
+      }
+    ],
+    "summary": "Our comprehensive study highlights the asymmetries between assessment and optimization."
+  },
+  {
+    "id": "afine",
+    "title": "Toward Generalized Image Quality Assessment: Relaxing the Perfect Reference Quality Assumption",
+    "authors": "Du Chen*, <strong>Tianhe Wu*</strong>, Kede Ma, Lei Zhang",
+    "venue": "CVPR 2025",
+    "image": "images/afine/data.png",
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2503.11221"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://tianhewu.github.io/A-FINE-page.github.io/"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/ChrisDud0257/AFINE"
+      },
+      {
+        "label": "Dataset",
+        "url": "https://drive.google.com/drive/folders/1vZehlUPDyDfo6Mq1K8pAMe3pcjqdDRht?usp=drive_link"
+      },
+      {
+        "label": "Benchmark",
+        "url": "https://drive.google.com/file/d/1LhtLNDl6Jxwi6CPPVjX2_w4zIDRLFfbO/view"
+      }
+    ],
+    "summary": "A generalized FR-IQA model for low-level vision, applicable to both perfect and imperfect reference scenarios."
+  },
+  {
+    "id": "mllm_iqa",
+    "title": "A Comprehensive Study of Multimodal Large Language Models for Image Quality Assessment",
+    "authors": "<strong>Tianhe Wu</strong>, Kede Ma, Jie Liang, Yujiu Yang, Lei Zhang",
+    "venue": "ECCV 2024",
+    "image": "images/mllm_iqa/teaser.png",
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2403.10854"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/TianheWu/MLLMs-for-IQA"
+      }
+    ],
+    "summary": "A systematic study on the ability of multimodal large language models to perceive and assess image quality."
+  },
+  {
+    "id": "assessor360",
+    "title": "Assessor360: Multi-sequence Network for Blind Omnidirectional Image Quality Assessment",
+    "authors": "<strong>Tianhe Wu*</strong>, Shuwei Shi*, Haoming Cai, Mingdeng Cao, Jing Xiao, Yinqiang Zheng, Yujiu Yang",
+    "venue": "NeurIPS 2023",
+    "image": "images/assessor360/visual.png",
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2305.10983"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/TianheWu/Assessor360"
+      }
+    ],
+    "summary": "We present a new framework for blind omnidirectional IQA."
+  },
+  {
+    "id": "ahiq",
+    "title": "Attentions Help CNNs See Better: Attention-based Hybrid Image Quality Assessment Network",
+    "authors": "Shanshan Lao*, Yuan Gong*, Shuwei Shi, Sidi Yang, <strong>Tianhe Wu</strong>, Jiahao Wang, Weihao Xia, Yujiu Yang",
+    "venue": "CVPR Workshops 2022 Oral",
+    "image": "images/ahiq/method.png",
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2204.10485"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/IIGROUP/AHIQ"
+      }
+    ],
+    "summary": "The champion method for NTIRE2022 FR IQA."
+  },
+  {
+    "id": "maniqa",
+    "title": "MANIQA: Multi-dimension Attention Network for No-Reference Image Quality Assessment",
+    "authors": "Sidi Yang*, <strong>Tianhe Wu*</strong>, Shuwei Shi, Shanshan Lao, Yuan Gong, Mingdeng Cao, Jiahao Wang, Yujiu Yang",
+    "venue": "CVPR Workshops 2022 Oral",
+    "image": "images/maniqa/method.png",
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2204.08958"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/IIGROUP/MANIQA"
+      }
+    ],
+    "summary": "The champion method for NTIRE2022 NR IQA."
+  }
+]
