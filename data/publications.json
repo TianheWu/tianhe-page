@@ -1,8 +1,8 @@
 [
   {
     "id": "qwenimageflash",
-    "title": "Qwen-Image-Flash: Beyond Objective Design",
-    "authors": "Qwen Team (Sole First Author)",
+    "title": "Qwen-Image-Flash: Rethinking the Training Recipe for Few-Step Distillation",
+    "authors": "<strong>Tianhe Wu</strong>, Zikai Zhou, Kun Yan, Kaiyuan Gao, Lihan Jiang, Jiahao Li, Jie Zhang, Ningyuan Tang, Shengming Yin, Xiaoyue Chen, Xiao Xu, Yilei Chen, Yuxiang Chen, Yan Shu, Yixian Xu, Yanran Zhang, Zihao Liu, Zhendong Wang, Zekai Zhang, Deqing Li, Liang Peng, Yi Wang, Zeke Xie, Jingren Zhou, Bo Zheng, Chenfei Wu",
     "venue": "Preprint 2026",
     "image": "images/qwenimageflash/teaser.png",
     "links": [
@@ -11,7 +11,7 @@
         "url": "https://arxiv.org/abs/2606.03746"
       }
     ],
-    "summary": "The paper presents Qwen-Image-Flash, showing that efficient 4-step image generation and editing distillation depends not only on the loss objective, but also critically on data composition, multi-teacher guidance, and the generation-editing task mix."
+    "summary": "A systematic study of data composition, teacher guidance, and generation–editing task mixtures for few-step DMD, leading to unified image generation and editing in four steps."
   },
   {
     "id": "dpdmd",
