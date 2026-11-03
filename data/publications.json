@@ -2,7 +2,7 @@
   {
     "id": "qwenimageflash",
     "title": "Qwen-Image-Flash: Rethinking the Training Recipe for Few-Step Distillation",
-    "authors": "<strong>Tianhe Wu</strong>, Zikai Zhou, Kun Yan, Kaiyuan Gao, Lihan Jiang, Jiahao Li, Jie Zhang, Ningyuan Tang, Shengming Yin, Xiaoyue Chen, Xiao Xu, Yilei Chen, Yuxiang Chen, Yan Shu, Yixian Xu, Yanran Zhang, Zihao Liu, Zhendong Wang, Zekai Zhang, Deqing Li, Liang Peng, Yi Wang, Zeke Xie, Jingren Zhou, Bo Zheng, Chenfei Wu",
+    "authors": "<strong>Tianhe Wu*</strong>, Zikai Zhou*, Kun Yan, Kaiyuan Gao, Lihan Jiang, Jiahao Li, Jie Zhang, Ningyuan Tang, Shengming Yin, Xiaoyue Chen, Xiao Xu, Yilei Chen, Yuxiang Chen, Yan Shu, Yixian Xu, Yanran Zhang, Zihao Liu, Zhendong Wang, Zekai Zhang, Deqing Li, Liang Peng, Yi Wang, Zeke Xie, Jingren Zhou, Bo Zheng, Chenfei Wu",
     "venue": "Preprint 2026",
     "image": "images/qwenimageflash/teaser.png",
     "links": [
