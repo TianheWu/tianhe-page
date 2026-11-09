@@ -12,13 +12,24 @@ Open http://127.0.0.1:8765/. The page also works directly from `index.html`. All
 
 ## Edit content
 
-- Biography, news, experience, and education: `index.html`.
+- Biography, news, projects, experience, and education: `index.html`.
 - Appearance and fixed desktop layout: `stylesheet.css`.
 - Publications: `data/publications.json`, then run `python3 scripts/render_publications.py`.
 - Portrait: `images/profile/photo.jpg` (the supplied waterfront photo).
 - Keep publication IDs stable: direct paper links use them.
 
 The renderer owns only the block between `publications:start` and `publications:end`. It preserves the rest of the page. Author strings may contain trusted `<strong>` / `<sup>` markup.
+
+## Projects
+
+The Projects section sits between News and Research. The Seedream 5.5 entry pairs an official benchmark on the left with generated examples on the right, with the project name and [official project link](https://seed.bytedance.com/seedream5_5) above them. It does not include personal contribution text. The benchmark is reproduced unchanged from the [official technical blog](https://seed.bytedance.com/en/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5), with its original labels and values. Clicking it opens the full-resolution chart.
+
+The three generation examples in `images/projects/seedream5_5/` are web-sized JPEG copies of official showcase images, displayed without cropping. Original AI labels are retained, and the gallery credits ByteDance Seed and links to its showcase. Sources:
+
+- `street-colors.jpg`: https://lf3-static.bytednsdoc.com/obj/eden-cn/bdeh7uhpsuht/sd55-008-cfc4e0dc-l.webp
+- `street-portrait.jpg`: https://lf3-static.bytednsdoc.com/obj/eden-cn/bdeh7uhpsuht/sd55-009-a2c2dca4-l.webp
+- `evening-bistro.jpg`: https://lf3-static.bytednsdoc.com/obj/eden-cn/bdeh7uhpsuht/sd55-010-ac6278fc-l.webp
+- `quality-benchmark.jpg`: https://lf3-static.bytednsdoc.com/obj/eden-cn/lapzild-tss/ljhwZthlaukjlkulzlp/user-upload/4xfa4mw8m342o.jpg
 
 ## Proportional layout
 
