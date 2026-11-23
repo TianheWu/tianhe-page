@@ -7,7 +7,8 @@
     "title": "Prune to Expand: Training Prompt Enhancers with Less to Imitate",
     "authors": "<strong>Tianhe Wu</strong>, Qilin Sun, Kede Ma",
     "venue": "Preprint 2026",
-    "image": "images/reel/prune-to-expand.webp",
+    "image": "images/prune-to-expand/teaser.png",
+    "imageAlt": "Six side-by-side comparisons of images generated from the original prompt (left) and the P2E-enhanced prompt (right), including pets, abstract art, kite flying, hikers, a library, and an autumn road.",
     "links": [
       {
         "label": "arXiv",

@@ -32,7 +32,7 @@
   let wheelActive = false;
 
   // Build a flat piece of film once, then project it in narrow vertical strips.
-  // Type and perforations bend with the photograph along the same surface.
+  // Type and perforations bend with the cover along the same surface.
   function makeTexture(paper, index) {
     const texture = document.createElement('canvas');
     texture.width = 864;
@@ -62,11 +62,14 @@
     const image = new Image();
     image.decoding = 'async';
     image.onload = () => {
-      const scale = Math.max(picture.w / image.naturalWidth, picture.h / image.naturalHeight);
-      const sourceW = picture.w / scale;
-      const sourceH = picture.h / scale;
-      ctx.drawImage(image, (image.naturalWidth - sourceW) / 2, (image.naturalHeight - sourceH) / 2,
-        sourceW, sourceH, picture.x, picture.y, picture.w, picture.h);
+      const scale = Math.min(picture.w / image.naturalWidth, picture.h / image.naturalHeight);
+      const width = image.naturalWidth * scale;
+      const height = image.naturalHeight * scale;
+      ctx.fillStyle = '#fff';
+      ctx.fillRect(picture.x, picture.y, picture.w, picture.h);
+      ctx.imageSmoothingQuality = 'high';
+      ctx.drawImage(image, picture.x + (picture.w - width) / 2, picture.y + (picture.h - height) / 2,
+        width, height);
       requestFrame();
     };
     image.onerror = () => {
