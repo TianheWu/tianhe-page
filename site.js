@@ -27,7 +27,7 @@
   }
 
   function publicationTarget(hash) {
-    if (hash === '#publications') return publications;
+    if (hash === '#research' || hash === '#publications') return publications;
     if (!hash.startsWith('#paper-')) return null;
     const paper = document.getElementById(hash.slice(1));
     return papers.includes(paper) ? paper : null;

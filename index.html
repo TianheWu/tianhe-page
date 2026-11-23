@@ -11,11 +11,9 @@
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://tianhewu.github.io/tianhe-page/images/profile/photo.jpg">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="stylesheet.css?v=projects-2">
   <script src="layout.js"></script>
-  <link rel="stylesheet" href="research-reel.css">
-  <script src="site.js" defer></script>
-  <script src="research-reel.js?v=2" defer></script>
+  <script src="site.js?v=research-index" defer></script>
   <title>Tianhe Wu · Visual Generative Intelligence</title>
 </head>
 <body>
@@ -24,8 +22,8 @@
     <div class="header-inner">
       <a class="wordmark" href="#about" aria-label="Tianhe Wu, home">TW<span class="wordmark-dot">.</span></a>
       <nav aria-label="Main navigation">
-        <a href="#research">Research</a>
         <a href="#projects">Projects</a>
+        <a href="#research">Research</a>
         <a href="#experience">Experience</a>
         <a href="#education">Education</a>
         <a class="nav-contact" href="mailto:tianhewu-c@my.cityu.edu.hk">Contact <span aria-hidden="true">↗</span></a>
@@ -54,44 +52,6 @@
       </figure>
     </section>
 
-    <section class="cinema" id="research" aria-labelledby="research-title">
-      <div class="reel-shell">
-        <header class="reel-header">
-          <div>
-            <p class="reel-label">Research · 2022–2026</p>
-            <h2 id="research-title">From perception <em>to generation.</em></h2>
-          </div>
-          <a class="index-link" href="#publications">Publication index</a>
-        </header>
-        <div id="research-reel" hidden>
-          <div class="reel-toolbar">
-            <div class="reel-switch" role="group" aria-label="Research collection">
-              <button type="button" data-collection="understanding" aria-pressed="true">Understanding <span></span></button>
-              <button type="button" data-collection="generation" aria-pressed="false">Generation <span></span></button>
-            </div>
-            <span class="reel-hint">Drag to browse</span>
-          </div>
-          <div class="reel-stage" role="group" tabindex="0" aria-label="Paper filmstrip. Use the left and right arrow keys to browse.">
-            <canvas aria-hidden="true"></canvas>
-          </div>
-          <div class="reel-detail">
-            <div class="reel-caption" aria-live="polite" aria-atomic="true">
-              <p class="reel-meta"><span class="reel-position"></span><span class="reel-venue"></span></p>
-              <h3><a class="reel-title" target="_blank" rel="noopener noreferrer"></a></h3>
-              <p class="reel-subtitle"></p>
-            </div>
-            <div class="reel-actions">
-              <div class="reel-transport" role="group" aria-label="Browse papers">
-                <button type="button" class="reel-prev" aria-label="Previous paper"><span aria-hidden="true"></span></button>
-                <button type="button" class="reel-next" aria-label="Next paper"><span aria-hidden="true"></span></button>
-              </div>
-              <a class="reel-read" target="_blank" rel="noopener noreferrer">Read paper</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section class="news-section" id="news" aria-labelledby="news-title">
       <div class="section-label"><span class="eyebrow">Latest</span><h2 id="news-title">A few updates.</h2></div>
       <div class="news-content">
@@ -112,21 +72,16 @@
       </div>
     </section>
 
-    <section class="projects-section" id="projects" aria-labelledby="projects-title">
-      <div class="section-heading">
-        <div><p class="eyebrow">Projects</p><h2 id="projects-title">Selected projects.</h2></div>
-        <p class="projects-context">Industry engineering</p>
-      </div>
-
+    <section class="projects-section" id="projects" aria-labelledby="seedream55-title">
       <article class="featured-project" id="project-seedream55" aria-labelledby="seedream55-title">
         <header class="project-heading">
-          <div><p class="project-company">ByteDance Seed</p><h3 id="seedream55-title">Seedream <span>5.5</span></h3></div>
-          <a class="project-link" href="https://seed.bytedance.com/seedream5_5" target="_blank" rel="noopener noreferrer">Explore Seedream 5.5 <span aria-hidden="true">↗</span></a>
+          <div><p class="eyebrow" id="projects-title">Projects · ByteDance Seed</p><h2 id="seedream55-title">Seedream <span>5.5</span></h2></div>
+          <a class="project-link" href="https://seed.bytedance.com/seedream5_5" target="_blank" rel="noopener noreferrer">Project website <span aria-hidden="true">↗</span></a>
         </header>
         <div class="project-media">
           <figure class="project-visual project-benchmark">
             <a class="project-benchmark-link" href="images/projects/seedream5_5/quality-benchmark.jpg" target="_blank" rel="noopener noreferrer" aria-label="View the full-size Seedream 5.5 text structure and realism benchmark">
-              <img src="images/projects/seedream5_5/quality-benchmark.jpg" width="2619" height="1544" alt="Official Seedream 5.5 text structure and realism evaluation: GSB scores for image-to-image and text-to-image tasks compared with GPT Image 2.5 Sunburst, Nano Banana 2.1, and Seedream 5.0 Pro" loading="lazy" decoding="async">
+              <span class="benchmark-preview"><img src="images/projects/seedream5_5/quality-benchmark.jpg" width="2619" height="1544" alt="Official Seedream 5.5 text structure and realism evaluation: GSB scores for image-to-image and text-to-image tasks compared with GPT Image 2.5 Sunburst, Nano Banana 2.1, and Seedream 5.0 Pro" loading="lazy" decoding="async"></span>
             </a>
             <figcaption><span>Text structure &amp; realism · GSB</span><a href="https://seed.bytedance.com/en/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5" target="_blank" rel="noopener noreferrer">Official evaluation <span aria-hidden="true">↗</span></a></figcaption>
           </figure>
@@ -138,15 +93,15 @@
                 <img src="images/projects/seedream5_5/evening-bistro.jpg" width="1120" height="632" alt="Seedream 5.5 generated evening bistro scene with detailed materials and warm lighting" loading="lazy" decoding="async">
               </span>
             </a>
-            <figcaption><span>Generated with Seedream 5.5</span><span>Examples from ByteDance Seed</span></figcaption>
+            <figcaption>Generated examples</figcaption>
           </figure>
         </div>
       </article>
     </section>
 
     <section class="research-section" id="publications" aria-labelledby="publications-title">
-      <div class="section-heading">
-        <div><p class="eyebrow">Publications</p><h2 id="publications-title">Publication index.</h2></div>
+      <div class="section-heading" id="research">
+        <div><p class="eyebrow">Research</p><h2 id="publications-title">Publication index.</h2></div>
         <a class="section-link" href="https://scholar.google.com/citations?user=QW1JtysAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Scholar profile <span aria-hidden="true">↗</span></a>
       </div>
       <div class="publication-controls" hidden>
@@ -161,7 +116,7 @@
       </div>
       <div class="publication-list" id="publication-list">
         <!-- publications:start -->
-        <article class="paper" id="paper-prune-to-expand" data-group="selected" data-category="understanding" data-short-title="Prune to Expand" data-cover="images/reel/prune-to-expand.webp?v=1985e30ac9">
+        <article class="paper" id="paper-prune-to-expand" data-group="selected" data-category="understanding">
           <a class="paper-figure" href="https://arxiv.org/abs/2611.27229v1" target="_blank" rel="noopener noreferrer" aria-label="Read Prune to Expand: Training Prompt Enhancers with Less to Imitate">
             <img src="images/prune-to-expand/teaser.png" alt="Six side-by-side comparisons of images generated from the original prompt (left) and the P2E-enhanced prompt (right), including pets, abstract art, kite flying, hikers, a library, and an autumn road." loading="lazy" decoding="async" width="600" height="360">
           </a>
@@ -173,7 +128,7 @@
             <div class="paper-links"><a href="https://arxiv.org/abs/2611.27229v1" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a><a href="https://arxiv.org/pdf/2611.27229v1" target="_blank" rel="noopener noreferrer">PDF <span aria-hidden="true">↗</span></a></div>
           </div>
         </article>
-        <article class="paper" id="paper-qwenimageflash" data-group="selected" data-category="generation" data-short-title="Qwen-Image-Flash" data-cover="images/reel/qwenimageflash.webp?v=4e31e49828">
+        <article class="paper" id="paper-qwenimageflash" data-group="selected" data-category="generation">
           <a class="paper-figure" href="https://arxiv.org/abs/2606.03746" target="_blank" rel="noopener noreferrer" aria-label="Read Qwen-Image-Flash: Rethinking the Training Recipe for Few-Step Distillation">
             <img src="images/qwenimageflash/teaser.png" alt="Research figure for Qwen-Image-Flash: Rethinking the Training Recipe for Few-Step Distillation" loading="lazy" decoding="async" width="600" height="360">
           </a>
@@ -185,9 +140,9 @@
             <div class="paper-links"><a href="https://arxiv.org/abs/2606.03746" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a></div>
           </div>
         </article>
-        <article class="paper" id="paper-qwen-image-layered" data-group="other" data-category="generation" data-short-title="Qwen-Image-Layered 1.5" data-cover="images/reel/qwen-image-layered.webp?v=211f38f5d2">
+        <article class="paper" id="paper-qwen-image-layered" data-group="other" data-category="generation">
           <a class="paper-figure" href="https://aclanthology.org/2026.emnlp-main.2409/" target="_blank" rel="noopener noreferrer" aria-label="Read Qwen-Image-Layered 1.5: Unified Image Generation and Editing with Native Transparency Awareness">
-            <img src="images/reel/qwen-image-layered.webp" alt="Research figure for Qwen-Image-Layered 1.5: Unified Image Generation and Editing with Native Transparency Awareness" loading="lazy" decoding="async" width="600" height="360">
+            <img src="images/qwen-image-layered/teaser.png" alt="A summer drink poster split into six layers, with examples of raster generation and editing, transparent image generation and editing, and referring image matting." loading="lazy" decoding="async" width="600" height="360">
           </a>
           <div class="paper-content">
             <div class="paper-meta"><span class="paper-venue">EMNLP 2026</span><span class="paper-category">Generation</span></div>
@@ -197,7 +152,7 @@
             <div class="paper-links"><a href="https://aclanthology.org/2026.emnlp-main.2409/" target="_blank" rel="noopener noreferrer">ACL Anthology <span aria-hidden="true">↗</span></a><a href="https://aclanthology.org/2026.emnlp-main.2409.pdf" target="_blank" rel="noopener noreferrer">PDF <span aria-hidden="true">↗</span></a></div>
           </div>
         </article>
-        <article class="paper" id="paper-dpdmd" data-group="selected" data-category="generation" data-short-title="DP-DMD" data-cover="images/reel/dpdmd.webp?v=4703f87e67">
+        <article class="paper" id="paper-dpdmd" data-group="selected" data-category="generation">
           <a class="paper-figure" href="https://arxiv.org/abs/2602.03139" target="_blank" rel="noopener noreferrer" aria-label="Read Diversity-Preserved Distribution Matching Distillation for Fast Visual Synthesis">
             <img src="images/dpdmd/teaser.png" alt="Research figure for Diversity-Preserved Distribution Matching Distillation for Fast Visual Synthesis" loading="lazy" decoding="async" width="600" height="360">
           </a>
@@ -209,7 +164,7 @@
             <div class="paper-links"><a href="https://arxiv.org/abs/2602.03139" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a><a href="https://github.com/Multimedia-Analytics-Laboratory/dpdmd" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div>
           </div>
         </article>
-        <article class="paper" id="paper-vqr1" data-group="selected" data-category="understanding" data-short-title="VisualQuality-R1" data-cover="images/reel/vqr1.webp?v=128cf22d82">
+        <article class="paper" id="paper-vqr1" data-group="selected" data-category="understanding">
           <a class="paper-figure" href="https://arxiv.org/abs/2505.14460" target="_blank" rel="noopener noreferrer" aria-label="Read VisualQuality-R1: Reasoning-Induced Image Quality Assessment via Reinforcement Learning to Rank">
             <img src="images/vqr1/teaser.png" alt="Research figure for VisualQuality-R1: Reasoning-Induced Image Quality Assessment via Reinforcement Learning to Rank" loading="lazy" decoding="async" width="600" height="360">
           </a>
@@ -221,7 +176,7 @@
             <div class="paper-links"><a href="https://arxiv.org/abs/2505.14460" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a><a href="https://github.com/TianheWu/VisualQuality-R1" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div>
           </div>
         </article>
-        <article class="paper" id="paper-qwenimagerl" data-group="reports" data-category="generation" data-short-title="Qwen-Image-2.0-RL" data-cover="images/reel/qwenimagerl.webp?v=7b16daa082">
+        <article class="paper" id="paper-qwenimagerl" data-group="reports" data-category="generation">
           <a class="paper-figure" href="https://arxiv.org/abs/2606.27608" target="_blank" rel="noopener noreferrer" aria-label="Read Qwen-Image-2.0-RL Technical Report">
             <img src="images/qwenimagerl/teaser.png" alt="Research figure for Qwen-Image-2.0-RL Technical Report" loading="lazy" decoding="async" width="600" height="360">
           </a>
@@ -233,7 +188,7 @@
             <div class="paper-links"><a href="https://arxiv.org/abs/2606.27608" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a></div>
           </div>
         </article>
-        <article class="paper" id="paper-qwenimageagent" data-group="reports" data-category="generation" data-short-title="Qwen-Image-Agent" data-cover="images/reel/qwenimageagent.webp?v=6a4fc32d42">
+        <article class="paper" id="paper-qwenimageagent" data-group="reports" data-category="generation">
           <a class="paper-figure" href="https://arxiv.org/abs/2606.26907" target="_blank" rel="noopener noreferrer" aria-label="Read Qwen-Image-Agent: Bridging the Context Gap in Real-World Image Generation">
             <img src="images/qwenimageagent/teaser.png" alt="Research figure for Qwen-Image-Agent: Bridging the Context Gap in Real-World Image Generation" loading="lazy" decoding="async" width="600" height="360">
           </a>
@@ -245,7 +200,7 @@
             <div class="paper-links"><a href="https://arxiv.org/abs/2606.26907" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a></div>
           </div>
         </article>
-        <article class="paper" id="paper-qwenrobot" data-group="reports" data-category="generation" data-short-title="Qwen-RobotWorld" data-cover="images/reel/qwenrobot.webp?v=5082c92166">
+        <article class="paper" id="paper-qwenrobot" data-group="reports" data-category="generation">
           <a class="paper-figure" href="https://arxiv.org/abs/2606.17030" target="_blank" rel="noopener noreferrer" aria-label="Read Qwen-RobotWorld Technical Report: Unifying Embodied World Modeling through Language-Conditioned Video Generation">
             <img src="images/qwenrobot/teaser.png" alt="Research figure for Qwen-RobotWorld Technical Report: Unifying Embodied World Modeling through Language-Conditioned Video Generation" loading="lazy" decoding="async" width="600" height="360">
           </a>
@@ -257,7 +212,7 @@
             <div class="paper-links"><a href="https://arxiv.org/abs/2606.17030" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a></div>
           </div>
         </article>
-        <article class="paper" id="paper-qwenimage2_vae" data-group="reports" data-category="generation" data-short-title="Qwen-Image-VAE-2.0" data-cover="images/reel/qwenimage2_vae.webp?v=b0c8162836">
+        <article class="paper" id="paper-qwenimage2_vae" data-group="reports" data-category="generation">
           <a class="paper-figure" href="https://arxiv.org/abs/2605.13565" target="_blank" rel="noopener noreferrer" aria-label="Read Qwen-Image-VAE-2.0 Technical Report">
             <img src="images/qwenimage2_vae/teaser.png" alt="Research figure for Qwen-Image-VAE-2.0 Technical Report" loading="lazy" decoding="async" width="600" height="360">
           </a>
@@ -269,7 +224,7 @@
             <div class="paper-links"><a href="https://arxiv.org/abs/2605.13565" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a><a href="https://github.com/alibaba/OmniDoc-TokenBench" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div>
           </div>
         </article>
-        <article class="paper" id="paper-qwenimage2" data-group="reports" data-category="generation" data-short-title="Qwen-Image-2.0" data-cover="images/reel/qwenimage2.webp?v=95c665606f">
+        <article class="paper" id="paper-qwenimage2" data-group="reports" data-category="generation">
           <a class="paper-figure" href="https://arxiv.org/abs/2605.10730" target="_blank" rel="noopener noreferrer" aria-label="Read Qwen-Image-2.0 Technical Report">
             <img src="images/qwenimage2/teaser.png" alt="Research figure for Qwen-Image-2.0 Technical Report" loading="lazy" decoding="async" width="600" height="360">
           </a>
@@ -281,7 +236,7 @@
             <div class="paper-links"><a href="https://arxiv.org/abs/2605.10730" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a></div>
           </div>
         </article>
-        <article class="paper" id="paper-tooliqa" data-group="other" data-category="understanding" data-short-title="Tool-IQA" data-cover="images/reel/tooliqa.webp?v=6289b51686">
+        <article class="paper" id="paper-tooliqa" data-group="other" data-category="understanding">
           <a class="paper-figure" href="https://arxiv.org/abs/2606.16082" target="_blank" rel="noopener noreferrer" aria-label="Read Tool-IQA: Augmenting Image Quality Assessment with Simple Tools">
             <img src="images/tooliqa/teaser.png" alt="Research figure for Tool-IQA: Augmenting Image Quality Assessment with Simple Tools" loading="lazy" decoding="async" width="600" height="360">
           </a>
@@ -293,7 +248,7 @@
             <div class="paper-links"><a href="https://arxiv.org/abs/2606.16082" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a><a href="https://github.com/narthchin/Tool-IQA" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div>
           </div>
         </article>
-        <article class="paper" id="paper-qwenimagebench" data-group="other" data-category="understanding" data-short-title="Qwen-Image-Bench" data-cover="images/reel/qwenimagebench.webp?v=ed62a98430">
+        <article class="paper" id="paper-qwenimagebench" data-group="other" data-category="understanding">
           <a class="paper-figure" href="https://arxiv.org/abs/2605.28091" target="_blank" rel="noopener noreferrer" aria-label="Read Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation">
             <img src="images/qwenimagebench/teaser.png" alt="Research figure for Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation" loading="lazy" decoding="async" width="600" height="360">
           </a>
@@ -305,7 +260,7 @@
             <div class="paper-links"><a href="https://arxiv.org/abs/2605.28091" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a><a href="https://github.com/QwenLM/Qwen-Image-Bench" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div>
           </div>
         </article>
-        <article class="paper" id="paper-smallergrpo" data-group="other" data-category="understanding" data-short-title="S2L-PO" data-cover="images/reel/smallergrpo.webp?v=883c3d5201">
+        <article class="paper" id="paper-smallergrpo" data-group="other" data-category="understanding">
           <a class="paper-figure" href="https://arxiv.org/abs/2605.30789" target="_blank" rel="noopener noreferrer" aria-label="Read Smaller Models are Natural Explorers for Policy-Level Diversity in GRPO">
             <img src="images/smallergrpo/image.png" alt="Research figure for Smaller Models are Natural Explorers for Policy-Level Diversity in GRPO" loading="lazy" decoding="async" width="600" height="360">
           </a>
@@ -317,7 +272,7 @@
             <div class="paper-links"><a href="https://arxiv.org/abs/2605.30789" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a><a href="https://github.com/qishisuren123/S2L-PO" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div>
           </div>
         </article>
-        <article class="paper" id="paper-hybrid_forcing" data-group="other" data-category="generation" data-short-title="Hybrid Forcing" data-cover="images/reel/hybrid_forcing.webp?v=d21ff4131b">
+        <article class="paper" id="paper-hybrid_forcing" data-group="other" data-category="generation">
           <a class="paper-figure" href="https://arxiv.org/abs/2604.10103" target="_blank" rel="noopener noreferrer" aria-label="Read Long-Horizon Streaming Video Generation via Hybrid Attention with Decoupled Distillation">
             <img src="images/hybrid_forcing/image.png" alt="Research figure for Long-Horizon Streaming Video Generation via Hybrid Attention with Decoupled Distillation" loading="lazy" decoding="async" width="600" height="360">
           </a>
@@ -329,7 +284,7 @@
             <div class="paper-links"><a href="https://arxiv.org/abs/2604.10103" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a><a href="https://github.com/leeruibin/hybrid-forcing" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div>
           </div>
         </article>
-        <article class="paper" id="paper-meiqa" data-group="other" data-category="understanding" data-short-title="ME-IQA" data-cover="images/reel/meiqa.webp?v=0d48c495fd">
+        <article class="paper" id="paper-meiqa" data-group="other" data-category="understanding">
           <a class="paper-figure" href="https://arxiv.org/abs/2603.20785" target="_blank" rel="noopener noreferrer" aria-label="Read ME-IQA: Memory-Enhanced Image Quality Assessment via Re-Ranking">
             <img src="images/meiqa/teaser.png" alt="Research figure for ME-IQA: Memory-Enhanced Image Quality Assessment via Re-Ranking" loading="lazy" decoding="async" width="600" height="360">
           </a>
@@ -341,7 +296,7 @@
             <div class="paper-links"><a href="https://arxiv.org/abs/2603.20785" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a></div>
           </div>
         </article>
-        <article class="paper" id="paper-mixgrm" data-group="other" data-category="understanding" data-short-title="Mix-GRM" data-cover="images/reel/mixgrm.webp?v=0a61ecc8fa">
+        <article class="paper" id="paper-mixgrm" data-group="other" data-category="understanding">
           <a class="paper-figure" href="https://arxiv.org/abs/2603.01571v1" target="_blank" rel="noopener noreferrer" aria-label="Read Beyond Length Scaling: Synergizing Breadth and Depth for Generative Reward Models">
             <img src="images/mixgrm/teaser.png" alt="Research figure for Beyond Length Scaling: Synergizing Breadth and Depth for Generative Reward Models" loading="lazy" decoding="async" width="600" height="360">
           </a>
@@ -353,7 +308,7 @@
             <div class="paper-links"><a href="https://arxiv.org/abs/2603.01571v1" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a><a href="https://github.com/Don-Joey/Mix-GRM" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div>
           </div>
         </article>
-        <article class="paper" id="paper-dpposr" data-group="other" data-category="generation" data-short-title="DP2O-SR" data-cover="images/reel/dpposr.webp?v=d72eeac2e3">
+        <article class="paper" id="paper-dpposr" data-group="other" data-category="generation">
           <a class="paper-figure" href="https://arxiv.org/abs/2510.18851" target="_blank" rel="noopener noreferrer" aria-label="Read DP2O-SR: Direct Perceptual Preference Optimization for Real-World Image Super-Resolution">
             <img src="images/dpposr/teaser.png" alt="Research figure for DP2O-SR: Direct Perceptual Preference Optimization for Real-World Image Super-Resolution" loading="lazy" decoding="async" width="600" height="360">
           </a>
@@ -365,7 +320,7 @@
             <div class="paper-links"><a href="https://arxiv.org/abs/2510.18851" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a><a href="https://github.com/cswry/DP2O-SR" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div>
           </div>
         </article>
-        <article class="paper" id="paper-perceptual_optimization" data-group="other" data-category="understanding" data-short-title="Perceptual Optimization and Assessment" data-cover="images/reel/perceptual_optimization.webp?v=46a3907118">
+        <article class="paper" id="paper-perceptual_optimization" data-group="other" data-category="understanding">
           <a class="paper-figure" href="https://arxiv.org/abs/2509.20878" target="_blank" rel="noopener noreferrer" aria-label="Read The Unanticipated Asymmetry Between Perceptual Optimization and Assessment">
             <img src="images/perceptual_optimization/teaser.png" alt="Research figure for The Unanticipated Asymmetry Between Perceptual Optimization and Assessment" loading="lazy" decoding="async" width="600" height="360">
           </a>
@@ -377,7 +332,7 @@
             <div class="paper-links"><a href="https://arxiv.org/abs/2509.20878" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a><a href="https://github.com/Oreki1999/AsymmetryIQA" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div>
           </div>
         </article>
-        <article class="paper" id="paper-afine" data-group="other" data-category="understanding" data-short-title="A-FINE" data-cover="images/reel/afine.webp?v=4560cc1dfc">
+        <article class="paper" id="paper-afine" data-group="other" data-category="understanding">
           <a class="paper-figure" href="https://arxiv.org/abs/2503.11221" target="_blank" rel="noopener noreferrer" aria-label="Read Toward Generalized Image Quality Assessment: Relaxing the Perfect Reference Quality Assumption">
             <img src="images/afine/data.png" alt="Research figure for Toward Generalized Image Quality Assessment: Relaxing the Perfect Reference Quality Assumption" loading="lazy" decoding="async" width="600" height="360">
           </a>
@@ -389,7 +344,7 @@
             <div class="paper-links"><a href="https://arxiv.org/abs/2503.11221" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a><a href="https://tianhewu.github.io/A-FINE-page.github.io/" target="_blank" rel="noopener noreferrer">Project Page <span aria-hidden="true">↗</span></a><a href="https://github.com/ChrisDud0257/AFINE" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a><a href="https://drive.google.com/drive/folders/1vZehlUPDyDfo6Mq1K8pAMe3pcjqdDRht?usp=drive_link" target="_blank" rel="noopener noreferrer">Dataset <span aria-hidden="true">↗</span></a><a href="https://drive.google.com/file/d/1LhtLNDl6Jxwi6CPPVjX2_w4zIDRLFfbO/view" target="_blank" rel="noopener noreferrer">Benchmark <span aria-hidden="true">↗</span></a></div>
           </div>
         </article>
-        <article class="paper" id="paper-mllm_iqa" data-group="other" data-category="understanding" data-short-title="MLLMs for Image Quality Assessment" data-cover="images/reel/mllm_iqa.webp?v=c67c11d6c9">
+        <article class="paper" id="paper-mllm_iqa" data-group="other" data-category="understanding">
           <a class="paper-figure" href="https://arxiv.org/abs/2403.10854" target="_blank" rel="noopener noreferrer" aria-label="Read A Comprehensive Study of Multimodal Large Language Models for Image Quality Assessment">
             <img src="images/mllm_iqa/teaser.png" alt="Research figure for A Comprehensive Study of Multimodal Large Language Models for Image Quality Assessment" loading="lazy" decoding="async" width="600" height="360">
           </a>
@@ -401,7 +356,7 @@
             <div class="paper-links"><a href="https://arxiv.org/abs/2403.10854" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a><a href="https://github.com/TianheWu/MLLMs-for-IQA" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div>
           </div>
         </article>
-        <article class="paper" id="paper-ahiq" data-group="other" data-category="understanding" data-short-title="AHIQ" data-cover="images/reel/ahiq.webp?v=5dddff2938">
+        <article class="paper" id="paper-ahiq" data-group="other" data-category="understanding">
           <a class="paper-figure" href="https://arxiv.org/abs/2204.10485" target="_blank" rel="noopener noreferrer" aria-label="Read Attentions Help CNNs See Better: Attention-based Hybrid Image Quality Assessment Network">
             <img src="images/ahiq/method.png" alt="Research figure for Attentions Help CNNs See Better: Attention-based Hybrid Image Quality Assessment Network" loading="lazy" decoding="async" width="600" height="360">
           </a>
@@ -413,7 +368,7 @@
             <div class="paper-links"><a href="https://arxiv.org/abs/2204.10485" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a><a href="https://github.com/IIGROUP/AHIQ" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div>
           </div>
         </article>
-        <article class="paper" id="paper-maniqa" data-group="other" data-category="understanding" data-short-title="MANIQA" data-cover="images/reel/maniqa.webp?v=ecd972d477">
+        <article class="paper" id="paper-maniqa" data-group="other" data-category="understanding">
           <a class="paper-figure" href="https://arxiv.org/abs/2204.08958" target="_blank" rel="noopener noreferrer" aria-label="Read MANIQA: Multi-dimension Attention Network for No-Reference Image Quality Assessment">
             <img src="images/maniqa/method.png" alt="Research figure for MANIQA: Multi-dimension Attention Network for No-Reference Image Quality Assessment" loading="lazy" decoding="async" width="600" height="360">
           </a>
@@ -425,7 +380,7 @@
             <div class="paper-links"><a href="https://arxiv.org/abs/2204.08958" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a><a href="https://github.com/IIGROUP/MANIQA" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div>
           </div>
         </article>
-        <article class="paper" id="paper-assessor360" data-group="other" data-category="understanding" data-short-title="Assessor360" data-cover="images/reel/assessor360.webp?v=d82fbf94af">
+        <article class="paper" id="paper-assessor360" data-group="other" data-category="understanding">
           <a class="paper-figure" href="https://arxiv.org/abs/2305.10983" target="_blank" rel="noopener noreferrer" aria-label="Read Assessor360: Multi-sequence Network for Blind Omnidirectional Image Quality Assessment">
             <img src="images/assessor360/visual.png" alt="Research figure for Assessor360: Multi-sequence Network for Blind Omnidirectional Image Quality Assessment" loading="lazy" decoding="async" width="600" height="360">
           </a>

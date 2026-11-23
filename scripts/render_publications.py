@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 """Render publication data to static, searchable HTML; no client framework needed."""
-from hashlib import sha256
 from html import escape
 import json
 from pathlib import Path
@@ -16,18 +15,12 @@ def render():
         paper_id = escape(paper["id"], quote=True)
         group = escape(paper["group"], quote=True)
         category = escape(paper["category"], quote=True)
-        short_title = escape(paper["shortTitle"], quote=True)
         image = escape(paper["image"], quote=True)
         alt = escape(paper.get("imageAlt", "Research figure for " + paper["title"]), quote=True)
-        cover_path = Path("images/reel") / (paper["id"] + ".webp")
-        cover = image
-        if (ROOT / cover_path).is_file():
-            version = sha256((ROOT / cover_path).read_bytes()).hexdigest()[:10]
-            cover = f"{escape(cover_path.as_posix(), quote=True)}?v={version}"
         distinction = '<span class="paper-distinction">Selected work</span>' if group == "selected" else ""
         venue_class = "paper-venue is-preprint" if paper["venue"].startswith("Preprint") else "paper-venue"
         links = "".join(f'<a href="{escape(link["url"], quote=True)}" target="_blank" rel="noopener noreferrer">{escape(link["label"])} <span aria-hidden="true">↗</span></a>' for link in paper["links"])
-        articles.append(f'''        <article class="paper" id="paper-{paper_id}" data-group="{group}" data-category="{category}" data-short-title="{short_title}" data-cover="{cover}">
+        articles.append(f'''        <article class="paper" id="paper-{paper_id}" data-group="{group}" data-category="{category}">
           <a class="paper-figure" href="{escape(paper['links'][0]['url'], quote=True)}" target="_blank" rel="noopener noreferrer" aria-label="Read {escape(paper['title'], quote=True)}">
             <img src="{image}" alt="{alt}" loading="lazy" decoding="async" width="600" height="360">
           </a>
