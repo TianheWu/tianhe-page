@@ -1,36 +1,72 @@
 (() => {
   'use strict';
-  const papers = [...document.querySelectorAll('.paper')];
-  const buttons = [...document.querySelectorAll('[data-filter]')];
-  const showAll = document.querySelector('#show-all');
 
-  function filterPublications(group) {
-    let count = 0;
-    papers.forEach(paper => {
-      paper.hidden = group !== 'all' && paper.dataset.group !== group;
-      if (!paper.hidden) count += 1;
-    });
-    buttons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.filter === group)));
-    document.querySelector('#result-count').textContent = `${String(count).padStart(2, '0')} / ${papers.length}`;
-    showAll.hidden = group === 'all';
+  const publications = document.getElementById('publications');
+  const papers = [...publications.querySelectorAll('.paper')];
+  const controls = publications.querySelector('.publication-controls');
+  const buttons = [...controls.querySelectorAll('[data-filter]')];
+  const resultCount = document.getElementById('result-count');
+  const showAll = document.getElementById('show-all');
+
+  function matchesFilter(paper, filter) {
+    return filter === 'all' || filter === paper.dataset.group || filter === paper.dataset.category;
   }
 
-  document.querySelector('.publication-controls').hidden = false;
-  buttons.forEach(button => button.addEventListener('click', () => filterPublications(button.dataset.filter)));
+  function applyFilter(filter) {
+    let count = 0;
+    for (const paper of papers) {
+      paper.hidden = !matchesFilter(paper, filter);
+      if (!paper.hidden) count += 1;
+    }
+
+    for (const button of buttons) {
+      button.setAttribute('aria-pressed', String(button.dataset.filter === filter));
+    }
+    resultCount.textContent = String(count).padStart(2, '0') + ' / ' + papers.length;
+    showAll.hidden = filter === 'all';
+  }
+
+  function publicationTarget(hash) {
+    if (hash === '#publications') return publications;
+    if (!hash.startsWith('#paper-')) return null;
+    const paper = document.getElementById(hash.slice(1));
+    return papers.includes(paper) ? paper : null;
+  }
+
+  for (const button of buttons) {
+    const filter = button.dataset.filter;
+    const count = papers.filter(paper => matchesFilter(paper, filter)).length;
+    button.querySelector('span').textContent = String(count).padStart(2, '0');
+    button.addEventListener('click', () => applyFilter(filter));
+  }
+
+  showAll.textContent = 'Explore all ' + papers.length + ' publications';
   showAll.addEventListener('click', () => {
-    filterPublications('all');
-    const allButton = document.querySelector('[data-filter="all"]');
-    allButton.focus({ preventScroll: true });
-    document.querySelector('#research').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+    applyFilter('all');
+    controls.querySelector('[data-filter="all"]').focus({ preventScroll: true });
+    publications.scrollIntoView({
+      behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth',
+    });
   });
-  const linkedPaper = document.getElementById(location.hash.slice(1));
-  filterPublications(linkedPaper?.classList.contains('paper') ? 'all' : 'selected');
+
+  // Reveal the destination before the browser follows a link, including repeat clicks on the same hash.
+  document.addEventListener('click', event => {
+    if (event.defaultPrevented || event.button !== 0 ||
+        event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    const link = event.target.closest('a[href^="#"]');
+    if (link && publicationTarget(link.hash)) applyFilter('all');
+  });
+
   window.addEventListener('hashchange', () => {
-    const paper = document.getElementById(location.hash.slice(1));
-    if (paper?.classList.contains('paper')) {
-      filterPublications('all');
-      paper.scrollIntoView();
+    const target = publicationTarget(location.hash);
+    if (target) {
+      applyFilter('all');
+      target.scrollIntoView({ behavior: 'instant' });
     }
   });
 
+  const initialTarget = publicationTarget(location.hash);
+  applyFilter(initialTarget ? 'all' : 'selected');
+  controls.hidden = false;
+  if (initialTarget) initialTarget.scrollIntoView({ behavior: 'instant' });
 })();

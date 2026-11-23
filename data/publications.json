@@ -1,6 +1,30 @@
 [
   {
+    "id": "prune-to-expand",
+    "category": "understanding",
+    "group": "selected",
+    "shortTitle": "Prune to Expand",
+    "title": "Prune to Expand: Training Prompt Enhancers with Less to Imitate",
+    "authors": "<strong>Tianhe Wu</strong>, Qilin Sun, Kede Ma",
+    "venue": "Preprint 2026",
+    "image": "images/reel/prune-to-expand.webp",
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2611.27229v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2611.27229v1"
+      }
+    ],
+    "summary": "Prune to Expand removes details unrelated to the user’s intent from training captions. An LLM fine-tuned on these captions learns to expand short prompts for image generation."
+  },
+  {
     "id": "qwenimageflash",
+    "category": "generation",
+    "group": "selected",
+    "shortTitle": "Qwen-Image-Flash",
     "title": "Qwen-Image-Flash: Rethinking the Training Recipe for Few-Step Distillation",
     "authors": "<strong>Tianhe Wu*</strong>, Zikai Zhou*, Kun Yan, Kaiyuan Gao, Lihan Jiang, Jiahao Li, Jie Zhang, Ningyuan Tang, Shengming Yin, Xiaoyue Chen, Xiao Xu, Yilei Chen, Yuxiang Chen, Yan Shu, Yixian Xu, Yanran Zhang, Zihao Liu, Zhendong Wang, Zekai Zhang, Deqing Li, Liang Peng, Yi Wang, Zeke Xie, Jingren Zhou, Bo Zheng, Chenfei Wu",
     "venue": "Preprint 2026",
@@ -14,7 +38,31 @@
     "summary": "A systematic study of data composition, teacher guidance, and generation–editing task mixtures for few-step DMD, leading to unified image generation and editing in four steps."
   },
   {
+    "id": "qwen-image-layered",
+    "category": "generation",
+    "group": "other",
+    "shortTitle": "Qwen-Image-Layered 1.5",
+    "title": "Qwen-Image-Layered 1.5: Unified Image Generation and Editing with Native Transparency Awareness",
+    "authors": "Shengming Yin, Zekai Zhang, Yixian Xu, Kaiyuan Gao, Zhendong Wang, Lihan Jiang, Ningyuan Tang, <strong>Tianhe Wu</strong>, Xiaoyue Chen, Yanran Zhang, Zihao Liu, Zikai Zhou, Jiahao Li, Xiao Xu, Kun Yan, Yuxiang Chen, Yilei Chen, Yan Shu, Jie Zhang, Heung-Yeung Shum, Lionel Ni, Jingren Zhou, Chenfei Wu",
+    "venue": "EMNLP 2026",
+    "image": "images/reel/qwen-image-layered.webp",
+    "links": [
+      {
+        "label": "ACL Anthology",
+        "url": "https://aclanthology.org/2026.emnlp-main.2409/"
+      },
+      {
+        "label": "PDF",
+        "url": "https://aclanthology.org/2026.emnlp-main.2409.pdf"
+      }
+    ],
+    "summary": "The model learns color and transparency together, enabling it to generate images and edit transparent layers. The paper introduces TransEdit-Bench to evaluate these edits."
+  },
+  {
     "id": "dpdmd",
+    "category": "generation",
+    "group": "selected",
+    "shortTitle": "DP-DMD",
     "title": "Diversity-Preserved Distribution Matching Distillation for Fast Visual Synthesis",
     "authors": "<strong>Tianhe Wu*</strong>, Ruibin Li*, Lei Zhang, Kede Ma",
     "venue": "ICML 2026",
@@ -33,6 +81,9 @@
   },
   {
     "id": "vqr1",
+    "category": "understanding",
+    "group": "selected",
+    "shortTitle": "VisualQuality-R1",
     "title": "VisualQuality-R1: Reasoning-Induced Image Quality Assessment via Reinforcement Learning to Rank",
     "authors": "<strong>Tianhe Wu</strong>, Jian Zou, Jie Liang, Lei Zhang, Kede Ma",
     "venue": "NeurIPS 2025 Spotlight",
@@ -51,6 +102,9 @@
   },
   {
     "id": "qwenimagerl",
+    "category": "generation",
+    "group": "reports",
+    "shortTitle": "Qwen-Image-2.0-RL",
     "title": "Qwen-Image-2.0-RL Technical Report",
     "authors": "Qwen Team",
     "venue": "Preprint 2026",
@@ -65,6 +119,9 @@
   },
   {
     "id": "qwenimageagent",
+    "category": "generation",
+    "group": "reports",
+    "shortTitle": "Qwen-Image-Agent",
     "title": "Qwen-Image-Agent: Bridging the Context Gap in Real-World Image Generation",
     "authors": "Qwen Team",
     "venue": "Preprint 2026",
@@ -79,6 +136,9 @@
   },
   {
     "id": "qwenrobot",
+    "category": "generation",
+    "group": "reports",
+    "shortTitle": "Qwen-RobotWorld",
     "title": "Qwen-RobotWorld Technical Report: Unifying Embodied World Modeling through Language-Conditioned Video Generation",
     "authors": "Qwen Team",
     "venue": "Preprint 2026",
@@ -93,6 +153,9 @@
   },
   {
     "id": "qwenimage2_vae",
+    "category": "generation",
+    "group": "reports",
+    "shortTitle": "Qwen-Image-VAE-2.0",
     "title": "Qwen-Image-VAE-2.0 Technical Report",
     "authors": "Qwen Team",
     "venue": "Preprint 2026",
@@ -111,6 +174,9 @@
   },
   {
     "id": "qwenimage2",
+    "category": "generation",
+    "group": "reports",
+    "shortTitle": "Qwen-Image-2.0",
     "title": "Qwen-Image-2.0 Technical Report",
     "authors": "Qwen Team (As the core contributor to this project)",
     "venue": "Preprint 2026",
@@ -125,6 +191,9 @@
   },
   {
     "id": "tooliqa",
+    "category": "understanding",
+    "group": "other",
+    "shortTitle": "Tool-IQA",
     "title": "Tool-IQA: Augmenting Image Quality Assessment with Simple Tools",
     "authors": "Guanyi Qin, Junjie Zhang, Chunming He, Yibing Fu, Jie Liang, <strong>Tianhe Wu</strong>, Lei Zhang",
     "venue": "Preprint 2026",
@@ -143,6 +212,9 @@
   },
   {
     "id": "qwenimagebench",
+    "category": "understanding",
+    "group": "other",
+    "shortTitle": "Qwen-Image-Bench",
     "title": "Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation",
     "authors": "Qwen Team",
     "venue": "EMNLP 2026",
@@ -161,24 +233,30 @@
   },
   {
     "id": "smallergrpo",
+    "category": "understanding",
+    "group": "other",
+    "shortTitle": "S2L-PO",
     "title": "Smaller Models are Natural Explorers for Policy-Level Diversity in GRPO",
-    "authors": "Yiming Ren, Yiran Xu, Zicheng Lin, Chufan Shi, Yukang Chen, Dingdong Wang, <strong>Tianhe Wu</strong>, Jujie Wang, Yujiu Yang, Yu Qiao, Ruihang Chu",
+    "authors": "Yiming Ren, Yiran Xu, Zicheng Lin, Chufan Shi, Yukang Chen, Dingdong Wang, <strong>Tianhe Wu</strong>, Junjie Wang, Yujiu Yang, Yu Qiao, Ruihang Chu",
     "venue": "ICML 2026",
     "image": "images/smallergrpo/image.png",
     "links": [
       {
         "label": "arXiv",
-        "url": "https://arxiv.org/abs/2604.10103"
+        "url": "https://arxiv.org/abs/2605.30789"
       },
       {
         "label": "Code",
-        "url": "https://github.com/leeruibin/hybrid-forcing"
+        "url": "https://github.com/qishisuren123/S2L-PO"
       }
     ],
     "summary": "S2L-PO uses smaller models as diverse explorers to train larger reasoning models more efficiently."
   },
   {
     "id": "hybrid_forcing",
+    "category": "generation",
+    "group": "other",
+    "shortTitle": "Hybrid Forcing",
     "title": "Long-Horizon Streaming Video Generation via Hybrid Attention with Decoupled Distillation",
     "authors": "Ruibin Li, Tao Yang, Fangzhou Ai, <strong>Tianhe Wu</strong>, Shilei Wen, Bingyue Peng, Lei Zhang",
     "venue": "Preprint 2026",
@@ -197,6 +275,9 @@
   },
   {
     "id": "meiqa",
+    "category": "understanding",
+    "group": "other",
+    "shortTitle": "ME-IQA",
     "title": "ME-IQA: Memory-Enhanced Image Quality Assessment via Re-Ranking",
     "authors": "Kanglong Fan, <strong>Tianhe Wu<sup>&dagger;</sup></strong>, Wen Wen, Jianzhao Liu, Le Yang, Yabin Zhang, Yiting Liao, Junlin Li, Li Zhang",
     "venue": "ECCV 2026",
@@ -211,6 +292,9 @@
   },
   {
     "id": "mixgrm",
+    "category": "understanding",
+    "group": "other",
+    "shortTitle": "Mix-GRM",
     "title": "Beyond Length Scaling: Synergizing Breadth and Depth for Generative Reward Models",
     "authors": "Qiyuan Zhang, Yufei Wang, <strong>Tianhe Wu</strong>, Can Xu, Qingfeng Sun, Kai Zheng, Xue Liu, Chen Ma",
     "venue": "ACL Findings 2026",
@@ -229,6 +313,9 @@
   },
   {
     "id": "dpposr",
+    "category": "generation",
+    "group": "other",
+    "shortTitle": "DP2O-SR",
     "title": "DP2O-SR: Direct Perceptual Preference Optimization for Real-World Image Super-Resolution",
     "authors": "Rongyuan Wu, Lingchen Sun, Zhengqiang Zhang, Shihao Wang, <strong>Tianhe Wu</strong>, Qiaosi Yi, Shuai Li, Lei Zhang",
     "venue": "NeurIPS 2025",
@@ -247,6 +334,9 @@
   },
   {
     "id": "perceptual_optimization",
+    "category": "understanding",
+    "group": "other",
+    "shortTitle": "Perceptual Optimization and Assessment",
     "title": "The Unanticipated Asymmetry Between Perceptual Optimization and Assessment",
     "authors": "Jiabei Zhang*, Qi Wang, Siyu Wu, Du Chen, <strong>Tianhe Wu*<sup>&dagger;</sup></strong>",
     "venue": "Preprint 2025",
@@ -265,6 +355,9 @@
   },
   {
     "id": "afine",
+    "category": "understanding",
+    "group": "other",
+    "shortTitle": "A-FINE",
     "title": "Toward Generalized Image Quality Assessment: Relaxing the Perfect Reference Quality Assumption",
     "authors": "Du Chen*, <strong>Tianhe Wu*</strong>, Kede Ma, Lei Zhang",
     "venue": "CVPR 2025",
@@ -295,6 +388,9 @@
   },
   {
     "id": "mllm_iqa",
+    "category": "understanding",
+    "group": "other",
+    "shortTitle": "MLLMs for Image Quality Assessment",
     "title": "A Comprehensive Study of Multimodal Large Language Models for Image Quality Assessment",
     "authors": "<strong>Tianhe Wu</strong>, Kede Ma, Jie Liang, Yujiu Yang, Lei Zhang",
     "venue": "ECCV 2024",
@@ -312,25 +408,10 @@
     "summary": "A systematic study on the ability of multimodal large language models to perceive and assess image quality."
   },
   {
-    "id": "assessor360",
-    "title": "Assessor360: Multi-sequence Network for Blind Omnidirectional Image Quality Assessment",
-    "authors": "<strong>Tianhe Wu*</strong>, Shuwei Shi*, Haoming Cai, Mingdeng Cao, Jing Xiao, Yinqiang Zheng, Yujiu Yang",
-    "venue": "NeurIPS 2023",
-    "image": "images/assessor360/visual.png",
-    "links": [
-      {
-        "label": "arXiv",
-        "url": "https://arxiv.org/abs/2305.10983"
-      },
-      {
-        "label": "Code",
-        "url": "https://github.com/TianheWu/Assessor360"
-      }
-    ],
-    "summary": "We present a new framework for blind omnidirectional IQA."
-  },
-  {
     "id": "ahiq",
+    "category": "understanding",
+    "group": "other",
+    "shortTitle": "AHIQ",
     "title": "Attentions Help CNNs See Better: Attention-based Hybrid Image Quality Assessment Network",
     "authors": "Shanshan Lao*, Yuan Gong*, Shuwei Shi, Sidi Yang, <strong>Tianhe Wu</strong>, Jiahao Wang, Weihao Xia, Yujiu Yang",
     "venue": "CVPR Workshops 2022 Oral",
@@ -349,6 +430,9 @@
   },
   {
     "id": "maniqa",
+    "category": "understanding",
+    "group": "other",
+    "shortTitle": "MANIQA",
     "title": "MANIQA: Multi-dimension Attention Network for No-Reference Image Quality Assessment",
     "authors": "Sidi Yang*, <strong>Tianhe Wu*</strong>, Shuwei Shi, Shanshan Lao, Yuan Gong, Mingdeng Cao, Jiahao Wang, Yujiu Yang",
     "venue": "CVPR Workshops 2022 Oral",
@@ -364,5 +448,26 @@
       }
     ],
     "summary": "The champion method for NTIRE2022 NR IQA."
+  },
+  {
+    "id": "assessor360",
+    "category": "understanding",
+    "group": "other",
+    "shortTitle": "Assessor360",
+    "title": "Assessor360: Multi-sequence Network for Blind Omnidirectional Image Quality Assessment",
+    "authors": "<strong>Tianhe Wu*</strong>, Shuwei Shi*, Haoming Cai, Mingdeng Cao, Jing Xiao, Yinqiang Zheng, Yujiu Yang",
+    "venue": "NeurIPS 2023",
+    "image": "images/assessor360/visual.png",
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2305.10983"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/TianheWu/Assessor360"
+      }
+    ],
+    "summary": "We present a new framework for blind omnidirectional IQA."
   }
 ]
